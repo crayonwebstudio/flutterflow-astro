@@ -1,0 +1,438 @@
+ <a class="ff-page-skip" href="#main">Skip to content</a>    <div class="ff-ban" id="ff-banner-studio-rename" role="region" aria-label="Announcement" data-astro-cid-po733llg=""> <p data-astro-cid-po733llg="">FlutterFlow’s visual builder is now FlutterFlow Studio. Everything you’ve built is right where you left it. <a class="ff-lnk" href="/studio/faq/" data-astro-cid-po733llg="">What’s changing</a></p> <button class="ff-ibtn" type="button" aria-label="Dismiss" hidden="" data-astro-cid-po733llg=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x ff-i" aria-hidden="true" data-astro-cid-po733llg="true"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg></button> </div> <script>(function(){const key = "ff-banner-studio-rename";
+
+  (() => {
+    const bn = document.getElementById(key);
+    try { if (localStorage.getItem(key)) { bn.hidden = true; return; } } catch (e) {}
+    const b = bn.querySelector("button");
+    b.hidden = false;
+    b.addEventListener("click", () => {
+      // focus would stay on the hidden button; hand it to the next stop after the banner (the bar's lockup).
+      // Not nextElementSibling: that's this script.
+      const next = [...document.querySelectorAll("a[href],button")]
+        .find((el) => !bn.contains(el) && bn.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING);
+      bn.hidden = true;
+      next?.focus();
+      try { localStorage.setItem(key, "1"); } catch (e) {}
+    });
+  })();
+})();</script> <header class="ff-snav" data-ff-snav="" data-astro-cid-gxc3ym7p=""> <nav class="ff-snav-nav ff-wrap" aria-label="Main" data-astro-cid-gxc3ym7p=""> <a href="/" data-astro-cid-gxc3ym7p="true" class="ff-lkp ff-snav-brand"><img src="/_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp" srcset="/_astro/flutterflow-mark-96.ChAYdHC__oeoFH.webp 30w, /_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp 60w, /_astro/flutterflow-mark-96.ChAYdHC__28B3sA.webp 96w" sizes="30px" alt="" width="96" height="96" loading="eager" decoding="async"><svg class="ff-lkp-wordmark" viewbox="80 -710 5099 722" role="img" aria-label="FlutterFlow"><path fill="currentColor" d="M80 0L80 -710L555 -710L555 -597L139 -597L210 -670L210 -344L139 -403L537 -403L537 -291L139 -291L210 -350L210 0ZM748 0Q690 0 655 -30Q620 -60 620 -126L620 -710L748 -710L748 -139Q748 -119 758.5 -109Q769 -99 788 -99L827 -99L827 0ZM1055 12Q974 12 926.5 -41.5Q879 -95 879 -190L879 -534L1007 -534L1007 -222Q1007 -155 1029.5 -123.5Q1052 -92 1098 -92Q1150 -92 1178.5 -126.5Q1207 -161 1207 -227L1207 -534L1335 -534L1335 0L1218 0L1215 -147L1231 -142Q1219 -66 1174 -27Q1129 12 1055 12ZM1637 0Q1557 0 1519.5 -37Q1482 -74 1482 -153L1482 -659L1610 -659L1610 -165Q1610 -128 1626 -113.5Q1642 -99 1676 -99L1751 -99L1751 0ZM1398 -435L1398 -534L1751 -534L1751 -435ZM2004 0Q1924 0 1886.5 -37Q1849 -74 1849 -153L1849 -659L1977 -659L1977 -165Q1977 -128 1993 -113.5Q2009 -99 2043 -99L2118 -99L2118 0ZM1765 -435L1765 -534L2118 -534L2118 -435ZM2404 12Q2324 12 2265 -22.5Q2206 -57 2174 -120Q2142 -183 2142 -267Q2142 -351 2174 -413.5Q2206 -476 2264.5 -511Q2323 -546 2401 -546Q2477 -546 2534.5 -512Q2592 -478 2623 -414Q2654 -350 2654 -260L2654 -231L2275 -231Q2279 -161 2313.5 -125.5Q2348 -90 2405 -90Q2448 -90 2476.5 -109.5Q2505 -129 2516 -164L2647 -156Q2625 -78 2560.5 -33Q2496 12 2404 12ZM2275 -317L2522 -317Q2518 -382 2485 -413.5Q2452 -445 2401 -445Q2350 -445 2316.5 -412Q2283 -379 2275 -317ZM2724 0L2724 -534L2844 -534L2849 -386L2838 -388Q2850 -465 2883.5 -499.5Q2917 -534 2975 -534L3024 -534L3024 -424L2974 -424Q2933 -424 2906 -412Q2879 -400 2865.5 -374.5Q2852 -349 2852 -308L2852 0ZM3087 0L3087 -710L3562 -710L3562 -597L3146 -597L3217 -670L3217 -344L3146 -403L3544 -403L3544 -291L3146 -291L3217 -350L3217 0ZM3755 0Q3697 0 3662 -30Q3627 -60 3627 -126L3627 -710L3755 -710L3755 -139Q3755 -119 3765.5 -109Q3776 -99 3795 -99L3834 -99L3834 0ZM4118 12Q4039 12 3979.5 -22.5Q3920 -57 3887.5 -120Q3855 -183 3855 -267Q3855 -352 3887.5 -414.5Q3920 -477 3979.5 -511.5Q4039 -546 4118 -546Q4197 -546 4256 -511.5Q4315 -477 4347.5 -414.5Q4380 -352 4380 -267Q4380 -183 4347.5 -120Q4315 -57 4256 -22.5Q4197 12 4118 12ZM4118 -92Q4180 -92 4213.5 -138Q4247 -184 4247 -267Q4247 -349 4213.5 -395.5Q4180 -442 4118 -442Q4056 -442 4022 -395.5Q3988 -349 3988 -267Q3988 -184 4022 -138Q4056 -92 4118 -92ZM4543 0L4382 -534L4513 -534L4617 -145L4724 -534L4836 -534L4944 -145L5048 -534L5179 -534L5018 0L4886 0L4780 -358L4675 0Z"></path></svg></a> <div class="ff-snav-nav-mid" data-astro-cid-gxc3ym7p=""> <div class="ff-snav-item" data-ff-snav-item="" data-astro-cid-gxc3ym7p=""> <button class="ff-snav-menu" type="button" aria-expanded="false" aria-controls="sn-flutterflow-0" data-astro-cid-gxc3ym7p="">Product<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m6 9 6 6 6-6"></path>  </svg></button> <div class="ff-snav-panel" id="sn-flutterflow-0" style="--ff-snav-cols:1" data-astro-cid-gxc3ym7p="">   <div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow</p><ul aria-label="FlutterFlow" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/product/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/ai/" data-astro-cid-gxc3ym7p="">AI</a></li><li data-astro-cid-gxc3ym7p=""><a href="/changelog/" data-astro-cid-gxc3ym7p="">What’s new</a></li><li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/ffx" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-vs-studio/" data-astro-cid-gxc3ym7p="">FlutterFlow or Studio?</a></li> </ul></div>   </div> </div><div class="ff-snav-item" data-ff-snav-item="" data-astro-cid-gxc3ym7p=""> <button class="ff-snav-menu" type="button" aria-expanded="false" aria-controls="sn-flutterflow-1" data-astro-cid-gxc3ym7p="">Studio<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m6 9 6 6 6-6"></path>  </svg></button> <div class="ff-snav-panel ff-snav-panel-studio" id="sn-flutterflow-1" style="--ff-snav-cols:2" data-astro-cid-gxc3ym7p="">  <a class="ff-snav-lead" href="https://app.flutterflow.io" data-astro-cid-gxc3ym7p=""><span class="ff-snav-lead-t" data-astro-cid-gxc3ym7p=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-gxc3ym7p=""></span>Sign in to Studio</span><span class="ff-snav-lead-p" data-astro-cid-gxc3ym7p="">Your projects are where you left them.</span><span class="ff-btn ff-btn-primary ff-btn-sm" aria-hidden="true" data-astro-cid-gxc3ym7p="">Sign in</span></a> <div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow Studio</p><ul aria-label="FlutterFlow Studio" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/ai/" data-astro-cid-gxc3ym7p="">AI tools</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/desktop/" data-astro-cid-gxc3ym7p="">Desktop app</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/changelog/" data-astro-cid-gxc3ym7p="">Changelog</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/faq/" data-astro-cid-gxc3ym7p="">FAQ</a></li> </ul></div><div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Experts</p><ul aria-label="Experts" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/work-with-developers/" data-astro-cid-gxc3ym7p="">Hire an expert</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/apply-to-be-a-developer/" data-astro-cid-gxc3ym7p="">Apply to be an expert</a></li> </ul></div>   </div> </div><a class="ff-snav-lk" href="/pricing/" data-astro-cid-gxc3ym7p="">Pricing</a><a class="ff-snav-lk" href="/enterprise/" data-astro-cid-gxc3ym7p="">Enterprise</a><div class="ff-snav-item" data-ff-snav-item="" data-astro-cid-gxc3ym7p=""> <button class="ff-snav-menu" type="button" aria-expanded="false" aria-controls="sn-flutterflow-4" data-astro-cid-gxc3ym7p="">Resources<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m6 9 6 6 6-6"></path>  </svg></button> <div class="ff-snav-panel" id="sn-flutterflow-4" style="--ff-snav-cols:3" data-astro-cid-gxc3ym7p="">   <div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Inspiration</p><ul aria-label="Inspiration" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/showcase/" data-astro-cid-gxc3ym7p="">Showcase</a></li><li data-astro-cid-gxc3ym7p=""><a href="/customer-stories/" data-astro-cid-gxc3ym7p="">Customer stories</a></li><li data-astro-cid-gxc3ym7p=""><a href="/blog/" data-astro-cid-gxc3ym7p="">Blog</a></li> </ul></div><div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Learn</p><ul aria-label="Learn" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://www.youtube.com/playlist?list=PLsUp7t2vRqx9UE13G8Xod8F-m248iR0E3" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Trainings<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://marketplace.flutterflow.io/home" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Templates<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li> </ul></div><div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Community</p><ul aria-label="Community" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://community.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-developer-groups/" data-astro-cid-gxc3ym7p="">Developer groups</a></li><li data-astro-cid-gxc3ym7p=""><a href="/student-ambassadors/" data-astro-cid-gxc3ym7p="">Student ambassadors</a></li> </ul></div>   </div> </div> </div> <div class="ff-snav-nav-end" data-astro-cid-gxc3ym7p=""> <a class="ff-snav-lk ff-snav-signin" href="https://build.flutterflow.io/signin" data-astro-cid-gxc3ym7p="">Sign in</a> <a class="ff-btn ff-btn-primary ff-btn-sm ff-btn-ab" href="https://build.flutterflow.io/signin?returnTo=%2Fnew" data-astro-cid-gxc3ym7p="true" data-astro-cid-sghildrv="">Start building</a> <div class="ff-snav-sm" data-astro-cid-gxc3ym7p=""><button class="ff-ibtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="ms-flutterflow" aria-haspopup="dialog" data-ff-snav-open="" data-astro-cid-gxc3ym7p=""><svg class="ff-i" viewbox="0 0 24 24" aria-hidden="true" data-astro-cid-gxc3ym7p=""><path d="M4 6h16" data-astro-cid-gxc3ym7p=""></path><path d="M4 12h16" data-astro-cid-gxc3ym7p=""></path><path d="M4 18h16" data-astro-cid-gxc3ym7p=""></path></svg></button></div> </div> </nav> </header> <!-- the sheet: over the page from the bar down, its own bar drawn where the real one is, so close lands on the menu button --> <dialog class="ff-snav-ms" id="ms-flutterflow" aria-label="Menu" data-astro-cid-gxc3ym7p=""> <div class="ff-snav-nav ff-wrap" data-astro-cid-gxc3ym7p=""> <a href="/" data-astro-cid-gxc3ym7p="true" class="ff-lkp ff-snav-brand"><img src="/_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp" srcset="/_astro/flutterflow-mark-96.ChAYdHC__oeoFH.webp 30w, /_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp 60w, /_astro/flutterflow-mark-96.ChAYdHC__28B3sA.webp 96w" sizes="30px" alt="" width="96" height="96" loading="lazy" decoding="async"><svg class="ff-lkp-wordmark" viewbox="80 -710 5099 722" role="img" aria-label="FlutterFlow"><path fill="currentColor" d="M80 0L80 -710L555 -710L555 -597L139 -597L210 -670L210 -344L139 -403L537 -403L537 -291L139 -291L210 -350L210 0ZM748 0Q690 0 655 -30Q620 -60 620 -126L620 -710L748 -710L748 -139Q748 -119 758.5 -109Q769 -99 788 -99L827 -99L827 0ZM1055 12Q974 12 926.5 -41.5Q879 -95 879 -190L879 -534L1007 -534L1007 -222Q1007 -155 1029.5 -123.5Q1052 -92 1098 -92Q1150 -92 1178.5 -126.5Q1207 -161 1207 -227L1207 -534L1335 -534L1335 0L1218 0L1215 -147L1231 -142Q1219 -66 1174 -27Q1129 12 1055 12ZM1637 0Q1557 0 1519.5 -37Q1482 -74 1482 -153L1482 -659L1610 -659L1610 -165Q1610 -128 1626 -113.5Q1642 -99 1676 -99L1751 -99L1751 0ZM1398 -435L1398 -534L1751 -534L1751 -435ZM2004 0Q1924 0 1886.5 -37Q1849 -74 1849 -153L1849 -659L1977 -659L1977 -165Q1977 -128 1993 -113.5Q2009 -99 2043 -99L2118 -99L2118 0ZM1765 -435L1765 -534L2118 -534L2118 -435ZM2404 12Q2324 12 2265 -22.5Q2206 -57 2174 -120Q2142 -183 2142 -267Q2142 -351 2174 -413.5Q2206 -476 2264.5 -511Q2323 -546 2401 -546Q2477 -546 2534.5 -512Q2592 -478 2623 -414Q2654 -350 2654 -260L2654 -231L2275 -231Q2279 -161 2313.5 -125.5Q2348 -90 2405 -90Q2448 -90 2476.5 -109.5Q2505 -129 2516 -164L2647 -156Q2625 -78 2560.5 -33Q2496 12 2404 12ZM2275 -317L2522 -317Q2518 -382 2485 -413.5Q2452 -445 2401 -445Q2350 -445 2316.5 -412Q2283 -379 2275 -317ZM2724 0L2724 -534L2844 -534L2849 -386L2838 -388Q2850 -465 2883.5 -499.5Q2917 -534 2975 -534L3024 -534L3024 -424L2974 -424Q2933 -424 2906 -412Q2879 -400 2865.5 -374.5Q2852 -349 2852 -308L2852 0ZM3087 0L3087 -710L3562 -710L3562 -597L3146 -597L3217 -670L3217 -344L3146 -403L3544 -403L3544 -291L3146 -291L3217 -350L3217 0ZM3755 0Q3697 0 3662 -30Q3627 -60 3627 -126L3627 -710L3755 -710L3755 -139Q3755 -119 3765.5 -109Q3776 -99 3795 -99L3834 -99L3834 0ZM4118 12Q4039 12 3979.5 -22.5Q3920 -57 3887.5 -120Q3855 -183 3855 -267Q3855 -352 3887.5 -414.5Q3920 -477 3979.5 -511.5Q4039 -546 4118 -546Q4197 -546 4256 -511.5Q4315 -477 4347.5 -414.5Q4380 -352 4380 -267Q4380 -183 4347.5 -120Q4315 -57 4256 -22.5Q4197 12 4118 12ZM4118 -92Q4180 -92 4213.5 -138Q4247 -184 4247 -267Q4247 -349 4213.5 -395.5Q4180 -442 4118 -442Q4056 -442 4022 -395.5Q3988 -349 3988 -267Q3988 -184 4022 -138Q4056 -92 4118 -92ZM4543 0L4382 -534L4513 -534L4617 -145L4724 -534L4836 -534L4944 -145L5048 -534L5179 -534L5018 0L4886 0L4780 -358L4675 0Z"></path></svg></a> <div class="ff-snav-ms-end" data-astro-cid-gxc3ym7p=""><button class="ff-ibtn" type="button" aria-label="Close menu" autofocus="" data-ff-snav-ms-close="" data-astro-cid-gxc3ym7p=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg></button></div> </div> <div class="ff-snav-ms-body" data-astro-cid-gxc3ym7p=""> <ul class="ff-snav-ms-main" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/pricing/" data-astro-cid-gxc3ym7p="">Pricing<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m9 18 6-6-6-6"></path>  </svg></a></li><li data-astro-cid-gxc3ym7p=""><a href="/enterprise/" data-astro-cid-gxc3ym7p="">Enterprise<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m9 18 6-6-6-6"></path>  </svg></a></li> </ul> <div class="ff-snav-ms-res" data-astro-cid-gxc3ym7p="">  <div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow</p><ul aria-label="FlutterFlow" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/product/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/ai/" data-astro-cid-gxc3ym7p="">AI</a></li><li data-astro-cid-gxc3ym7p=""><a href="/changelog/" data-astro-cid-gxc3ym7p="">What’s new</a></li><li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/ffx" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-vs-studio/" data-astro-cid-gxc3ym7p="">FlutterFlow or Studio?</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow Studio</p><ul aria-label="FlutterFlow Studio" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/ai/" data-astro-cid-gxc3ym7p="">AI tools</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/desktop/" data-astro-cid-gxc3ym7p="">Desktop app</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/changelog/" data-astro-cid-gxc3ym7p="">Changelog</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/faq/" data-astro-cid-gxc3ym7p="">FAQ</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Experts</p><ul aria-label="Experts" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/work-with-developers/" data-astro-cid-gxc3ym7p="">Hire an expert</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/apply-to-be-a-developer/" data-astro-cid-gxc3ym7p="">Apply to be an expert</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Inspiration</p><ul aria-label="Inspiration" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/showcase/" data-astro-cid-gxc3ym7p="">Showcase</a></li><li data-astro-cid-gxc3ym7p=""><a href="/customer-stories/" data-astro-cid-gxc3ym7p="">Customer stories</a></li><li data-astro-cid-gxc3ym7p=""><a href="/blog/" data-astro-cid-gxc3ym7p="">Blog</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Learn</p><ul aria-label="Learn" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://www.youtube.com/playlist?list=PLsUp7t2vRqx9UE13G8Xod8F-m248iR0E3" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Trainings<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://marketplace.flutterflow.io/home" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Templates<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Community</p><ul aria-label="Community" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://community.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-developer-groups/" data-astro-cid-gxc3ym7p="">Developer groups</a></li><li data-astro-cid-gxc3ym7p=""><a href="/student-ambassadors/" data-astro-cid-gxc3ym7p="">Student ambassadors</a></li> </ul></div> </div> <div class="ff-snav-ms-foot" data-astro-cid-gxc3ym7p="">  <a class="ff-btn ff-btn-primary ff-btn-ab" href="https://build.flutterflow.io/signin?returnTo=%2Fnew" data-astro-cid-gxc3ym7p="true" data-astro-cid-sghildrv="">Start building</a> <a class="ff-btn ff-btn-secondary ff-btn-ab" href="https://build.flutterflow.io/signin" data-astro-cid-gxc3ym7p="true" data-astro-cid-sghildrv="">Sign in</a> <p data-astro-cid-gxc3ym7p=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-gxc3ym7p=""></span>Already use FlutterFlow Studio? <a class="ff-lnk" href="https://app.flutterflow.io" data-astro-cid-gxc3ym7p="">Open Studio</a></p>  </div> </div> </dialog> <script type="module">const f=[...document.querySelectorAll("[data-ff-snav]")],u=()=>{const t=scrollY>2;document.documentElement.toggleAttribute("data-ff-snav-scrolled",t);for(const n of f)n.classList.toggle("ff-snav-scrolled",t)};u();addEventListener("scroll",u,{passive:!0});const p=[],v=[];for(const t of f){const n=[...t.querySelectorAll("[data-ff-snav-item]")],a=n.map(e=>e.querySelector("button")),d=(e,s)=>e.setAttribute("aria-expanded",String(s));n.forEach((e,s)=>{const o=a[s];o.addEventListener("click",()=>{const l=o.getAttribute("aria-expanded")!=="true";a.forEach(i=>d(i,!1)),d(o,l)}),e.addEventListener("focusout",l=>{const i=l.relatedTarget;i&&!e.contains(i)&&d(o,!1)})}),p.push(()=>n.forEach((e,s)=>{if(a[s].getAttribute("aria-expanded")!=="true")return;const o=e.contains(document.activeElement);d(a[s],!1),o&&a[s].focus()})),v.push(e=>n.forEach((s,o)=>{s.contains(e)||d(a[o],!1)}));const r=t.querySelector("[data-ff-snav-open]"),c=t.nextElementSibling;r.addEventListener("click",()=>{const e=t.getBoundingClientRect().top-(parseFloat(getComputedStyle(t).top)||0);e>0&&scrollTo({top:scrollY+e,behavior:"instant"}),c.style.setProperty("--ff-snav-ms-top",`${Math.max(0,t.getBoundingClientRect().top)}px`),c.showModal(),r.setAttribute("aria-expanded","true")}),c.querySelector("[data-ff-snav-ms-close]").addEventListener("click",()=>c.close()),c.addEventListener("close",()=>{r.setAttribute("aria-expanded","false"),(r.offsetParent?r:a[0]??r).focus()}),matchMedia("(width >= 821px)").addEventListener("change",e=>{e.matches&&c.open&&c.close()})}document.addEventListener("keydown",t=>{t.key==="Escape"&&p.forEach(n=>n())});document.addEventListener("click",t=>v.forEach(n=>n(t.target)));</script> <main id="main" tabindex="-1"> <article class="ff-art" data-astro-cid-v3wnudhb=""><div class="ff-wrap" data-astro-cid-v3wnudhb=""><a class="ff-art-bc-back" href="/blog/" data-astro-cid-v3wnudhb=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left ff-i" aria-hidden="true" data-astro-cid-v3wnudhb="true"> <path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path>  </svg>All posts</a><header class="ff-art-head" data-astro-cid-v3wnudhb=""><p class="ff-art-meta" data-astro-cid-v3wnudhb=""><time datetime="2022-02-19" data-astro-cid-v3wnudhb="">Feb 19, 2022</time><i data-astro-cid-v3wnudhb=""></i><a href="/author/souvik-biswas/" data-astro-cid-v3wnudhb="">Souvik Biswas</a><i data-astro-cid-v3wnudhb=""></i>13 min read<span class="ff-ptag ff-ptag-studio" data-astro-cid-v3wnudhb="true"><span class="ff-ptag-dot" aria-hidden="true"></span>FlutterFlow Studio</span></p><h1 class="ff-art-h" data-astro-cid-v3wnudhb="">Building a Flutter Slide Puzzle With Minimal Code</h1></header><div class="ff-art-body" data-astro-cid-v3wnudhb=""><p class="ff-art-lede" data-astro-cid-v3wnudhb="">Build a working version of the Flutter Slide Puzzle from scratch with very minimal code using FlutterFlow.</p><div class="ff-prose" data-astro-cid-v3wnudhb=""> <p>Recently the Flutter team at Google has announced a challenge called the <a href="https://flutterhack.devpost.com/?ref=blog.flutterflow.io"><strong>Flutter Puzzle Hack</strong></a> for a chance to win one of over $50,000 worth of prizes. To be eligible for a prize, you have to either build a solvable slide puzzle from scratch or use their sample project as the starting point and use your creativity to design an innovative version of it.</p>
+<p><strong>You need coding skills to participate in this challenge, right?</strong> — Not really, and this is why you are here.</p>
+<p>In this article, we’ll demonstrate how to build a working version of the Flutter Puzzle from scratch with very minimal coding using <a href="/?ref=blog.flutterflow.io"><strong>FlutterFlow</strong></a>. The only code that you need to write is for the logic of the puzzle (that code is included in this post 🙂).</p>
+<p>The final puzzle, that you’ll be building throughout this article, will look like this:‌</p>
+<p><img src="/images/cdn/93a57b53c433.gif" alt/=""></p>
+<p>You can try out the puzzle by going to <a href="https://app.flutterflow.io/run/KyjLKF6B4NIHLSWrkEwe?ref=blog.flutterflow.io"><strong>this link</strong></a>.</p>
+<h2 id="whats-flutterflow">What’s FlutterFlow?</h2>
+<p><img src="/images/cdn/a7bb81b84fcc.png" alt="FlutterFlow is a low-code builder for native mobile applications"></p>
+<p>FlutterFlow is a <strong>low-code builder</strong> for native mobile applications (Android &amp; iOS). You can the intuitive drag and drop visual builder to create your apps’ user interface but it offers a lot more:</p>
+<ul>
+<li>Easy integration with Firebase, Stripe, Algolia, GitHub, etc.</li>
+<li>Over 50 templates to start with</li>
+<li>Define Custom Functions, Custom Actions, and Custom Widgets</li>
+<li>AI generated code powered by OpenAI</li>
+<li>One click deployment using Codemagic</li>
+</ul>
+<p>Behind the scenes, code is generated using the open source framework called <a href="https://flutter.dev/?ref=blog.flutterflow.io"><strong>Flutter</strong></a> powered by Google, so the app you build is totally eligible for the Flutter Puzzle Hack challenge.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>To start building the puzzle using FlutterFlow, you need to create a free account by going <a href="https://app.flutterflow.io/create-account?ref=blog.flutterflow.io"><strong>here</strong></a>. If you already have an account, just <a href="https://app.flutterflow.io/?ref=blog.flutterflow.io"><strong>login</strong></a>.</p>
+<p>Once you successfully login to your account, you will be navigated to the FlutterFlow <strong>Dashboard</strong> page.</p>
+<p>Follow the steps below to create a new project:</p>
+<ol>
+<li>Click “<strong>+ Create New</strong>”.</li>
+<li>Enter a <strong>Project Name</strong>, for example — “<em>SlidePuzzle</em>”.</li>
+<li>Under <strong>Blank App</strong>, click “<strong>+ Create New</strong>”. You would also have an option to choose among the variety of templates offered by FlutterFlow, these cover most of the common use cases. But as this puzzle is a unique project you need to start from scratch.</li>
+<li>In <strong>Project Setup Step 1</strong>, you don’t need to change anything just click <em><strong>Next Step</strong></em>.</li>
+<li>In <strong>Project Setup Step 2</strong>, set an Initial Page. Enter the page name, for example — “<em>PuzzlePage</em>”, and click “<strong>+ Create New</strong>” under <strong>Blank Page</strong>.</li>
+<li>Click <strong>Start Building</strong>.</li>
+</ol>
+<p><img src="/images/cdn/39baedae4f70.gif" alt/=""></p>
+<p>This will take you to the project editor (or, the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder?ref=blog.flutterflow.io"><strong>UI Builder</strong></a>) where you can access the various widgets and customize your app by modifying their properties.</p>
+<h2 id="building-the-puzzle-ui">Building the puzzle UI</h2>
+<p>The <strong>UI Builder</strong> of FlutterFlow makes it really simple to create the user interface of any app by dragging and dropping widgets (UI elements) onto the canvas.</p>
+<p><a href="https://docs.flutterflow.io/building-your-ui/ui-builder/canvas-area?ref=blog.flutterflow.io"><strong>Canvas</strong></a> is the area where you would initially see “Empty Screen” written. The widgets can be found inside the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/widget-and-component-panel?ref=blog.flutterflow.io"><strong>Widget Panel</strong></a> section (present on the left) under the <strong>Widgets</strong> tab.</p>
+<p><img src="/images/cdn/6f74f7c1350d.png" alt/=""></p>
+<p>Let’s start by building a basic layout for an app.</p>
+<ol>
+<li>Drag and drop an <strong>AppBar</strong> widget onto the canvas.</li>
+<li>Go to the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a> (present on the right), customize the AppBar properties. For example, set the <strong>Background Color</strong> to <em>PrimaryBG</em>.</li>
+<li>Add a <strong>Text</strong> widget as the title inside the AppBar.</li>
+<li>Customize the text and properties to make it attractive. For example, change the text to “<em>Slide Puzzle</em>” and select <strong>Text Color</strong> as Primary.</li>
+<li>Set the <strong>Background Color</strong> of the page (Scaffold) to <em>PrimaryBG</em> as well.</li>
+</ol>
+<p><img src="/images/cdn/e96654e0dfdf.gif" alt/=""></p>
+<p>It’s time to build the main puzzle layout, follow the steps below:</p>
+<ol>
+<li>Start by placing a <strong>Column</strong> widget on the canvas.</li>
+<li>Add a <strong>Row</strong> widget inside the Column, place two <strong>Text</strong> widgets side-by-side. One them will display the text “<em>Moves:</em>” and the other will show the number of moves (it’s hardcoded here but later it will be set from a variable).</li>
+<li>Add a <strong>Container</strong> widget to the Column and place it below the Row. Set its width to <strong><code>80%</code></strong>, height to <strong><code>50%</code></strong>, and background color as <em>PrimaryBG</em>.</li>
+<li>Drag and drop a <strong>GridView</strong> widget inside the Container.</li>
+<li>Add a <strong>Button</strong> widget to the GridView.</li>
+</ol>
+<p><img src="/images/cdn/4f9eba015c9b.gif" alt/=""></p>
+<blockquote>
+<p><em><strong>The above steps are just to give you a basic idea about how to build the puzzle layout. Feel free to customize and modify the properties as per your requirement.</strong></em></p>
+</blockquote>
+<p><strong>Initial puzzle layout is complete but does it look like a puzzle at all?</strong> — No, it’s because we haven’t generated the rest of the tiles yet. By tile here is referred to the Button widget that you just added.</p>
+<p>FlutterFlow allows you to easily generate dynamic children of the GridView from a variable. Before that, you need to create a variable, and we’ll be defining it as a <a href="https://docs.flutterflow.io/working-with-data/local-state?ref=blog.flutterflow.io"><strong>Local State</strong></a> variable because this will actually contain the list integers to be placed on the puzzle board.</p>
+<h2 id="defining-local-state-variables">Defining Local State variables</h2>
+<p>The Local State variables can be stored inside the app and are accessible from all the pages. Though in the case of the puzzle, you won’t need to access the variables from different pages as it contains just a single page but storing the variables like this helps in easily updating their states (or values).</p>
+<p>Define the following Local State variables:</p>
+<ul>
+<li><strong><code>boardNumbers</code></strong>: to store the list of integers to be displayed inside the board tiles</li>
+<li><strong><code>moves</code></strong>: to track the number of tile moves inside the puzzle</li>
+<li><strong><code>isStarted</code></strong>: to track whether the puzzle game has started</li>
+</ul>
+<p>Follow the steps below to add the variables:</p>
+<ol>
+<li>Navigate to the <strong>Local State</strong> page from the <a href="https://docs.flutterflow.io/building-your-ui/navigation-menu?ref=blog.flutterflow.io"><strong>Navigation Menu</strong></a> (left-most menu)</li>
+<li>Click <strong>+ Add State Variable</strong>.</li>
+<li>In the Add Field dialog, enter the field name and the type of variable (example, Integer).</li>
+<li>If it’s of list type then enable <strong>List</strong> using the toggle.</li>
+<li>Click <strong>Create</strong>.</li>
+</ol>
+<p>Keep the <strong>Persisted</strong> toggle disabled as you don’t need to persist the state of any of the variables between app restarts.</p>
+<p>Create these variables with their respective data types and default values, following table has all the types listed:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Field Name</th><th>Data Type</th><th>List</th><th>Persisted</th><th>Default Value</th></tr></thead><tbody><tr><td>boardNumbers</td><td>Integer</td><td>true</td><td>false</td><td>-</td></tr><tr><td>moves</td><td>Integer</td><td>false</td><td>false</td><td>0</td></tr><tr><td>isStarted</td><td>Boolean</td><td>false</td><td>false</td><td>false</td></tr></tbody></table>
+<h2 id=""></h2>
+<p>Initializing the puzzle</p>
+<p>The <strong><code>boardNumbers</code></strong> variable doesn’t have any default value, so it should be initialized with a list of integers before displaying them inside the GridView.</p>
+<p>It’s time to do some coding (very minimal code), you need to define a <a href="https://docs.flutterflow.io/customizing-your-app/custom-actions?ref=blog.flutterflow.io"><strong>Custom Action</strong></a> to shuffle and return a list of integers.</p>
+<ol>
+<li>Navigate to the <strong>Custom Code</strong> page from the <a href="https://docs.flutterflow.io/building-your-ui/navigation-menu?ref=blog.flutterflow.io"><strong>Navigation Menu</strong></a>.</li>
+<li>Click <strong>+ Create</strong>.</li>
+<li>Enter the <strong>Action Name</strong> as <strong><code>shuffleBoard</code></strong>.</li>
+<li>Enable the <strong>Return Value</strong> toggle, set the <strong>Data Type</strong> to <em><strong>Integer</strong></em> and <strong>Is List</strong> to <em><strong>True</strong></em>.</li>
+<li>Click <strong>View Boilerplate Code</strong>, then select <strong>Copy to Editor</strong>.</li>
+<li>Add the following code for shuffling the list of integers and returning them:<br>
+‍</li>
+</ol>
+<ul>
+<li>Click on <strong>Check Errors</strong>, select <strong>Compile</strong>.</li>
+<li>Wait for the compiling to complete. If there are no errors, click <strong>Save</strong>.</li>
+</ul>
+<p><img src="/images/cdn/74450f70a18e.gif" alt/=""></p>
+<p>Now, add a new Button widget to start the game by calling the <strong><code>shuffleBoard</code></strong> Action and setting the initial values to the local state variables inside the <strong><code>onTap</code></strong> gesture.</p>
+<ol>
+<li>Drag and drop a <strong>Button</strong> widget, change the text to “<em>Start Game</em>”.</li>
+<li>Select the Start Game button, go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties panel</strong></a> (the right menu).</li>
+<li>Click <strong>+ Add Action</strong> button.</li>
+<li>Choose the gesture from the dropdown as <strong>On Tap</strong>.</li>
+<li>First action:
+<ol>
+<li>Select the <strong>Action Type</strong> as <em><strong>Custom Action</strong></em>.</li>
+<li>Choose <strong>Custom Action Name</strong> as <em><strong>shuffleBoard</strong></em>.</li>
+<li>Enter the Output Variable Name as <em><strong>shuffledNumList</strong></em>.</li>
+</ol>
+</li>
+<li>Second Action:
+<ol>
+<li>Select the <strong>Action Type</strong> as <em><strong>Update Local State</strong></em>.</li>
+<li>Set <strong>Select field to update</strong> as <em><strong>boardNumbers</strong></em>.</li>
+<li>Select <strong>Update Type</strong> as <em><strong>Set Value</strong></em>.</li>
+<li>Select the <strong>Value Source</strong> as <em><strong>From Variable</strong></em>.</li>
+<li>Choose <strong>Source</strong> as <em><strong>Action Outputs</strong></em>.</li>
+<li>Select <em><strong>shuffledNumList</strong></em> under <strong>Available Options</strong>.</li>
+</ol>
+</li>
+<li>Third Action:
+<ol>
+<li>Select the <strong>Action Type</strong> as <em><strong>Update Local State</strong></em>.</li>
+<li>Set <strong>Select field to update</strong> as <em><strong>isStarted</strong></em>.</li>
+<li>Select <strong>Update Type</strong> as <em><strong>Set Value</strong></em>.</li>
+<li>Select the <strong>Value Source</strong> as <em><strong>Specific Value</strong></em>.</li>
+<li>Choose <strong>Value</strong> as <em><strong>True</strong></em>.</li>
+</ol>
+</li>
+</ol>
+<h2 id="-1">‍</h2>
+<p><img src="/images/cdn/6e3ebc8ab557.gif" alt/=""></p>
+<h2 id="generating-tiles">Generating tiles</h2>
+<p>The <strong>tiles</strong> (Buttons with numbers) can be generated dynamically inside the GridView by using the <strong><code>boardNumbers</code></strong> local state variable.</p>
+<ol>
+<li>Select the <strong>GridView</strong> widget.</li>
+<li>Go to <strong>Generate Dynamic Children</strong> tab present inside the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties panel</strong></a>.</li>
+<li>Enter the <strong>Variable Name</strong> as <em><strong>currNumList</strong></em>.</li>
+<li>Select the <strong>Source</strong> as <em><strong>Local State</strong></em>.</li>
+<li>Under <strong>Available Options</strong>, choose <em><strong>boardNumbers</strong></em>.</li>
+<li>Click <strong>Save</strong>, then click <strong>Ok</strong> inside the dialog.</li>
+</ol>
+<p><img src="/images/cdn/ea3f6d1c0075.gif" alt/=""></p>
+<p>To display the numbers in the tiles from the list variable:</p>
+<ol>
+<li>Select the <strong>Button</strong> widget.</li>
+<li>Under <strong>Button Text</strong>, click <em><strong>Set from Variable</strong></em>.</li>
+<li>Select the <strong>Source</strong> as <em><strong>currNumList item (Integer)</strong></em>.</li>
+<li>Keep the <strong>Number Format Options</strong> as <em><strong>No Formatting</strong></em>.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><img src="/images/cdn/609fad32f426.gif" alt/=""></p>
+<p>Currently the <strong><code>boardNumbers</code></strong> variable contains “0” as well but it shouldn’t be visible on the board, you need to hide the 0th title so that it looks like an empty area there.</p>
+<p>There’s a simple trick to hide the tile containing “0”:</p>
+<ol>
+<li>Select the <strong>Button</strong> (tile).</li>
+<li>In the Properties Menu, expand the <strong>Visibility</strong> section.</li>
+<li>Set the source as <strong>Condition</strong>.</li>
+<li>Select the <strong>First Value Source</strong> as <em><strong>currNumList item</strong></em>.</li>
+<li>Change the condition type to <strong>Not Equals To</strong>.</li>
+<li>Set the <strong>Second Value Source</strong> as <em><strong>Specific Value</strong></em>.</li>
+<li>Enter the <strong>Value</strong> as “0”.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<h2 id="adding-empty-list-widget">Adding empty list widget</h2>
+<p>The <strong><code>boardNumbers</code></strong> variable would be empty initially, it would only the initialized when the Start Game button is tapped. So, initially the GridView would have nothing to display. You can add a <strong>Component</strong> to be displayed while the GridView has an empty list.</p>
+<p>Let’s add a component that would look similar to the puzzle but with tiles in the correct order (solved state) and when the Start Game button is clicked the tiles would be shuffled.</p>
+<p>To get the list of integers in the solved state you need to define a simple <a href="https://docs.flutterflow.io/customizing-your-app/custom-functions?ref=blog.flutterflow.io"><strong>Custom Function</strong></a>.</p>
+<ol>
+<li>Go to the <strong>Custom Code</strong> page from the <a href="https://docs.flutterflow.io/building-your-ui/navigation-menu?ref=blog.flutterflow.io"><strong>Navigation Menu</strong></a>.</li>
+<li>Select the <strong>Custom Functions</strong> tab.</li>
+<li>Click <strong>+ Create</strong>.</li>
+<li>Enter the function name as <strong>initBoard</strong>.</li>
+<li>Set the return <strong>Data Type</strong> as <em><strong>Integer</strong></em> and set <strong>Is List</strong> to <em><strong>True</strong></em>.</li>
+<li>Go to the <strong>Code</strong> tab, add the following inside the function:</li>
+</ol>
+<ul>
+<li>Click <strong>Check Errors</strong>. If there are no errors, then click <strong>Save</strong>.</li>
+</ul>
+<p><img src="/images/cdn/0e1d03622a5e.gif" alt/=""></p>
+<p>Create a Component by following the steps below:</p>
+<ol>
+<li>Go to <strong>Select Page or Component</strong> from the <a href="https://docs.flutterflow.io/building-your-ui/navigation-menu?ref=blog.flutterflow.io"><strong>Navigation Menu</strong></a>.</li>
+<li>Select the <strong>Components</strong> tab.</li>
+<li>Click <strong>+ Create New</strong>.</li>
+<li>Enter the name of the component as <strong>InitialGridView</strong> and click <em><strong>+ Create New</strong></em> under <strong>Blank Component</strong>.</li>
+<li>Add a <strong>Container</strong> widget with width and height set to <strong><code>100%</code></strong>.</li>
+<li>Drag and drop a <strong>GridView</strong> widget and add a <strong>Button</strong> inside it.</li>
+<li>Select the GridView and go to the <strong>Generate Dynamic Children</strong> tab present inside the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties panel</strong></a>.</li>
+<li>Enter the <strong>Variable Name</strong> as <em><strong>initNumList</strong></em>.</li>
+<li>Select <strong>Source</strong> as <em><strong>Custom Function</strong></em>.</li>
+<li>Under <strong>Function Name</strong>, select <em><strong>initBoard</strong></em>.</li>
+<li>Click <strong>Save</strong>, then click <strong>Ok</strong> inside the dialog.</li>
+<li>Select a <strong>Button</strong>, click <em><strong>Set From Variable</strong></em> under <strong>Button Text</strong>.</li>
+<li>Select the <strong>Source</strong> as <em><strong>initNumList item</strong></em>, click <strong>Save</strong>.</li>
+</ol>
+<p><img src="/images/cdn/d89426430bf9.gif" alt/=""></p>
+<p>Set the component inside the GridView of PuzzlePage when the list is empty:</p>
+<ol>
+<li>Select the GridView widget, expand the <strong>Empty List Widget</strong> (inside <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties panel</strong></a>).</li>
+<li>Check the <strong>Show Empty List Widget</strong> checkbox.</li>
+<li>Select the <strong>Widget Type</strong> as <em><strong>Component</strong></em>.</li>
+<li>Choose <em><strong>InitialGridView</strong></em> as the <strong>Component Name</strong>.</li>
+</ol>
+<p><img src="/images/cdn/e118dfa1db38.gif" alt/=""></p>
+<h2 id="puzzle-logic">Puzzle logic</h2>
+<p>This is the most important piece of code that you’ll be adding to the puzzle, it estimates whether a tile can move and to which position it can move by finding out the empty area.</p>
+<p>We won’t go into the details of how this logic works, you can simply define the following as a <a href="https://docs.flutterflow.io/customizing-your-app/custom-actions?ref=blog.flutterflow.io"><strong>Custom Action</strong></a> and proceed to the next step. This action would require <em>three parameters</em> to be passed and its return type would be <em>JSON</em>.</p>
+<p>Follow the steps below:</p>
+<ol>
+<li>Navigate to the <strong>Custom Code</strong> page.</li>
+<li>Go to <strong>Custom Actions</strong> tab.</li>
+<li>Click <strong>+ Create</strong>.</li>
+<li>Enter the action name as <strong>onClick</strong>.</li>
+<li>Enable the <strong>Return Value</strong> toggle, set the <strong>Data Type</strong> as <em><strong>JSON</strong></em>.</li>
+<li>Define the following Arguments, by clicking on <strong>+ Add Parameter</strong>:
+<ul>
+<li>Argument 1: <strong>list</strong>, Data Type: <strong>Integer</strong>, Is List: <strong>True</strong>.</li>
+<li>Argument 2: <strong>index</strong>, Data Type: <strong>Integer</strong>, Is List: <strong>False</strong>.</li>
+<li>Argument 3: <strong>moves</strong>, Data Type: <strong>Integer</strong>, Is List: <strong>False</strong>.</li>
+</ul>
+</li>
+<li>Click <strong>View Boilerplate Code</strong>, select <strong>Copy to Editor</strong>.</li>
+<li>Download the following code and copy-paste it inside the function:</li>
+</ol>
+<p>[</p>
+<p>Puzzle logic code</p>
+<p>Code to be added as a Custom Action to the FlutterFlow project.</p>
+<p>puzzle_logic.dart</p>
+<p>3 KB</p>
+<p>](/blog-assets/2022/02/puzzle_logic.dart “Download”)</p>
+<ol start="9">
+<li>Click <strong>Check Errors</strong>, then select <strong>Compile</strong> inside the dialog.</li>
+<li>If no errors are found, click <strong>Save</strong>.</li>
+</ol>
+<p><img src="/images/cdn/2db9cba2f538.gif" alt/=""></p>
+<p>In the above code, the updated list of numbers and the moves are returned in JSON format.</p>
+<p>To make this logic work, you’ll need to pass the index of the tapped tile. But from the grid tiles, only the number can be retrieved not its index inside the list. To get the index you need to add one more simple Custom Function:</p>
+<ul>
+<li><strong>Function Name:</strong> getIndex</li>
+<li><strong>Return Type:</strong> Integer (Is List: False)</li>
+<li><strong>Function Arguments:</strong>
+<ul>
+<li>board —&gt; Data Type: Integer, Is List: True</li>
+<li>value —&gt; Data Type: Integer, Is List: False</li>
+</ul>
+</li>
+</ul>
+<h2 id="trigger-action-on-tile-tap">Trigger action on tile tap</h2>
+<p>Once you have the <strong><code>onClick</code></strong> action defined, you are ready to set them as onTap action of the Button widget inside the GridView. The following actions should be defined on the Button in order:</p>
+<ol>
+<li>Call the <strong>onClick</strong> Custom Action by providing the required variables which will return the updated <strong>list</strong> and the <strong>moves</strong> in a JSON format.</li>
+<li>Use the Update Local State action to update the <strong>list of board numbers</strong> from the JSON.</li>
+<li>Use the Update Local State action to update the <strong>number of moves</strong> from the JSON.</li>
+</ol>
+<p>Follow the steps below to define these actions:</p>
+<ol>
+<li>Select the <strong>Button</strong> (tile) inside GridVew.</li>
+<li>Go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties panel</strong></a> (the right menu).</li>
+<li>Click <strong>+ Add Action</strong> button.</li>
+<li>Choose the gesture from the dropdown as <strong>On Tap</strong>.</li>
+<li>First action:
+<ol>
+<li>Select the <strong>Action Type</strong> as <em><strong>Custom Action</strong></em>.</li>
+<li>Choose <strong>Custom Action Name</strong> as <em><strong>onClick</strong></em>.</li>
+<li>Pass the <strong>list</strong> argument from: <strong>From Variable &gt; Local State &gt; boardNumbers</strong>.</li>
+<li>Pass the <strong>index</strong> argument from: <strong>From Variable &gt; Custom Function &gt; getIndex</strong>.</li>
+<li>Set the index function argument <strong>board</strong> from <strong>From Variable &gt; Local State &gt; boardNumbers</strong>, and <strong>value</strong> from <strong>From Variable &gt; currNumList item</strong>.</li>
+<li>Pass the <strong>moves</strong> argument from: <strong>From Variable &gt; Local State &gt; moves</strong>.</li>
+<li>Enter the Output Variable Name as <em><strong>listMovesMap</strong></em>.</li>
+</ol>
+</li>
+<li>Second Action:
+<ol>
+<li>Select the <strong>Action Type</strong> as <em><strong>Update Local State</strong></em>.</li>
+<li>Set <strong>Select field to update</strong> as <em><strong>boardNumbers</strong></em>.</li>
+<li>Select <strong>Update Type</strong> as <em><strong>Set Value</strong></em>.</li>
+<li>Select the <strong>Value Source</strong> as <em><strong>From Variable</strong></em>.</li>
+<li>Choose <strong>Source</strong> as <em><strong>Action Outputs</strong></em>.</li>
+<li>Select <em><strong>listMovesMap</strong></em> under <strong>Available Options</strong>.</li>
+<li>Select <strong>JSON Path</strong> and define the path as <strong><code>$.list</code></strong>.</li>
+</ol>
+</li>
+<li>Third Action:
+<ol>
+<li>Select the <strong>Action Type</strong> as <em><strong>Update Local State</strong></em>.</li>
+<li>Set <strong>Select field to update</strong> as <em><strong>moves</strong></em>.</li>
+<li>Select <strong>Update Type</strong> as <em><strong>Set Value</strong></em>.</li>
+<li>Select the <strong>Value Source</strong> as <em><strong>From Variable</strong></em>.</li>
+<li>Choose <strong>Source</strong> as <em><strong>Action Outputs</strong></em>.</li>
+<li>Select <em><strong>listMovesMap</strong></em> under <strong>Available Options</strong>.</li>
+<li>Select <strong>JSON Path</strong> and define the path as <strong><code>$.moves</code></strong>.</li>
+</ol>
+</li>
+</ol>
+<p><img src="/images/cdn/a98b2542c4a6.gif" alt/=""></p>
+<h2 id="show-solved-dialog">Show solved dialog</h2>
+<p>Once a user completes solving the puzzle, you should show something on the UI to indicate that.</p>
+<p>Add a new <strong>Custom Action</strong> called <strong><code>isSolved</code></strong> with the following code:</p>
+<p><img src="/images/cdn/c9fc752058d6.png" alt/=""></p>
+<p>Then, you need to add a few more actions to the Button (or tile), follow the steps below:</p>
+<ol>
+<li>Select the <strong>Button</strong> (tile) inside GridVew.</li>
+<li>Go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties panel</strong></a> (the right menu).</li>
+<li>Click <strong>+ Add Action</strong> button.</li>
+<li>Choose the <strong>Type of Action</strong> as <strong>On Tap</strong>.</li>
+<li>First action (call the custom action):
+<ol>
+<li>Select action as <em><strong>Custom Action</strong></em>.</li>
+<li>Choose <strong>Custom Action Name</strong> as <em><strong>isSolved</strong></em>.</li>
+<li>Pass the <strong>board</strong> argument from: <strong>From Variable &gt; Local State &gt; boardNumbers</strong>.</li>
+<li>Enter the <strong>Output Variable Name</strong> as <em><strong>isSolved</strong></em>.</li>
+</ol>
+</li>
+<li>Second Action (stop the timer):
+<ol>
+<li>Select action as <em><strong>Update Local State</strong></em>.</li>
+<li>Set <strong>Select field to update</strong> as <em><strong>isStarted</strong></em>.</li>
+<li>Select <strong>Update Type</strong> as <em><strong>Set Value</strong></em>.</li>
+<li>Select the <strong>Value Source</strong> as <em><strong>Specific Value</strong></em>.</li>
+<li>Select <strong>Value</strong> as <em><strong>False</strong></em>.</li>
+<li>Enable the <strong>Set Conditional Execution</strong> toggle.</li>
+<li>Select the Source as <strong>Action Outputs</strong>.</li>
+<li>Under <strong>Available Options</strong>, choose <em><strong>isSolved</strong></em>.</li>
+</ol>
+</li>
+<li>Third Action (show dialog box):
+<ol>
+<li>Select the action as <em><strong>Alert Dialog</strong></em>.</li>
+<li>Select <strong>Alert Dialog Type</strong> as <em><strong>Informational Dialog</strong></em>.</li>
+<li>Enter <strong>Title</strong> as “Solved”.</li>
+<li>Enter <strong>Message</strong> as “You have successfully solved the puzzle!”.</li>
+<li>Enter <strong>Dismiss Text</strong> as “OK”.</li>
+<li>Enable the <strong>Set Conditional Execution</strong> toggle.</li>
+<li>Select the Source as <strong>Action Outputs</strong>.</li>
+<li>Under <strong>Available Options</strong>, choose <em><strong>isSolved</strong></em>.</li>
+</ol>
+</li>
+</ol>
+<p>The second and third actions will only be triggered if the <strong>isSolved</strong> custom action output is <strong>True</strong>.</p>
+<p><img src="/images/cdn/537e215689db.gif" alt/=""></p>
+<p>As the puzzle is solved, the dialog will be displayed like this:</p>
+<p><img src="/images/cdn/1d980241f35a.gif" alt/=""></p>
+<p>Once you have added this final set of actions, your puzzle is ready!</p>
+<h2 id="trying-out-the-app">Trying out the app</h2>
+<p>You can use the <strong>Run</strong> button present on the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/tool-bar?ref=blog.flutterflow.io"><strong>Tool Bar</strong></a> (present on the top) of FlutterFlow to test out the puzzle on your web browser.</p>
+<p><img src="/images/cdn/1c8624985d52.png" alt/=""></p>
+<p><code>Typically it requires around</code> <strong><code>2-4 minutes</code></strong> <code>to build and start the app using Run mode.</code></p>
+<p>The Flutter Slide Puzzle app in action:</p>
+<p><img src="/images/cdn/93a57b53c433.gif" alt/=""></p>
+<p>Try out this version of the Slide Puzzle by going to <a href="https://app.flutterflow.io/run/KyjLKF6B4NIHLSWrkEwe?ref=blog.flutterflow.io"><strong>this link</strong></a>.</p>
+<h2 id="tips-and-ideas-for-your-project">Tips and ideas for your project</h2>
+<p>Some ideas that you can incorporate inside your puzzle on top of the sample that we created in this article are as follows:</p>
+<h3 id="stopwatch">Stopwatch</h3>
+<p>Notice in the above demo, a stopwatch starts as soon as the Start Game button is tapped. This is one of the basic features that you can incorporate inside your puzzle. Though FlutterFlow doesn’t provide a <strong>Timer</strong> widget, it won’t stop you from adding a <a href="https://docs.flutterflow.io/customizing-your-app/custom-widgets?ref=blog.flutterflow.io"><strong>Custom Widget</strong></a> 😉.</p>
+<p>Create a Custom Widget by going to the <strong>Custom Code</strong> page. Enter the widget name as <em><strong>TimerWidget</strong></em> and define the following parameters:</p>
+<ul>
+<li><strong>fontSize</strong>: Double (Is List: False)</li>
+<li><strong>color</strong>: Color (Is List: False)</li>
+</ul>
+<p>Then download the following code and upload it there:</p>
+<p>[</p>
+<p>Timer widget</p>
+<p>timer_widget.dart</p>
+<p>2 KB</p>
+<p>](/blog-assets/2022/02/timer_widget.dart “Download”)</p>
+<h3 id="adaptive-layout">Adaptive layout</h3>
+<p>As this Flutter challenge is focused on the Web platform, <strong>responsive layout</strong> is one of the major criteria to get an edge over the other competitors. In FlutterFlow, you can select any widget and use the <strong>Responsive Visibility</strong> section (present inside the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>) to set on which type of display that particular widget should be visible. With the help of this, you can use different dimensions of widgets depending upon the screen sizes.</p>
+<p><img src="/images/cdn/36b2d5a48d72.png" alt/=""></p>
+<h3 id="adding-dark-mode-support">Adding dark mode support</h3>
+<p>Dark mode support can be easily added to the Puzzle by going to the <strong>Settings &amp; Integrations &gt; Theme &gt; Theme Colors</strong>, enable <em><strong>Dark Mode Theme</strong></em> using the toggle, and choose the appropriate colors to be used in the dark mode.</p>
+<p><img src="/images/cdn/61e48a34ec8a.png" alt/=""></p>
+<p>Click the <strong>Preview Themes</strong> button to see how the light and the dark mode themes look when applied on your <em><strong>PuzzlePage</strong></em>:</p>
+<p><img src="/images/cdn/67cc5e02ef54.gif" alt/=""></p>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>FlutterFlow should help you to build your version of the Slide Puzzle even if you don’t know how to write Flutter code at all.</p>
+<p>Finally, to submit your project to this challenge:</p>
+<ul>
+<li>You can go to the <a href="https://flutterhack.devpost.com/?ref=blog.flutterflow.io"><strong>challenge page</strong></a> to start your submission.</li>
+<li>You need to provide a <strong>link to your code</strong> during submission. Using FlutterFlow you can directly <a href="https://docs.flutterflow.io/building-your-ui/connect-to-github?ref=blog.flutterflow.io"><strong>upload your code to GitHub</strong></a>. Just share that link, don’t forget to make your repository <em><strong>public</strong></em>.</li>
+<li>Record a video (less than <strong>3 minutes</strong>) of the puzzle by starting it in the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/tool-bar?ref=blog.flutterflow.io#7.-run"><strong>Run mode</strong></a> of FlutterFlow. Upload it to YouTube, Vimeo, Facebook Video, etc., and provide the link during submission.</li>
+<li>Lastly, you should <strong>host your Flutter web app</strong> and provide the link. You can use <a href="https://firebase.google.com/docs/hosting?ref=blog.flutterflow.io"><strong>Firebase Hosting</strong></a> or <a href="https://pages.github.com/?ref=blog.flutterflow.io"><strong>GitHub Pages</strong></a> to host the website.</li>
+</ul>
+<p>Share your puzzle on Twitter with the <strong>#FlutterPuzzleHack</strong> and don’t forget to tag <strong>FlutterFlow</strong> (<a href="https://twitter.com/flutterflow?ref=blog.flutterflow.io"><strong>@flutterflow</strong></a>). We can’t wait to see your creations!</p> </div><footer class="ff-art-foot" data-astro-cid-v3wnudhb=""><p class="ff-art-meta" data-astro-cid-v3wnudhb=""><time datetime="2022-02-19" data-astro-cid-v3wnudhb="">Feb 19, 2022</time></p><div class="ff-art-share ff-art-foot-share" data-ff-art-share="" data-astro-cid-v3wnudhb="true" data-astro-cid-owv5jxu4=""> <button type="button" class="ff-ibtn ff-ibtn-sm ff-art-copy" data-ff-url="https://www.flutterflow.io/blog/building-flutter-slide-puzzle-with-minimal-code" aria-label="Copy link" data-astro-cid-owv5jxu4=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link ff-i ff-art-cp" aria-hidden="true" data-astro-cid-owv5jxu4="true"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check ff-i ff-art-ok" aria-hidden="true" data-astro-cid-owv5jxu4="true"> <path d="M20 6 9 17l-5-5"></path>  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x ff-i ff-art-no" aria-hidden="true" data-astro-cid-owv5jxu4="true"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg> </button> <a class="ff-ibtn ff-ibtn-sm" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.flutterflow.io%2Fblog%2Fbuilding-flutter-slide-puzzle-with-minimal-code&text=Building%20a%20Flutter%20Slide%20Puzzle%20With%20Minimal%20Code" target="_blank" rel="noopener" aria-label="Share on X (opens in a new tab)" data-astro-cid-owv5jxu4=""> <svg viewbox="0 0 24 24" aria-hidden="true" data-astro-cid-owv5jxu4="true"><path fill="currentColor" d="M17.176 4h2.76l-6.03 6.777L21 20h-5.554l-4.351-5.593L5.117 20H2.355l6.451-7.25L2 4h5.695l3.932 5.113L17.176 4Zm-.97 14.375h1.53L7.863 5.54H6.223l9.983 12.835Z"></path></svg> </a> <a class="ff-ibtn ff-ibtn-sm" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.flutterflow.io%2Fblog%2Fbuilding-flutter-slide-puzzle-with-minimal-code" target="_blank" rel="noopener" aria-label="Share on LinkedIn (opens in a new tab)" data-astro-cid-owv5jxu4=""> <svg viewbox="0 0 24 24" aria-hidden="true" data-astro-cid-owv5jxu4="true"><path fill="currentColor" d="M4.5 3C3.672 3 3 3.672 3 4.5v15c0 .828.672 1.5 1.5 1.5h15c.828 0 1.5-.672 1.5-1.5v-15c0-.828-.672-1.5-1.5-1.5h-15Zm3.02 4.003a1.546 1.546 0 0 1-.003 3.088 1.546 1.546 0 0 1 .003-3.088ZM5.682 18.324h2.65V9.767H5.682v8.557Zm4.597-8.562h2.44v1.19h.034c.34-.644 1.17-1.322 2.407-1.322 2.573 0 3.049 1.694 3.049 3.897v4.797h-2.55v-4.252c0-1.014-.019-2.319-1.413-2.319-1.414 0-1.63 1.105-1.63 2.247v4.324h-2.337V9.762Z"></path></svg> </a> <span class="ff-vh" role="status" aria-live="polite" data-astro-cid-owv5jxu4=""></span> </div> <script type="module">for(const t of document.querySelectorAll("[data-ff-art-share] .ff-art-copy")){const e=t.parentElement.querySelector("[role=status]");let a=0;t.addEventListener("click",async()=>{clearTimeout(a),t.removeAttribute("data-ff-copied"),t.removeAttribute("data-ff-failed");try{await navigator.clipboard.writeText(t.dataset.ffUrl),t.setAttribute("data-ff-copied",""),e.textContent="Copied"}catch{t.setAttribute("data-ff-failed",""),e.textContent="Couldn’t copy. Copy the address from the browser’s bar."}a=window.setTimeout(()=>{t.removeAttribute("data-ff-copied"),t.removeAttribute("data-ff-failed"),e.textContent=""},2e3)})}</script></footer></div></div></article> <div class="ff-wrap"><section id="close" aria-labelledby="close-h" class="ff-block ff-cls" data-astro-cid-uny4lie4="true"> <div class="ff-sec-center" data-astro-cid-l4fe2nj4=""><h2 id="close-h" data-astro-cid-l4fe2nj4=""><span class="ff-ln" data-astro-cid-l4fe2nj4="">Turn your idea into an app</span></h2><div class="ff-cls-acts ff-cls-two" data-astro-cid-uny4lie4=""> <a class="ff-btn ff-btn-primary ff-btn-ab" href="https://build.flutterflow.io/signin?returnTo=%2Fnew" data-astro-cid-uny4lie4="true" data-astro-cid-sghildrv=""><span class="ff-ptag-dot" aria-hidden="true" data-astro-cid-uny4lie4=""></span>Start building<span class="ff-vh" data-astro-cid-sghildrv=""> in FlutterFlow</span></a> <a class="ff-btn ff-btn-primary ff-btn-ab" href="https://app.flutterflow.io" data-astro-cid-uny4lie4="true" data-astro-cid-sghildrv=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-uny4lie4=""></span>Open Studio</a> </div></div>   </section></div> </main> <div class="ff-wrap" data-astro-cid-557ad5nw=""> <footer class="ff-ftr-site-foot ff-ftr-all" data-astro-cid-557ad5nw=""> <div class="ff-ftr-top" data-astro-cid-557ad5nw=""> <div class="ff-ftr-id" data-astro-cid-557ad5nw=""> <a href="/" data-astro-cid-557ad5nw="true" class="ff-lkp ff-ftr-brand"><img src="/_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp" srcset="/_astro/flutterflow-mark-96.ChAYdHC__oeoFH.webp 30w, /_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp 60w, /_astro/flutterflow-mark-96.ChAYdHC__28B3sA.webp 96w" sizes="27px" alt="" width="96" height="96" loading="lazy" decoding="async"><svg class="ff-lkp-wordmark" viewbox="80 -710 5099 722" role="img" aria-label="FlutterFlow"><path fill="currentColor" d="M80 0L80 -710L555 -710L555 -597L139 -597L210 -670L210 -344L139 -403L537 -403L537 -291L139 -291L210 -350L210 0ZM748 0Q690 0 655 -30Q620 -60 620 -126L620 -710L748 -710L748 -139Q748 -119 758.5 -109Q769 -99 788 -99L827 -99L827 0ZM1055 12Q974 12 926.5 -41.5Q879 -95 879 -190L879 -534L1007 -534L1007 -222Q1007 -155 1029.5 -123.5Q1052 -92 1098 -92Q1150 -92 1178.5 -126.5Q1207 -161 1207 -227L1207 -534L1335 -534L1335 0L1218 0L1215 -147L1231 -142Q1219 -66 1174 -27Q1129 12 1055 12ZM1637 0Q1557 0 1519.5 -37Q1482 -74 1482 -153L1482 -659L1610 -659L1610 -165Q1610 -128 1626 -113.5Q1642 -99 1676 -99L1751 -99L1751 0ZM1398 -435L1398 -534L1751 -534L1751 -435ZM2004 0Q1924 0 1886.5 -37Q1849 -74 1849 -153L1849 -659L1977 -659L1977 -165Q1977 -128 1993 -113.5Q2009 -99 2043 -99L2118 -99L2118 0ZM1765 -435L1765 -534L2118 -534L2118 -435ZM2404 12Q2324 12 2265 -22.5Q2206 -57 2174 -120Q2142 -183 2142 -267Q2142 -351 2174 -413.5Q2206 -476 2264.5 -511Q2323 -546 2401 -546Q2477 -546 2534.5 -512Q2592 -478 2623 -414Q2654 -350 2654 -260L2654 -231L2275 -231Q2279 -161 2313.5 -125.5Q2348 -90 2405 -90Q2448 -90 2476.5 -109.5Q2505 -129 2516 -164L2647 -156Q2625 -78 2560.5 -33Q2496 12 2404 12ZM2275 -317L2522 -317Q2518 -382 2485 -413.5Q2452 -445 2401 -445Q2350 -445 2316.5 -412Q2283 -379 2275 -317ZM2724 0L2724 -534L2844 -534L2849 -386L2838 -388Q2850 -465 2883.5 -499.5Q2917 -534 2975 -534L3024 -534L3024 -424L2974 -424Q2933 -424 2906 -412Q2879 -400 2865.5 -374.5Q2852 -349 2852 -308L2852 0ZM3087 0L3087 -710L3562 -710L3562 -597L3146 -597L3217 -670L3217 -344L3146 -403L3544 -403L3544 -291L3146 -291L3217 -350L3217 0ZM3755 0Q3697 0 3662 -30Q3627 -60 3627 -126L3627 -710L3755 -710L3755 -139Q3755 -119 3765.5 -109Q3776 -99 3795 -99L3834 -99L3834 0ZM4118 12Q4039 12 3979.5 -22.5Q3920 -57 3887.5 -120Q3855 -183 3855 -267Q3855 -352 3887.5 -414.5Q3920 -477 3979.5 -511.5Q4039 -546 4118 -546Q4197 -546 4256 -511.5Q4315 -477 4347.5 -414.5Q4380 -352 4380 -267Q4380 -183 4347.5 -120Q4315 -57 4256 -22.5Q4197 12 4118 12ZM4118 -92Q4180 -92 4213.5 -138Q4247 -184 4247 -267Q4247 -349 4213.5 -395.5Q4180 -442 4118 -442Q4056 -442 4022 -395.5Q3988 -349 3988 -267Q3988 -184 4022 -138Q4056 -92 4118 -92ZM4543 0L4382 -534L4513 -534L4617 -145L4724 -534L4836 -534L4944 -145L5048 -534L5179 -534L5018 0L4886 0L4780 -358L4675 0Z"></path></svg></a> <p data-astro-cid-557ad5nw=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-557ad5nw=""></span>Already use FlutterFlow Studio? <a href="https://app.flutterflow.io" data-astro-cid-557ad5nw="">Open Studio</a><a href="https://build.flutterflow.io/signin" data-astro-cid-557ad5nw="">Sign in</a></p> </div> <nav class="ff-ftr-cols" aria-label="Footer" data-astro-cid-557ad5nw=""> <div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Product</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/product/" data-astro-cid-557ad5nw="">Product</a></li><li data-astro-cid-557ad5nw=""><a href="https://docs.flutterflow.io/ffx" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="/studio/changelog/" data-astro-cid-557ad5nw="">Changelog</a></li><li data-astro-cid-557ad5nw=""><a href="/studio/desktop/" data-astro-cid-557ad5nw="">Desktop</a></li><li data-astro-cid-557ad5nw=""><a href="/designer/" data-astro-cid-557ad5nw="">Designer</a></li><li data-astro-cid-557ad5nw=""><a href="/enterprise/" data-astro-cid-557ad5nw="">Enterprise</a></li><li data-astro-cid-557ad5nw=""><a href="/pricing/" data-astro-cid-557ad5nw="">Pricing</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Studio</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="https://app.flutterflow.io" data-astro-cid-557ad5nw="">Open Studio</a></li><li data-astro-cid-557ad5nw=""><a href="/ai/" data-astro-cid-557ad5nw="">AI</a></li><li data-astro-cid-557ad5nw=""><a href="https://docs.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://marketplace.flutterflow.io/home" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Templates<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://campus.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Campus<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.youtube.com/playlist?list=PLsUp7t2vRqx9UE13G8Xod8F-m248iR0E3" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Trainings<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://community.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://status.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Status<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Resources</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/studio/work-with-developers/" data-astro-cid-557ad5nw="">Hire an expert</a></li><li data-astro-cid-557ad5nw=""><a href="/studio/apply-to-be-a-developer/" data-astro-cid-557ad5nw="">Apply to be an expert</a></li><li data-astro-cid-557ad5nw=""><a href="/studio/showcase/" data-astro-cid-557ad5nw="">Showcase</a></li><li data-astro-cid-557ad5nw=""><a href="/customer-stories/" data-astro-cid-557ad5nw="">Customer stories</a></li><li data-astro-cid-557ad5nw=""><a href="/blog/" data-astro-cid-557ad5nw="">Blog</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Community</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/flutterflow-developer-groups/" data-astro-cid-557ad5nw="">Developer groups</a></li><li data-astro-cid-557ad5nw=""><a href="/student-ambassadors/" data-astro-cid-557ad5nw="">Student ambassadors</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Company</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/about-us/" data-astro-cid-557ad5nw="">About</a></li><li data-astro-cid-557ad5nw=""><a href="https://jobs.ashbyhq.com/FlutterFlow" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Careers<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="/contact-us/" data-astro-cid-557ad5nw="">Contact</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Connect</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="https://twitter.com/flutterflow" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">X<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.youtube.com/@FlutterFlow" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">YouTube<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.linkedin.com/company/flutterflow/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.reddit.com/r/FlutterFlow/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Reddit<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li> </ul></div> </nav> </div> <div class="ff-ftr-bar" data-astro-cid-557ad5nw=""> <div class="ff-ftr-legal" data-astro-cid-557ad5nw=""><span data-astro-cid-557ad5nw="">© 2026 FlutterFlow</span><a href="/tos/" data-astro-cid-557ad5nw="">Terms</a><a href="/privacy/" data-astro-cid-557ad5nw="">Privacy</a><a href="/tos-marketplace/" data-astro-cid-557ad5nw="">Marketplace terms</a><button class="ft-cookie" type="button" aria-haspopup="dialog" hidden="" data-astro-cid-2oyhmw5c="">Your Privacy Choices<svg class="ft-ccpa" viewbox="0 0 30 14" aria-hidden="true" focusable="false" data-astro-cid-2oyhmw5c=""><path fill="#fff" fill-rule="evenodd" d="M7.4,12.8h6.8l3.1-11.6H7.4C4.2,1.2,1.6,3.8,1.6,7S4.2,12.8,7.4,12.8z" data-astro-cid-2oyhmw5c=""></path><path fill="#06f" fill-rule="evenodd" d="M22.6,0H7.4c-3.9,0-7,3.1-7,7s3.1,7,7,7h15.2c3.9,0,7-3.1,7-7S26.4,0,22.6,0z M1.6,7c0-3.2,2.6-5.8,5.8-5.8h9.9l-3.1,11.6H7.4C4.2,12.8,1.6,10.2,1.6,7z" data-astro-cid-2oyhmw5c=""></path><path fill="#fff" d="M24.6,4c0.2,0.2,0.2,0.6,0,0.8l0,0L22.5,7l2.2,2.2c0.2,0.2,0.2,0.6,0,0.8c-0.2,0.2-0.6,0.2-0.8,0l0,0l-2.2-2.2L19.5,10c-0.2,0.2-0.6,0.2-0.8,0c-0.2-0.2-0.2-0.6,0-0.8l0,0L20.8,7l-2.2-2.2c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0l2.2,2.2L23.8,4C24,3.8,24.4,3.8,24.6,4z" data-astro-cid-2oyhmw5c=""></path><path fill="#06f" d="M12.7,4.1c0.2,0.2,0.3,0.6,0.1,0.8l0,0L8.6,9.8C8.5,9.9,8.4,10,8.3,10c-0.2,0.1-0.5,0.1-0.7-0.1l0,0L5.4,7.7c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0L8,8.6l3.8-4.5C12,3.9,12.4,3.9,12.7,4.1z" data-astro-cid-2oyhmw5c=""></path></svg></button> <script type="module" src="/_astro/PrivacyChoices.astro_astro_type_script_index_0_lang.BXErlLUd.js"></script></div> <div class="ff-tsw" role="radiogroup" aria-label="Theme" data-ff-tsw="" data-astro-cid-557ad5nw="true"> <button type="button" role="radio" aria-checked="true" aria-label="Match your system" title="Match your system" data-ff-tip="" data-ff-tsw-pick="system"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M3 4.5h18v11H3z"></path><path d="M8 20h8M12 15.5V20"></path></svg></button><button type="button" role="radio" aria-checked="false" aria-label="Light" title="Light" data-ff-tip="" data-ff-tsw-pick="light"><svg viewbox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"></path></svg></button><button type="button" role="radio" aria-checked="false" aria-label="Dark" title="Dark" data-ff-tip="" data-ff-tsw-pick="dark"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path></svg></button> </div> <!-- the remembered pick, checked before paint: the module script below runs only once the page is parsed --> <script>
+  (function (g) {
+    var pick = document.documentElement.dataset.ffTswPick, t = null;
+    if (!pick) { try { t = localStorage.getItem(document.documentElement.dataset.ffTswKey || "ff-theme"); } catch (e) {} pick = t === "light" || t === "dark" ? t : "system"; }
+    g.querySelectorAll("[data-ff-tsw-pick]").forEach(function (b) { b.setAttribute("aria-checked", String(b.dataset.ffTswPick === pick)); b.tabIndex = b.dataset.ffTswPick === pick ? 0 : -1; });
+  })(document.currentScript.previousElementSibling);
+</script> <script type="module">const c=document.documentElement,k="ff-theme",o=()=>c.dataset.ffTswKey||k,d=matchMedia("(prefers-color-scheme: dark)"),u=document.querySelectorAll("[data-ff-tsw]");function h(){try{const t=localStorage.getItem(o());return t==="light"||t==="dark"?t:"system"}catch{return"system"}}const a=()=>c.dataset.ffTswPick,r=()=>c.dataset.theme=a()==="system"?d.matches?"dark":"light":a();function i(t){for(const e of document.querySelectorAll("[data-ff-tsw] [data-ff-tsw-pick]"))e.setAttribute("aria-checked",String(e.dataset.ffTswPick===t)),e.tabIndex=e.dataset.ffTswPick===t?0:-1}function f(t){c.dataset.ffTswPick=t,r();try{t==="system"?localStorage.removeItem(o()):localStorage.setItem(o(),t)}catch{}i(t),document.dispatchEvent(new CustomEvent("ff:theme-switch-change",{detail:{pick:t}}))}a()||(c.dataset.ffTswPick=h(),r(),d.addEventListener("change",r));i(a());for(const t of u)t.addEventListener("click",e=>{const s=e.target.closest("[data-ff-tsw-pick]");s&&f(s.dataset.ffTswPick)}),t.addEventListener("keydown",e=>{if(!["ArrowLeft","ArrowRight","ArrowUp","ArrowDown"].includes(e.key))return;const s=[...t.querySelectorAll("[data-ff-tsw-pick]")],l=s.findIndex(w=>w.getAttribute("aria-checked")==="true"),n=s[(l+(e.key==="ArrowLeft"||e.key==="ArrowUp"?s.length-1:1))%s.length];e.preventDefault(),n.focus(),f(n.dataset.ffTswPick)});</script> </div> <div class="ff-ftr-flash" aria-hidden="true" data-ff-ftr-flash="" data-astro-cid-557ad5nw="true"><canvas></canvas></div> <script type="module" src="/_astro/FooterFlash.astro_astro_type_script_index_0_lang.2skXuUzs.js"></script> </footer> </div>    <script type="module" src="/_astro/third-party-body.astro_astro_type_script_index_0_lang.iWvDO2c2.js"></script> 

@@ -1,0 +1,520 @@
+ <a class="ff-page-skip" href="#main">Skip to content</a>    <div class="ff-ban" id="ff-banner-studio-rename" role="region" aria-label="Announcement" data-astro-cid-po733llg=""> <p data-astro-cid-po733llg="">FlutterFlow’s visual builder is now FlutterFlow Studio. Everything you’ve built is right where you left it. <a class="ff-lnk" href="/studio/faq/" data-astro-cid-po733llg="">What’s changing</a></p> <button class="ff-ibtn" type="button" aria-label="Dismiss" hidden="" data-astro-cid-po733llg=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x ff-i" aria-hidden="true" data-astro-cid-po733llg="true"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg></button> </div> <script>(function(){const key = "ff-banner-studio-rename";
+
+  (() => {
+    const bn = document.getElementById(key);
+    try { if (localStorage.getItem(key)) { bn.hidden = true; return; } } catch (e) {}
+    const b = bn.querySelector("button");
+    b.hidden = false;
+    b.addEventListener("click", () => {
+      // focus would stay on the hidden button; hand it to the next stop after the banner (the bar's lockup).
+      // Not nextElementSibling: that's this script.
+      const next = [...document.querySelectorAll("a[href],button")]
+        .find((el) => !bn.contains(el) && bn.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING);
+      bn.hidden = true;
+      next?.focus();
+      try { localStorage.setItem(key, "1"); } catch (e) {}
+    });
+  })();
+})();</script> <header class="ff-snav" data-ff-snav="" data-astro-cid-gxc3ym7p=""> <nav class="ff-snav-nav ff-wrap" aria-label="Main" data-astro-cid-gxc3ym7p=""> <a href="/" data-astro-cid-gxc3ym7p="true" class="ff-lkp ff-snav-brand"><img src="/_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp" srcset="/_astro/flutterflow-mark-96.ChAYdHC__oeoFH.webp 30w, /_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp 60w, /_astro/flutterflow-mark-96.ChAYdHC__28B3sA.webp 96w" sizes="30px" alt="" width="96" height="96" loading="eager" decoding="async"><svg class="ff-lkp-wordmark" viewbox="80 -710 5099 722" role="img" aria-label="FlutterFlow"><path fill="currentColor" d="M80 0L80 -710L555 -710L555 -597L139 -597L210 -670L210 -344L139 -403L537 -403L537 -291L139 -291L210 -350L210 0ZM748 0Q690 0 655 -30Q620 -60 620 -126L620 -710L748 -710L748 -139Q748 -119 758.5 -109Q769 -99 788 -99L827 -99L827 0ZM1055 12Q974 12 926.5 -41.5Q879 -95 879 -190L879 -534L1007 -534L1007 -222Q1007 -155 1029.5 -123.5Q1052 -92 1098 -92Q1150 -92 1178.5 -126.5Q1207 -161 1207 -227L1207 -534L1335 -534L1335 0L1218 0L1215 -147L1231 -142Q1219 -66 1174 -27Q1129 12 1055 12ZM1637 0Q1557 0 1519.5 -37Q1482 -74 1482 -153L1482 -659L1610 -659L1610 -165Q1610 -128 1626 -113.5Q1642 -99 1676 -99L1751 -99L1751 0ZM1398 -435L1398 -534L1751 -534L1751 -435ZM2004 0Q1924 0 1886.5 -37Q1849 -74 1849 -153L1849 -659L1977 -659L1977 -165Q1977 -128 1993 -113.5Q2009 -99 2043 -99L2118 -99L2118 0ZM1765 -435L1765 -534L2118 -534L2118 -435ZM2404 12Q2324 12 2265 -22.5Q2206 -57 2174 -120Q2142 -183 2142 -267Q2142 -351 2174 -413.5Q2206 -476 2264.5 -511Q2323 -546 2401 -546Q2477 -546 2534.5 -512Q2592 -478 2623 -414Q2654 -350 2654 -260L2654 -231L2275 -231Q2279 -161 2313.5 -125.5Q2348 -90 2405 -90Q2448 -90 2476.5 -109.5Q2505 -129 2516 -164L2647 -156Q2625 -78 2560.5 -33Q2496 12 2404 12ZM2275 -317L2522 -317Q2518 -382 2485 -413.5Q2452 -445 2401 -445Q2350 -445 2316.5 -412Q2283 -379 2275 -317ZM2724 0L2724 -534L2844 -534L2849 -386L2838 -388Q2850 -465 2883.5 -499.5Q2917 -534 2975 -534L3024 -534L3024 -424L2974 -424Q2933 -424 2906 -412Q2879 -400 2865.5 -374.5Q2852 -349 2852 -308L2852 0ZM3087 0L3087 -710L3562 -710L3562 -597L3146 -597L3217 -670L3217 -344L3146 -403L3544 -403L3544 -291L3146 -291L3217 -350L3217 0ZM3755 0Q3697 0 3662 -30Q3627 -60 3627 -126L3627 -710L3755 -710L3755 -139Q3755 -119 3765.5 -109Q3776 -99 3795 -99L3834 -99L3834 0ZM4118 12Q4039 12 3979.5 -22.5Q3920 -57 3887.5 -120Q3855 -183 3855 -267Q3855 -352 3887.5 -414.5Q3920 -477 3979.5 -511.5Q4039 -546 4118 -546Q4197 -546 4256 -511.5Q4315 -477 4347.5 -414.5Q4380 -352 4380 -267Q4380 -183 4347.5 -120Q4315 -57 4256 -22.5Q4197 12 4118 12ZM4118 -92Q4180 -92 4213.5 -138Q4247 -184 4247 -267Q4247 -349 4213.5 -395.5Q4180 -442 4118 -442Q4056 -442 4022 -395.5Q3988 -349 3988 -267Q3988 -184 4022 -138Q4056 -92 4118 -92ZM4543 0L4382 -534L4513 -534L4617 -145L4724 -534L4836 -534L4944 -145L5048 -534L5179 -534L5018 0L4886 0L4780 -358L4675 0Z"></path></svg></a> <div class="ff-snav-nav-mid" data-astro-cid-gxc3ym7p=""> <div class="ff-snav-item" data-ff-snav-item="" data-astro-cid-gxc3ym7p=""> <button class="ff-snav-menu" type="button" aria-expanded="false" aria-controls="sn-flutterflow-0" data-astro-cid-gxc3ym7p="">Product<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m6 9 6 6 6-6"></path>  </svg></button> <div class="ff-snav-panel" id="sn-flutterflow-0" style="--ff-snav-cols:1" data-astro-cid-gxc3ym7p="">   <div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow</p><ul aria-label="FlutterFlow" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/product/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/ai/" data-astro-cid-gxc3ym7p="">AI</a></li><li data-astro-cid-gxc3ym7p=""><a href="/changelog/" data-astro-cid-gxc3ym7p="">What’s new</a></li><li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/ffx" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-vs-studio/" data-astro-cid-gxc3ym7p="">FlutterFlow or Studio?</a></li> </ul></div>   </div> </div><div class="ff-snav-item" data-ff-snav-item="" data-astro-cid-gxc3ym7p=""> <button class="ff-snav-menu" type="button" aria-expanded="false" aria-controls="sn-flutterflow-1" data-astro-cid-gxc3ym7p="">Studio<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m6 9 6 6 6-6"></path>  </svg></button> <div class="ff-snav-panel ff-snav-panel-studio" id="sn-flutterflow-1" style="--ff-snav-cols:2" data-astro-cid-gxc3ym7p="">  <a class="ff-snav-lead" href="https://app.flutterflow.io" data-astro-cid-gxc3ym7p=""><span class="ff-snav-lead-t" data-astro-cid-gxc3ym7p=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-gxc3ym7p=""></span>Sign in to Studio</span><span class="ff-snav-lead-p" data-astro-cid-gxc3ym7p="">Your projects are where you left them.</span><span class="ff-btn ff-btn-primary ff-btn-sm" aria-hidden="true" data-astro-cid-gxc3ym7p="">Sign in</span></a> <div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow Studio</p><ul aria-label="FlutterFlow Studio" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/ai/" data-astro-cid-gxc3ym7p="">AI tools</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/desktop/" data-astro-cid-gxc3ym7p="">Desktop app</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/changelog/" data-astro-cid-gxc3ym7p="">Changelog</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/faq/" data-astro-cid-gxc3ym7p="">FAQ</a></li> </ul></div><div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Experts</p><ul aria-label="Experts" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/work-with-developers/" data-astro-cid-gxc3ym7p="">Hire an expert</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/apply-to-be-a-developer/" data-astro-cid-gxc3ym7p="">Apply to be an expert</a></li> </ul></div>   </div> </div><a class="ff-snav-lk" href="/pricing/" data-astro-cid-gxc3ym7p="">Pricing</a><a class="ff-snav-lk" href="/enterprise/" data-astro-cid-gxc3ym7p="">Enterprise</a><div class="ff-snav-item" data-ff-snav-item="" data-astro-cid-gxc3ym7p=""> <button class="ff-snav-menu" type="button" aria-expanded="false" aria-controls="sn-flutterflow-4" data-astro-cid-gxc3ym7p="">Resources<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m6 9 6 6 6-6"></path>  </svg></button> <div class="ff-snav-panel" id="sn-flutterflow-4" style="--ff-snav-cols:3" data-astro-cid-gxc3ym7p="">   <div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Inspiration</p><ul aria-label="Inspiration" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/showcase/" data-astro-cid-gxc3ym7p="">Showcase</a></li><li data-astro-cid-gxc3ym7p=""><a href="/customer-stories/" data-astro-cid-gxc3ym7p="">Customer stories</a></li><li data-astro-cid-gxc3ym7p=""><a href="/blog/" data-astro-cid-gxc3ym7p="">Blog</a></li> </ul></div><div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Learn</p><ul aria-label="Learn" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://www.youtube.com/playlist?list=PLsUp7t2vRqx9UE13G8Xod8F-m248iR0E3" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Trainings<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://marketplace.flutterflow.io/home" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Templates<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li> </ul></div><div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Community</p><ul aria-label="Community" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://community.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-developer-groups/" data-astro-cid-gxc3ym7p="">Developer groups</a></li><li data-astro-cid-gxc3ym7p=""><a href="/student-ambassadors/" data-astro-cid-gxc3ym7p="">Student ambassadors</a></li> </ul></div>   </div> </div> </div> <div class="ff-snav-nav-end" data-astro-cid-gxc3ym7p=""> <a class="ff-snav-lk ff-snav-signin" href="https://build.flutterflow.io/signin" data-astro-cid-gxc3ym7p="">Sign in</a> <a class="ff-btn ff-btn-primary ff-btn-sm ff-btn-ab" href="https://build.flutterflow.io/signin?returnTo=%2Fnew" data-astro-cid-gxc3ym7p="true" data-astro-cid-sghildrv="">Start building</a> <div class="ff-snav-sm" data-astro-cid-gxc3ym7p=""><button class="ff-ibtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="ms-flutterflow" aria-haspopup="dialog" data-ff-snav-open="" data-astro-cid-gxc3ym7p=""><svg class="ff-i" viewbox="0 0 24 24" aria-hidden="true" data-astro-cid-gxc3ym7p=""><path d="M4 6h16" data-astro-cid-gxc3ym7p=""></path><path d="M4 12h16" data-astro-cid-gxc3ym7p=""></path><path d="M4 18h16" data-astro-cid-gxc3ym7p=""></path></svg></button></div> </div> </nav> </header> <!-- the sheet: over the page from the bar down, its own bar drawn where the real one is, so close lands on the menu button --> <dialog class="ff-snav-ms" id="ms-flutterflow" aria-label="Menu" data-astro-cid-gxc3ym7p=""> <div class="ff-snav-nav ff-wrap" data-astro-cid-gxc3ym7p=""> <a href="/" data-astro-cid-gxc3ym7p="true" class="ff-lkp ff-snav-brand"><img src="/_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp" srcset="/_astro/flutterflow-mark-96.ChAYdHC__oeoFH.webp 30w, /_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp 60w, /_astro/flutterflow-mark-96.ChAYdHC__28B3sA.webp 96w" sizes="30px" alt="" width="96" height="96" loading="lazy" decoding="async"><svg class="ff-lkp-wordmark" viewbox="80 -710 5099 722" role="img" aria-label="FlutterFlow"><path fill="currentColor" d="M80 0L80 -710L555 -710L555 -597L139 -597L210 -670L210 -344L139 -403L537 -403L537 -291L139 -291L210 -350L210 0ZM748 0Q690 0 655 -30Q620 -60 620 -126L620 -710L748 -710L748 -139Q748 -119 758.5 -109Q769 -99 788 -99L827 -99L827 0ZM1055 12Q974 12 926.5 -41.5Q879 -95 879 -190L879 -534L1007 -534L1007 -222Q1007 -155 1029.5 -123.5Q1052 -92 1098 -92Q1150 -92 1178.5 -126.5Q1207 -161 1207 -227L1207 -534L1335 -534L1335 0L1218 0L1215 -147L1231 -142Q1219 -66 1174 -27Q1129 12 1055 12ZM1637 0Q1557 0 1519.5 -37Q1482 -74 1482 -153L1482 -659L1610 -659L1610 -165Q1610 -128 1626 -113.5Q1642 -99 1676 -99L1751 -99L1751 0ZM1398 -435L1398 -534L1751 -534L1751 -435ZM2004 0Q1924 0 1886.5 -37Q1849 -74 1849 -153L1849 -659L1977 -659L1977 -165Q1977 -128 1993 -113.5Q2009 -99 2043 -99L2118 -99L2118 0ZM1765 -435L1765 -534L2118 -534L2118 -435ZM2404 12Q2324 12 2265 -22.5Q2206 -57 2174 -120Q2142 -183 2142 -267Q2142 -351 2174 -413.5Q2206 -476 2264.5 -511Q2323 -546 2401 -546Q2477 -546 2534.5 -512Q2592 -478 2623 -414Q2654 -350 2654 -260L2654 -231L2275 -231Q2279 -161 2313.5 -125.5Q2348 -90 2405 -90Q2448 -90 2476.5 -109.5Q2505 -129 2516 -164L2647 -156Q2625 -78 2560.5 -33Q2496 12 2404 12ZM2275 -317L2522 -317Q2518 -382 2485 -413.5Q2452 -445 2401 -445Q2350 -445 2316.5 -412Q2283 -379 2275 -317ZM2724 0L2724 -534L2844 -534L2849 -386L2838 -388Q2850 -465 2883.5 -499.5Q2917 -534 2975 -534L3024 -534L3024 -424L2974 -424Q2933 -424 2906 -412Q2879 -400 2865.5 -374.5Q2852 -349 2852 -308L2852 0ZM3087 0L3087 -710L3562 -710L3562 -597L3146 -597L3217 -670L3217 -344L3146 -403L3544 -403L3544 -291L3146 -291L3217 -350L3217 0ZM3755 0Q3697 0 3662 -30Q3627 -60 3627 -126L3627 -710L3755 -710L3755 -139Q3755 -119 3765.5 -109Q3776 -99 3795 -99L3834 -99L3834 0ZM4118 12Q4039 12 3979.5 -22.5Q3920 -57 3887.5 -120Q3855 -183 3855 -267Q3855 -352 3887.5 -414.5Q3920 -477 3979.5 -511.5Q4039 -546 4118 -546Q4197 -546 4256 -511.5Q4315 -477 4347.5 -414.5Q4380 -352 4380 -267Q4380 -183 4347.5 -120Q4315 -57 4256 -22.5Q4197 12 4118 12ZM4118 -92Q4180 -92 4213.5 -138Q4247 -184 4247 -267Q4247 -349 4213.5 -395.5Q4180 -442 4118 -442Q4056 -442 4022 -395.5Q3988 -349 3988 -267Q3988 -184 4022 -138Q4056 -92 4118 -92ZM4543 0L4382 -534L4513 -534L4617 -145L4724 -534L4836 -534L4944 -145L5048 -534L5179 -534L5018 0L4886 0L4780 -358L4675 0Z"></path></svg></a> <div class="ff-snav-ms-end" data-astro-cid-gxc3ym7p=""><button class="ff-ibtn" type="button" aria-label="Close menu" autofocus="" data-ff-snav-ms-close="" data-astro-cid-gxc3ym7p=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg></button></div> </div> <div class="ff-snav-ms-body" data-astro-cid-gxc3ym7p=""> <ul class="ff-snav-ms-main" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/pricing/" data-astro-cid-gxc3ym7p="">Pricing<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m9 18 6-6-6-6"></path>  </svg></a></li><li data-astro-cid-gxc3ym7p=""><a href="/enterprise/" data-astro-cid-gxc3ym7p="">Enterprise<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m9 18 6-6-6-6"></path>  </svg></a></li> </ul> <div class="ff-snav-ms-res" data-astro-cid-gxc3ym7p="">  <div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow</p><ul aria-label="FlutterFlow" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/product/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/ai/" data-astro-cid-gxc3ym7p="">AI</a></li><li data-astro-cid-gxc3ym7p=""><a href="/changelog/" data-astro-cid-gxc3ym7p="">What’s new</a></li><li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/ffx" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-vs-studio/" data-astro-cid-gxc3ym7p="">FlutterFlow or Studio?</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow Studio</p><ul aria-label="FlutterFlow Studio" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/ai/" data-astro-cid-gxc3ym7p="">AI tools</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/desktop/" data-astro-cid-gxc3ym7p="">Desktop app</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/changelog/" data-astro-cid-gxc3ym7p="">Changelog</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/faq/" data-astro-cid-gxc3ym7p="">FAQ</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Experts</p><ul aria-label="Experts" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/work-with-developers/" data-astro-cid-gxc3ym7p="">Hire an expert</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/apply-to-be-a-developer/" data-astro-cid-gxc3ym7p="">Apply to be an expert</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Inspiration</p><ul aria-label="Inspiration" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/showcase/" data-astro-cid-gxc3ym7p="">Showcase</a></li><li data-astro-cid-gxc3ym7p=""><a href="/customer-stories/" data-astro-cid-gxc3ym7p="">Customer stories</a></li><li data-astro-cid-gxc3ym7p=""><a href="/blog/" data-astro-cid-gxc3ym7p="">Blog</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Learn</p><ul aria-label="Learn" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://www.youtube.com/playlist?list=PLsUp7t2vRqx9UE13G8Xod8F-m248iR0E3" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Trainings<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://marketplace.flutterflow.io/home" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Templates<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Community</p><ul aria-label="Community" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://community.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-developer-groups/" data-astro-cid-gxc3ym7p="">Developer groups</a></li><li data-astro-cid-gxc3ym7p=""><a href="/student-ambassadors/" data-astro-cid-gxc3ym7p="">Student ambassadors</a></li> </ul></div> </div> <div class="ff-snav-ms-foot" data-astro-cid-gxc3ym7p="">  <a class="ff-btn ff-btn-primary ff-btn-ab" href="https://build.flutterflow.io/signin?returnTo=%2Fnew" data-astro-cid-gxc3ym7p="true" data-astro-cid-sghildrv="">Start building</a> <a class="ff-btn ff-btn-secondary ff-btn-ab" href="https://build.flutterflow.io/signin" data-astro-cid-gxc3ym7p="true" data-astro-cid-sghildrv="">Sign in</a> <p data-astro-cid-gxc3ym7p=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-gxc3ym7p=""></span>Already use FlutterFlow Studio? <a class="ff-lnk" href="https://app.flutterflow.io" data-astro-cid-gxc3ym7p="">Open Studio</a></p>  </div> </div> </dialog> <script type="module">const f=[...document.querySelectorAll("[data-ff-snav]")],u=()=>{const t=scrollY>2;document.documentElement.toggleAttribute("data-ff-snav-scrolled",t);for(const n of f)n.classList.toggle("ff-snav-scrolled",t)};u();addEventListener("scroll",u,{passive:!0});const p=[],v=[];for(const t of f){const n=[...t.querySelectorAll("[data-ff-snav-item]")],a=n.map(e=>e.querySelector("button")),d=(e,s)=>e.setAttribute("aria-expanded",String(s));n.forEach((e,s)=>{const o=a[s];o.addEventListener("click",()=>{const l=o.getAttribute("aria-expanded")!=="true";a.forEach(i=>d(i,!1)),d(o,l)}),e.addEventListener("focusout",l=>{const i=l.relatedTarget;i&&!e.contains(i)&&d(o,!1)})}),p.push(()=>n.forEach((e,s)=>{if(a[s].getAttribute("aria-expanded")!=="true")return;const o=e.contains(document.activeElement);d(a[s],!1),o&&a[s].focus()})),v.push(e=>n.forEach((s,o)=>{s.contains(e)||d(a[o],!1)}));const r=t.querySelector("[data-ff-snav-open]"),c=t.nextElementSibling;r.addEventListener("click",()=>{const e=t.getBoundingClientRect().top-(parseFloat(getComputedStyle(t).top)||0);e>0&&scrollTo({top:scrollY+e,behavior:"instant"}),c.style.setProperty("--ff-snav-ms-top",`${Math.max(0,t.getBoundingClientRect().top)}px`),c.showModal(),r.setAttribute("aria-expanded","true")}),c.querySelector("[data-ff-snav-ms-close]").addEventListener("click",()=>c.close()),c.addEventListener("close",()=>{r.setAttribute("aria-expanded","false"),(r.offsetParent?r:a[0]??r).focus()}),matchMedia("(width >= 821px)").addEventListener("change",e=>{e.matches&&c.open&&c.close()})}document.addEventListener("keydown",t=>{t.key==="Escape"&&p.forEach(n=>n())});document.addEventListener("click",t=>v.forEach(n=>n(t.target)));</script> <main id="main" tabindex="-1"> <article class="ff-art" data-astro-cid-v3wnudhb=""><div class="ff-wrap" data-astro-cid-v3wnudhb=""><a class="ff-art-bc-back" href="/blog/" data-astro-cid-v3wnudhb=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left ff-i" aria-hidden="true" data-astro-cid-v3wnudhb="true"> <path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path>  </svg>All posts</a><header class="ff-art-head" data-astro-cid-v3wnudhb=""><p class="ff-art-meta" data-astro-cid-v3wnudhb=""><time datetime="2023-06-02" data-astro-cid-v3wnudhb="">Jun 2, 2023</time><i data-astro-cid-v3wnudhb=""></i><a href="/author/souvik-biswas/" data-astro-cid-v3wnudhb="">Souvik Biswas</a><i data-astro-cid-v3wnudhb=""></i>22 min read<span class="ff-ptag ff-ptag-studio" data-astro-cid-v3wnudhb="true"><span class="ff-ptag-dot" aria-hidden="true"></span>FlutterFlow Studio</span></p><h1 class="ff-art-h" data-astro-cid-v3wnudhb="">Creating an App for Interacting with IoT Devices using BLE and FlutterFlow</h1></header><div class="ff-art-body" data-astro-cid-v3wnudhb=""><p class="ff-art-lede" data-astro-cid-v3wnudhb="">In this blog post, we&#39;ll unlock the process of integrating Bluetooth functionality in a FlutterFlow project using Custom Actions and guide you on how to prep an IoT device for interaction with the app.</p><div class="ff-prose" data-astro-cid-v3wnudhb=""> <p>The ever-evolving landscape of IoT has brought the need for more efficient and interactive apps to the forefront. With a surge in our reliance on smart devices, tools like <a href="/"><strong>FlutterFlow</strong></a> and <a href="https://en.wikipedia.org/wiki/Bluetooth_Low_Energy"><strong>Bluetooth Low Energy</strong></a> (BLE) are stepping up to the challenge. FlutterFlow, a powerful no-code app builder, and BLE, a low power wireless communication standard, together form an impressive duo for creating IoT-based applications.</p>
+<p><strong>In this blog post, we’ll unlock the process of integrating Bluetooth functionality in a FlutterFlow project using Custom Actions and guide you on how to prep an IoT device for interaction with the app.</strong></p>
+<p>✅</p>
+<p>By the end of this tutorial, you’ll learn to build a cross-platform app (Android &amp; iOS) using FlutterFlow to send or receive data to and fro the IoT device.</p>
+<p>🛑</p>
+<p><strong>Disclaimer:</strong> As we would be using Custom Actions inside FlutterFlow, it’s recommended to have some basic understanding of <a href="https://dart.dev/"><strong>Dart</strong></a> and <a href="https://flutter.dev/"><strong>Flutter</strong></a> for following this article.</p>
+<p>This step-by-step guide will serve as a blueprint, providing valuable insights to both seasoned developers and beginners in the realm of IoT app development. So, let’s delve into the intriguing world of IoT, BLE, and FlutterFlow and create an app that truly connects.</p>
+<h2 id="app-overview">App Overview</h2>
+<p>The final app that we will be building will consist of three pages:</p>
+<ol>
+<li><strong>SplashPage:</strong> Acting as the gateway to the app, the SplashPage is the first screen users will encounter. Here, we’ll request Bluetooth permissions from the user and verify the device’s Bluetooth status. It’s a crucial step ensuring that our app can interact seamlessly with other Bluetooth-enabled devices.</li>
+<li><strong>HomePage:</strong> This is the primary page of the app consisting of a toggle to enable or disable Bluetooth, and displays both the devices currently connected and the nearby discoverable Bluetooth devices.</li>
+<li><strong>DevicePage:</strong> Delving deeper into inter-device interaction, the DevicePage comes into play when a user selects a device on the HomePage. Here, we establish a Bluetooth connection with the chosen device and navigate the user to this page. It provides a versatile platform for two-way communication, allowing data sending to the connected device, displaying received data, and featuring a button to disconnect when needed.</li>
+</ol>
+<p>To give you a sneak peek into what we’re about to build, here are some screenshots of the three pages (in order from left to right):</p>
+<p><img src="/images/cdn/b8526d7e889f.png" alt/=""></p>
+<p>By integrating the functionalities of these three pages, we’ll create a comprehensive app that streamlines user interaction with their IoT devices via Bluetooth.</p>
+<h2 id="understanding-the-basics">Understanding the Basics</h2>
+<p>In this section, we’ll look into some of the key concepts and the fundamentals of the tools we’ll be using in our project.</p>
+<h3 id="about-the-hardware">About the hardware</h3>
+<p>When embarking on an IoT project, a clear understanding of the hardware involved is crucial. For this project, we’re using the <a href="https://www.espressif.com/en/products/socs/esp32"><strong>ESP32</strong></a> microcontroller. This system-on-a-chip (SoC) integrates Wi-Fi and dual-mode Bluetooth capabilities, making it an excellent choice for our IoT application. Its power, affordability, and flexibility make it well-suited for various IoT scenarios.</p>
+<p><img src="/images/cdn/6d52f8360c2e.png" alt/=""></p>
+<h3 id="bluetooth-low-energy">Bluetooth Low Energy</h3>
+<p><a href="https://en.wikipedia.org/wiki/Bluetooth_Low_Energy"><strong>Bluetooth Low Energy</strong></a> (BLE), also known as Bluetooth 4.0, is a protocol designed for short-range wireless communication. Developed by the Bluetooth Special Interest Group (SIG), BLE is favored for IoT applications due to its power efficiency. It enables devices to connect and exchange data while consuming minimal power, a critical aspect for battery-operated IoT devices. BLE has widened the realm of possibilities for device communication, marking a significant advancement in IoT.</p>
+<h3 id="flutterflow-and-its-advantages">FlutterFlow and its advantages</h3>
+<p>FlutterFlow is a no-code app development platform. It offers a drag-and-drop interface, pre-built UI components, and the ability to create and integrate custom codes. These features are designed to streamline the app creation process, reducing the need for extensive coding while maintaining flexibility. Whether you’re an experienced developer or a beginner, FlutterFlow provides the tools to bring your app ideas to fruition.</p>
+<p><img src="/images/cdn/01adf7d42339.png" alt/=""></p>
+<p>In the following sections, we’ll see how these elements come together to create an interactive IoT application.</p>
+<h2 id="setting-up-flutterflow">Setting up FlutterFlow</h2>
+<p>Before diving into the development process, it’s important to ensure that our workspace is ready. We’ll be using <strong>FlutterFlow</strong> as our primary development tool. Here’s a quick guide on how to set it up and get started:</p>
+<p>Firstly, log in to your <strong>FlutterFlow account</strong>. On your dashboard, you’ll see the option to “<strong>Create New</strong>” project.</p>
+<p><img src="/images/cdn/0196a971f8ba.png" alt/=""></p>
+<p>Click on this, and you’ll be asked to enter the project name and choose between starting from scratch or using a pre-existing template. For this tutorial, we’ll be starting with a blank canvas – so select “<strong>Create Blank</strong>”.</p>
+<p><img src="/images/cdn/383d740ee640.png" alt/=""></p>
+<p>Once you’ve created your project, you’ll be introduced to the <strong>FlutterFlow App Builder</strong>.</p>
+<p>Learn more about the FlutterFlow App Builder layout <a href="https://docs.flutterflow.io/getting-started/ui-builder">here</a>.</p>
+<p>We want to focus on implementing the functionalities of the app rather than building the entire UI from scratch. So, it’s recommended that you follow along using the starter project that contains the basic app layout and essential UI components.</p>
+<blockquote>
+<p>Clone the Starter Project from <a href="https://app.flutterflow.io/project/bluetooth-starter-p1s0hv">here</a>.</p>
+</blockquote>
+<p>With these preliminary steps complete, you are ready to dive into the crux of creating custom actions and integrating BLE functionality into the FlutterFlow project.</p>
+<h2 id="integrating-ble-in-flutterflow">Integrating BLE in FlutterFlow</h2>
+<p>To facilitate interaction between our FlutterFlow app and BLE-enabled IoT devices, we need to integrate BLE functionality into our FlutterFlow project. We’ll achieve this with the help of custom actions and a suitable Flutter package.</p>
+<h3 id="what-are-custom-actions">What are Custom Actions?</h3>
+<p><strong>Custom Actions</strong> in FlutterFlow are pieces of Dart code that you can write and integrate into your FlutterFlow project. These actions provide extended functionalities that aren’t inherently present in FlutterFlow’s pre-defined <a href="https://docs.flutterflow.io/actions/actions">Actions</a>.</p>
+<p>In the context of our project, we’ll be creating custom actions that facilitate enabling/disabling Bluetooth of the device, scanning for BLE devices, connecting to a device, and handling data transmission.</p>
+<p>Check out the <a href="https://docs.flutterflow.io/customizing-your-app/custom-functions/custom-actions">Custom Actions documentation</a> page to learn more.</p>
+<h3 id="required-flutter-package">Required Flutter package</h3>
+<p>For integrating the Bluetooth functionality inside FlutterFlow, we’ll use the <a href="https://pub.dev/packages/flutter_blue_plus"><strong>flutter_blue_plus</strong></a> package. This Flutter plugin supports connectivity with other BLE devices, making it an ideal choice for our project. It provides APIs for finding devices, connecting to them, and exchanging data.</p>
+<p>⚠️</p>
+<p>The <code>flutter_blue_plus</code> package only supports <strong>Android</strong> and <strong>iOS</strong> devices. So, you won’t be able to compile or test the custom actions on the web while working on the project.</p>
+<h3 id="writing-custom-actions">Writing Custom Actions</h3>
+<p>We will need the following custom actions for fully implementing the BLE functionality inside our FlutterFlow project:</p>
+<h4 id="list-of-custom-actions">List of Custom Actions</h4>
+<ol>
+<li><code>isBluetoothEnabled</code><strong>:</strong> To verify whether the device’s Bluetooth is enabled.</li>
+<li><code>turnOnBluetooth</code><strong>:</strong> To turn on the device’s Bluetooth (only works on Android).</li>
+<li><code>turnOffBluetooth</code><strong>:</strong> To turn off the device’s Bluetooth (only works on Android).</li>
+<li><code>findDevices</code><strong>:</strong> To find nearby devices accessible via Bluetooth.</li>
+<li><code>getConnectedDevices</code><strong>:</strong> To fetch the devices with which your device is already connected.</li>
+<li><code>connectDevice</code><strong>:</strong> To connect with a Bluetooth device.</li>
+<li><code>disconnectDevice</code><strong>:</strong> To disconnect from a Bluetooth device.</li>
+<li><code>getRssi</code><strong>:</strong> To fetch the signal strength (RSSI) of the connected device.</li>
+<li><code>sendData</code><strong>:</strong> To send data to the connected IoT device via BLE.</li>
+<li><code>receiveData</code><strong>:</strong> To receive data from the connected IoT device via BLE.</li>
+</ol>
+<h4 id="1-isbluetoothenabled-action">1. isBluetoothEnabled Action</h4>
+<p>This action will be used to verify whether the device’s Bluetooth is enabled. Let’s start creating our first Custom Action:</p>
+<ol>
+<li>While inside your FlutterFlow project, navigate to the <strong>Custom Code</strong> page from the left menu.</li>
+<li>Click <strong>Add &gt; Action</strong>.</li>
+<li>Enter the <strong>name</strong> of the custom action as “<strong>isBluetoothEnabled</strong>”.</li>
+<li>This action should return a boolean value indicating whether Bluetooth is enabled. From the right panel, enable the toggle beside <strong>Return Value</strong>. Select the Type as <strong>Boolean</strong>, and make sure you uncheck both List and Nullable.</li>
+<li>Add the required <strong>Pubspec Dependency</strong>. And click on the refresh button to fetch the dependency.</li>
+<li>Now, you can use the <strong>code icon</strong> present in the top right corner to generate the boilerplate code and insert it into your editor. Add the import statement of the package and the code as follows:</li>
+</ol>
+<p><code>// DO NOT REMOVE OR MODIFY THE CODE ABOVE!   // Add the following code:   import &#39;package:flutter_blue_plus/flutter_blue_plus.dart&#39;;      Future&lt;bool&gt; isBluetoothEnabled() async {   await FlutterBluePlus.instance.isOn;   await Future.delayed(Duration(milliseconds: 100));   final state = await FlutterBluePlus.instance.state.first;   if (state == BluetoothState.on) {   return true;   }   return false;   }   </code></p>
+<ol start="7">
+<li>Make sure you check the “<strong>Exclude from compilation</strong>” checkmark (because this action can’t be compiled on the web platform).</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><img src="/images/cdn/b872ffdcd5b4.png" alt/=""></p>
+<p>✅</p>
+<p>Congrats! You are one step closer to complete integrating Bluetooth functionality inside your project.</p>
+<p>For each of the custom actions that we’ll be writing today, the arguments and return value might differ, but we will need the same Pubspec Dependency:</p>
+<p><code>flutter_blue_plus: 1.5.2</code></p>
+<p>⚠️</p>
+<p>Replace the version with the latest one supported by the current Flutter version used inside FlutterFlow. You can get the latest version from the <a href="https://pub.dev/packages/flutter_blue_plus"><code>pub.dev</code> page</a> of the package.</p>
+<h4 id="2-turnonbluetooth-action">2. turnOnBluetooth Action</h4>
+<p>This action can be used to turn on the device’s Bluetooth (only works on Android). Let’s take a look at a different method for adding a custom action.</p>
+<ol>
+<li>Enter the <strong>name</strong> of the action as <code>turnOnBluetooth</code>.</li>
+<li>Add the following code to the editor:</li>
+</ol>
+<p><code>import &#39;package:flutter_blue_plus/flutter_blue_plus.dart&#39;;      Future&lt;bool&gt; turnOnBluetooth() async {   if (isAndroid) {   return await FlutterBluePlus.instance.turnOn();   }   return true;   }   </code></p>
+<ol start="3">
+<li>Add the <strong><code>flutter_blue_plus</code></strong> dependency.</li>
+<li>Check “<strong>Exclude from compilation</strong>” checkbox.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p>This will automatically parse the code and define the return value and the arguments (if any). For adding the next custom actions, you can follow this method.</p>
+<h4 id="3-turnoffbluetooth-action">3. turnOffBluetooth Action</h4>
+<p>This action can be used to turn off the device’s Bluetooth (only works on Android). Use the following code:</p>
+<p><code>Future&lt;bool&gt; turnOffBluetooth() async {   if (isAndroid) {   return await FlutterBluePlus.instance.turnOff();   }   return true;   }</code></p>
+<h4 id="4-finddevices-action">4. findDevices Action</h4>
+<p>This action can be used to find nearby devices accessible via Bluetooth and return them as a list.</p>
+<p>Before adding this custom action, let’s define a new <strong>Data Type</strong> called “<strong>BTDevice</strong>”. This will make it simpler to store important IoT device information that we will require for managing the connection and for sending/receiving data. Follow the steps below:</p>
+<ol>
+<li>Go to the <strong>Data Types</strong> page from the left menu.</li>
+<li>Click on ”<strong>+ Create Data Type</strong>” button.</li>
+<li>Enter the name as “<strong>BTDevice</strong>”. Click <strong>Create</strong>.</li>
+<li>Click ”<strong>+ Add Field</strong>”. And, add the following fields one by one:</li>
+</ol>
+<p><img src="/images/cdn/4c8bb17939a4.png" alt/=""></p>
+<p>Use the following code for the custom action:</p>
+<p><code>import &#39;package:flutter_blue_plus/flutter_blue_plus.dart&#39;;      Future&lt;List&lt;BTDeviceStruct&gt;&gt; findDevices() async {   final flutterBlue = FlutterBluePlus.instance;   List&lt;BTDeviceStruct&gt; devices = [];   flutterBlue.scanResults.listen((results) {   List&lt;ScanResult&gt; scannedDevices = [];   for (ScanResult r in results) {   if (r.device.name.isNotEmpty) {   scannedDevices.add(r);   }   }   scannedDevices.sort((a, b) =&gt; b.rssi.compareTo(a.rssi));   devices.clear();   scannedDevices.forEach((deviceResult) {   devices.add(BTDeviceStruct(   name: deviceResult.device.name,   id: deviceResult.device.id.toString(),   rssi: deviceResult.rssi,   ));   });   });   final isScanning = flutterBlue.isScanningNow;   if (!isScanning) {   await flutterBlue.startScan(   timeout: const Duration(seconds: 5),   );   }      return devices;   }</code></p>
+<h4 id="5-getconnecteddevices-action">5. getConnectedDevices Action</h4>
+<p>This action will be used to fetch the devices with which your device is already connected. Remember, connected devices don’t show up in the scanned devices list. So, we need to use this separate action.</p>
+<p>Code is as follows:</p>
+<p><code>import &#39;package:flutter_blue_plus/flutter_blue_plus.dart&#39;;      Future&lt;List&lt;BTDeviceStruct&gt;&gt; getConnectedDevices() async {   final flutterBlue = FlutterBluePlus.instance;   final connectedDevices = await flutterBlue.connectedDevices;   List&lt;BTDeviceStruct&gt; devices = [];   for (int i = 0; i &lt; connectedDevices.length; i++) {   final deviceResult = connectedDevices[i];   final deviceState = await deviceResult.state.first;   if (deviceState == BluetoothDeviceState.connected) {   final deviceRssi = await deviceResult.readRssi();   devices.add(BTDeviceStruct(   name: deviceResult.name,   id: deviceResult.id.toString(),   rssi: deviceRssi,   ));   }   }   return devices;   }</code></p>
+<h4 id="6-connectdevice-action">6. connectDevice Action</h4>
+<p>You can use this action to connect with a Bluetooth device. It takes a <code>BTDevice</code> as one of its arguments and returns whether the connected device has <strong>write characteristics</strong> (we will discuss more about this while setting up our IoT device). Use the following code:</p>
+<p><code>import &#39;package:flutter_blue_plus/flutter_blue_plus.dart&#39;;      Future&lt;bool&gt; connectDevice(BTDeviceStruct deviceInfo) async {   final device = BluetoothDevice.fromId(deviceInfo.id, name: deviceInfo.name);   try {   await device.connect();   } catch (e) {   print(e);   }   var hasWriteCharacteristic = false;   final services = await device.discoverServices();   for (BluetoothService service in services) {   for (BluetoothCharacteristic characteristic in service.characteristics) {   final isWrite = characteristic.properties.write;   if (isWrite) {   debugPrint(   &#39;Found write characteristic: ${characteristic.uuid}, ${characteristic.properties}&#39;);   hasWriteCharacteristic = true;   }   }   }   return hasWriteCharacteristic;   }</code></p>
+<h4 id="7-disconnectdevice-action">7. disconnectDevice Action</h4>
+<p>This action can be used to disconnect from an already connected device. You need to pass the <code>BTDevice</code> from which you want to disconnect.</p>
+<p>Code is as follows:</p>
+<p><code>import &#39;package:flutter_blue_plus/flutter_blue_plus.dart&#39;;      Future disconnectDevice(BTDeviceStruct deviceInfo) async {   final device = BluetoothDevice.fromId(deviceInfo.id, name: deviceInfo.name);   try {   await device.disconnect();   } catch (e) {   print(e);   }   }</code></p>
+<h4 id="8-getrssi-action">8. getRssi Action</h4>
+<p>Once you are connected to a device, this action can be used to fetch the signal strength (RSSI or Received Signal Strength Indicator) between your device and the connected device (as you go further away from the device, your signal strength decreases). The signal strength reading is returned as an integer.</p>
+<p>Use the following code:</p>
+<p><code>import &#39;package:flutter_blue_plus/flutter_blue_plus.dart&#39;;      Future&lt;int&gt; getRssi(BTDeviceStruct deviceInfo) async {   final device = BluetoothDevice.fromId(deviceInfo.id, name: deviceInfo.name);   return await device.readRssi();   }</code></p>
+<p>Know more about RSSI <a href="https://www.mokoblue.com/measures-of-bluetooth-rssi/">here</a>.</p>
+<h4 id="9-senddata-action">9. sendData Action</h4>
+<p>This action can be used to send a <code>String</code> data to the connected IoT device via BLE. Use the following code:</p>
+<p><code>import &#39;package:flutter_blue_plus/flutter_blue_plus.dart&#39;;      Future sendData(BTDeviceStruct deviceInfo, String data) async {   final device = BluetoothDevice.fromId(deviceInfo.id, name: deviceInfo.name);   final services = await device.discoverServices();   for (BluetoothService service in services) {   for (BluetoothCharacteristic characteristic in service.characteristics) {   final isWrite = characteristic.properties.write;   if (isWrite) {   await characteristic.write(data.codeUnits);   }   }   }   }</code></p>
+<h4 id="10-receivedata-action">10. receiveData Action</h4>
+<p>You can use this action to receive data from the IoT device. The received data is usually in <code>UTF-16</code> format (while reading, it will be of <code>List&lt;int&gt;</code> type), so we need to use the <code>String.fromCharCodes()</code> method to convert it to a <code>String</code> and return it.</p>
+<p>Use the following code:</p>
+<p><code>import &#39;package:flutter_blue_plus/flutter_blue_plus.dart&#39;;      Future&lt;String?&gt; receiveData(BTDeviceStruct deviceInfo) async {   final device = BluetoothDevice.fromId(deviceInfo.id, name: deviceInfo.name);   final services = await device.discoverServices();   for (BluetoothService service in services) {   for (BluetoothCharacteristic characteristic in service.characteristics) {   final isRead = characteristic.properties.read;   final isNotify = characteristic.properties.notify;   if (isRead &amp;&amp; isNotify) {   final value = await characteristic.read();   return String.fromCharCodes(value);   }   }   }   return null;   }</code></p>
+<p>With this, you have completed defining all the custom actions required for implementing Bluetooth functionality inside your app. The final step involves connecting these custom actions to your UI components.</p>
+<h2 id="connecting-with-the-ui">Connecting with the UI</h2>
+<p>Now that we have written our custom actions for BLE functionality, it’s time to link these actions with the user interface (UI) of our app. We’ll go through this process for each of our app’s pages:</p>
+<h3 id="splashpage">SplashPage</h3>
+<p>On this page, the app will request <strong>Bluetooth permissions</strong> and check the <strong>Bluetooth status</strong> before navigating the user to the HomePage.</p>
+<p>First, you need to enable the Bluetooth permissions for the app inside FlutterFlow:</p>
+<ol>
+<li>Go to the <strong>Settings and Integrations</strong> page from the left menu.</li>
+<li>Select the <strong>Permissions</strong> tab (under Project Setup).</li>
+<li>Enable <strong>Bluetooth</strong> permission toggle.</li>
+<li>Enter a <strong>Permission Message</strong> that will be displayed to the user once this permission is requested.</li>
+</ol>
+<p><img src="/images/cdn/4568ee83c4ab.png" alt/=""></p>
+<p>Next, you need to add one more Bluetooth permission which will allow you to interact with the connected IoT device.</p>
+<ol>
+<li>Click ”<strong>+ Add Permission</strong>” button at the bottom of the page.</li>
+<li>Enter the iOS Permission Key as <strong><code>NSBluetoothPeripheralUsageDescription</code></strong>.</li>
+<li>Enter Android Permission Name as <strong><code>BLUETOOTH_ADMIN</code></strong>.</li>
+<li>You can use the same <strong>Permission Message</strong> as used in the other Bluetooth permission.</li>
+<li>Click the <strong>check icon</strong> to save.</li>
+</ol>
+<p><img src="/images/cdn/d0c4f2bf517e.png" alt/=""></p>
+<p>Now, let’s define the actions:</p>
+<ol>
+<li>Go to the <strong>SplashPage</strong>.</li>
+<li>We will ask for the permissions as soon as the page loads. Don’t select any widget on the page (or, you can select the Scaffold), and go to the <strong>Actions</strong> tab from the Properties panel (right).</li>
+<li>Click on ”<strong>+ Add Action</strong>” and make sure <strong>On Page Load</strong> is selected.</li>
+<li>Select <strong>Request Permissions</strong> action. Choose the permission type as <strong>Bluetooth</strong>.</li>
+<li>We need to add a few more actions, so click on <strong>Open</strong> beside the Action Flow Editor.</li>
+<li>Now, click on the ”<strong>+</strong>” button just below the first action, and select <strong>Add Action</strong>.</li>
+<li>Select <strong>Custom Action &gt; isBluetoothEnabled</strong>. Enter the output variable as <strong><code>bluetoothEnabled</code></strong>.</li>
+<li>Add another action after this, <strong>Navigate To &gt; HomePage</strong>.</li>
+<li>Pass the value for <strong><code>isBTEnabled</code></strong> parameter to the HomePage. Specify the value from <strong>Action Outputs &gt; <code>bluetoothEnabled</code></strong>.</li>
+</ol>
+<p>0:00 /0:54 1×</p>
+<p>The SplashPage is now ready! Time to move on to the primary page of the app, HomePage.</p>
+<h3 id="homepage">HomePage</h3>
+<p>The HomePage will feature a toggle to enable or disable Bluetooth. Additionally, this page will scan and display the connected and nearby devices.</p>
+<p>If you are using the Starter Project, you will find that we already have some <strong>Local Page State Variables</strong> inside the <strong>State Management</strong> tab of the Properties Panel (right). We will be requiring these variables for storing values, that we will be using on this page.</p>
+<p><img src="/images/cdn/f56bc996938e.png" alt/=""></p>
+<h4 id="page-load-actions">Page Load actions</h4>
+<p>Let’s start by defining some On Page Load actions that will trigger as soon as the user is navigated to this page. The actions in order of the flow are as follows:</p>
+<ol>
+<li><strong>Update Page State</strong> action:
+<ul>
+<li>Field: <code>isBluetoothEnabled</code>.</li>
+<li>Set Value &gt; Page Parameters &gt; <code>isBTEnabled</code>.</li>
+</ul>
+</li>
+<li>Add a <strong>Conditional Action</strong> to check whether the Bluetooth is enabled based on the <code>isBluetoothEnabled</code> page state variable. Only if it’s true, we will execute the following actions, so define all the next actions under the <strong>TRUE</strong> branch.</li>
+<li><strong>Update Page State</strong> action:
+<ul>
+<li>isFetchingDevices &gt; True.</li>
+<li>isFetchingConnectedDevices &gt; True.</li>
+</ul>
+</li>
+<li><strong>Custom Action &gt; getConnectedDevices</strong>:
+<ul>
+<li>Output Valrible Name: <code>fetchedConnectedDevices</code>.</li>
+</ul>
+</li>
+<li><strong>Update Page State</strong> action:
+<ul>
+<li>isFetchingConnectedDevices &gt; False.</li>
+<li>connectedDevices:
+<ul>
+<li>Set the value from <strong>Action Outputs &gt; fetchedConnectedDevices</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Custom Action &gt; findDevices</strong>:
+<ul>
+<li>Output Valrible Name: <code>devices</code>.</li>
+</ul>
+</li>
+<li><strong>Update Page State</strong> action:
+<ul>
+<li>isFetchingDevices &gt; False.</li>
+<li>foundDevices:
+<ul>
+<li>Set the value from <strong>Action Outputs &gt; devices</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>0:00 /2:19 1×</p>
+<p>Great! This was the most essential part of this page to fetch the connected and nearby devices. Next, we need to add functionality to the <strong>Switch</strong> widget for enabling or disabling the device’s Bluetooth.</p>
+<h4 id="setting-actions-on-switch">Setting actions on Switch</h4>
+<p><img src="/images/cdn/4771f1e3435a.png" alt/=""></p>
+<p>Select the Switch widget and set the initial value from the <strong><code>isBTEnabled</code></strong> page parameter.</p>
+<p><img src="/images/cdn/54f17cd50567.png" alt/=""></p>
+<p>Keep the Switch widget selected. Go to the <strong>Actions</strong> tab and open the Action Flow Editor. Here you can define actions on Toggled On and on Toggled Off.</p>
+<p>Actions for <strong>On Toggled On</strong>:</p>
+<ol>
+<li>Turn on the Bluetooth:
+<ul>
+<li><strong>Custom Action &gt; turnOnBluetooth</strong></li>
+<li>Name the output variable as <code>isTurningOn</code>.</li>
+</ul>
+</li>
+<li>Add a <strong>Wait</strong> action having <code>1000ms</code> to provide a short delay and let the Bluetooth state change.</li>
+<li>Add an <strong>Update Page State</strong> action to set the value of <code>isBluetoothEnabled</code> to <strong>True</strong>.</li>
+<li>Repeat the actions for updating the page states and fetching the connected and nearby devices (you can copy-paste the actions defined inside the On Page Load action, but use different output variable names).</li>
+</ol>
+<p>Actions for <strong>On Toggled Off</strong>:</p>
+<ol>
+<li>Turn off the Bluetooth:
+<ul>
+<li><strong>Custom Action &gt; turnOffBluetooth</strong></li>
+<li>Name the output variable as <code>isTurningOff</code>.</li>
+</ul>
+</li>
+<li>Add an <strong>Update Page State</strong> action to set the value of <code>isBluetoothEnabled</code> to <strong>False</strong>.</li>
+</ol>
+<p>⚠️</p>
+<p>Remember, the <code>turnOnBluetooth</code> and <code>turnOffBluetooth</code> custom actions only work on <strong>Android</strong>. If you want a solution for iOS, you can use a separate package (like <a href="https://pub.dev/packages/app_settings">app_settings</a>) to navigate the user to the Bluetooth settings page and let them enable Bluetooth. However, we won’t be looking into other packages in this article.</p>
+<h4 id="displaying-the-connected-devices">Displaying the connected devices</h4>
+<p>To display the connected devices inside a list, follow the steps below:</p>
+<ol>
+<li>Select the ListView named <strong>ConnectedDevicesList</strong>.</li>
+<li>Go to the <strong>Generate Dynamic Children</strong> tab inside the Properties Panel.</li>
+<li>Enter the variable name as <strong>displayConnectedDevices</strong>.</li>
+<li>Select the value from <strong>Page State &gt; connectedDevices</strong>.</li>
+<li>Click <strong>Confirm</strong>. You will get a dialog saying it will generate the list’s children dynamically from the variable, click <strong>Ok</strong>.</li>
+</ol>
+<p>0:00 /0:32 1×</p>
+<p>Now, you can display the connected device details inside the first Container of the ListView named <strong>ConnectedDeviceTile</strong>:</p>
+<ol>
+<li>Click on the first <strong>DeviceName</strong> Text.</li>
+<li>From the Properties Panel, set the Text from a variable.</li>
+<li>Select the value from <strong>displayConnectedDevices Item &gt; Data Structure Field &gt; name</strong>.</li>
+<li>Click <strong>Confirm</strong>.</li>
+<li>Set the value of the <strong>DeviceId</strong> Text by following similar steps.</li>
+</ol>
+<p>0:00 /0:29 1×</p>
+<p>There’s one more widget inside the ConnectedDeviceTile called <strong>StrengthIndicator</strong>. It is a pre-defined component inside the Starter Project that will help to display the strength of the BLE signal coming from the IoT device.</p>
+<p>Let’s set the values for the StrengthIndicator widget properties:</p>
+<ol>
+<li>Select the <strong>StrengthIndicator</strong> widget.</li>
+<li>Set the <strong>rssi</strong> value from <strong>displayConnectedDevices item &gt; rssi</strong>.</li>
+<li>Next, we need to set the <strong>color</strong> of the strength indicator, and we want it to change based on the <strong>rssi</strong> value. We can use a <strong>Conditional Value</strong> to set the color:
+<ul>
+<li>Set color from variable, select <strong>Conditional Value</strong>.</li>
+<li>Add the IF condition as: <strong>rssi &gt;= -67</strong>, then color <strong>Success</strong> (green).</li>
+<li>Add another condition, ELSE IF as: <strong>rssi &gt;= -90</strong>, then color <strong>Warning</strong> (yellow).</li>
+<li>Add ELSE condition color as <strong>Error</strong> (red).</li>
+</ul>
+</li>
+<li>Optional: You can choose the default color value as <strong>Success</strong>.</li>
+<li>Click <strong>Confirm</strong>.</li>
+</ol>
+<p>0:00 /1:24 1×</p>
+<p>Next, we need to set an action on the ConnectedDeviceTile to navigate to the DevicePage and pass the device details:</p>
+<ol>
+<li>Select the <strong>ConnectedDeviceTile</strong> widget.</li>
+<li>Go to the <strong>Actions</strong> tab inside Properties Panel.</li>
+<li>Add an action as <strong>Navigate To &gt; DevicePage</strong>.</li>
+<li>Pass the required parameters like <strong>deviceName</strong>, <strong>deviceId</strong>, and <strong>deviceRssi</strong> from <strong>displayConnectedDevices item &gt; Data Structure Field &gt; [field_name]</strong>.</li>
+<li>Also, pass the value of <strong>hasWriteCharacteristic</strong> as <strong>True</strong> (as the connected devices would always have write characteristic because we only allow connection with any device if they have “write” characteristic as per the <code>connectDevice</code> custom action).</li>
+</ol>
+<p>0:00 /1:01 1×</p>
+<p>In a similar way, set you can generate the children items for the ListView named <strong>ScannedDevicesList</strong> and set its value from the <strong>Page State &gt; foundDevices</strong>. Also, set the appropriate values inside the <strong>ScannedDeviceTile</strong> widget.</p>
+<p>The actions on ScannedDeviceTile will be a bit different as we are not yet connected with these devices:</p>
+<ol>
+<li>Select the <strong>ScannedDeviceTile</strong> widget.</li>
+<li>Open the <strong>Action Flow Editor</strong>.</li>
+<li>Add the first action as <strong>Custom Action &gt; connectDevice</strong>. Pass the <code>deviceInfo</code> argument as <strong>displayDevices item</strong>.</li>
+<li>Name the action output as <strong>hasWrite</strong> (the action returns whether the connected device has <code>write</code> characteristics ).</li>
+<li>Add another action, <strong>Update Page State &gt; connectedDevices &gt; Add to List &gt; displayDevices item</strong>.</li>
+<li>Finally, add the action to navigate to the <strong>DevicePage</strong> and pass appropriate parameter values.</li>
+</ol>
+<p>0:00 /1:45 1×</p>
+<p>🤓</p>
+<p><strong>TASK:</strong> There’s a small <strong>refresh icon</strong> beside the Devices title, but we haven’t yet added the actions to it. Add actions to fetch and update the connected and found devices (the actions will be similar to the ones set inside On Page Load).</p>
+<p>This completes our HomePage! Now, it’s time to send and receive data to/from the connected device.</p>
+<h3 id="devicepage">DevicePage</h3>
+<p>On this page, we will allow users to input any text and send it to the connected device, show received data from the IoT device, and also provide a button to disconnect.</p>
+<p>You will find in the Starter Project there are already two <strong>Local Page State Variables</strong> defined, <strong><code>currentRssi</code></strong> and <strong><code>receivedValue</code></strong>. We will use these variables to store necessary data to easily display them on the page.</p>
+<p><img src="/images/cdn/b22f23047ad5.png" alt/=""></p>
+<p>The connected device name, id, and strength indicator values are already set from the appropriate page parameters or page state variables.</p>
+<p>But we want the strength indicator to show real-time data so that the user can understand how good is their signal strength when they move further away from the IoT device.</p>
+<p>Let’s define some <strong>On Page Load</strong> actions:</p>
+<ol>
+<li>First, add an <strong>Update Page State</strong> action. Add the <strong><code>deviceRssi</code></strong> field and set its value from the <strong>Page Parameter &gt; deviceRssi</strong>.</li>
+<li>Next, add <strong>Start Periodic Action</strong>.
+<ul>
+<li>Set the time interval to <strong><code>2000</code></strong> milliseconds.</li>
+<li>Keep the <strong>Start Action immediately</strong> disabled.</li>
+<li>Name the timer as “<strong>rssiUpdateTimer</strong>”.</li>
+</ul>
+</li>
+<li>Add <strong>Custom Action &gt; getRssi</strong>.
+<ul>
+<li>Pass the value for <strong>deviceInfo</strong> argument by using <strong>Create Data Type</strong>. Set the appropriate values for the fields from the page parameters. Click <strong>Confirm</strong>.</li>
+<li>Name the output variable as “<strong>updatedRssi</strong>”.</li>
+</ul>
+</li>
+<li>Add <strong>Update Page State</strong> action to set the value of <code>currentRssi</code> from <strong>Action Outputs &gt; updatedRssi</strong>.</li>
+</ol>
+<p>0:00 /1:36 1×</p>
+<p>Now, the device strength indicator (RSSI value) will update after every 2 seconds interval.</p>
+<p>There’s already a TextField to take the user input, so let’s add actions to the <strong>SendButton</strong> for sending the data to the connected device:</p>
+<ol>
+<li>Open the <strong>Action Flow Editor</strong>.</li>
+<li>Add <strong>Custom Action &gt; sendData</strong>. Set the value of <strong><code>deviceInfo</code></strong> argument from <strong>Create Data Type</strong> (BTDevice) and pass <code>deviceName</code>, <code>deviceId</code>, and <code>currentRssi</code> values respectively. Set the value of <strong><code>data</code></strong> argument from <strong>Widget State &gt; TextField value</strong>.</li>
+<li>Add a <strong>Show Snack Bar</strong> action with a message like “Data sent to device” to indicate that the data has been sent successfully.</li>
+</ol>
+<p>0:00 /1:18 1×</p>
+<p>To display the data returned from the IoT device, we can use the <strong>DisplayReceivedData</strong> component.</p>
+<ol>
+<li>On the DevicePage, pass the value for the <strong>device</strong> property to the DisplayReceivedData component.</li>
+<li>Double-click on the component to open the details. You will find there’s already a <strong>Local Component State Variable</strong> called <code>data</code>.</li>
+<li>Define <strong>On Initialization</strong> actions in this component. We want to check whether there’s any received data every 1 second interval.</li>
+<li>Add <strong>Start Periodic Action</strong>. Set the time interval to <strong><code>1000</code></strong> milliseconds. Enter the timer name as “<strong>receiveDataTimer</strong>”.</li>
+<li>Add <strong>Custom Action &gt; receiveData</strong>. Set the value of the <strong>deviceInfo</strong> argument from the page state variable. Enter the output variable name as “<strong>receivedData</strong>”.</li>
+<li>Add <strong>Update Component State</strong> action. Add <strong>data</strong> field and set its value from <strong>Action Outputs &gt; receivedData</strong>.</li>
+</ol>
+<p>0:00 /1:19 1×</p>
+<p>Finally, we need to set actions on the disconnect device icon button:</p>
+<ol>
+<li>Select the disconnect device <strong>IconButton</strong>.</li>
+<li>Open the <strong>Action Flow Editor</strong>.</li>
+<li>Add the first action as <strong>Custom Action &gt; disconnectDevice</strong>. Set the value of <strong><code>deviceInfo</code></strong> argument from <strong>Create Data Type</strong> (BTDevice) and pass <code>deviceName</code>, <code>deviceId</code>, and <code>currentRssi</code> values respectively.</li>
+<li>Add another action to <strong>Navigate Back</strong>.</li>
+</ol>
+<p>0:00 /0:45 1×</p>
+<p>Great job! This completes our Flutter app.</p>
+<h2 id="setting-up-the-iot-device">Setting up the IoT device</h2>
+<p>For our FlutterFlow app to interact with IoT devices, we need to ensure that our device is correctly set up. In this section, we will cover the steps required to prepare an <strong>ESP32</strong> microcontroller to communicate via its built-in Bluetooth v4.2 (BLE).</p>
+<h3 id="download-arduino-ide">Download Arduino IDE</h3>
+<p>The first step is to download and install the <strong>Arduino IDE</strong>, which we’ll use to write and upload the firmware to our ESP32. You can download the latest version of the IDE from the <a href="https://www.arduino.cc/en/software">official Arduino website</a>.</p>
+<p><img src="/images/cdn/0d820882a98d.png" alt/=""></p>
+<p>Once you have downloaded the Arduino IDE, <strong>install</strong> it on your system.</p>
+<h3 id="configure-for-esp32">Configure for ESP32</h3>
+<p>The Arduino IDE comes preconfigured to support Arduino boards, but there are two steps required to add ESP32 support to it:</p>
+<ol>
+<li>Adding support for ESP32 boards in settings/preferences.</li>
+<li>Adding support for the ESP32 hardware, via the <a href="https://support.arduino.cc/hc/en-us/articles/360016119519-How-to-add-boards-in-the-board-manager">Board Manager</a>.</li>
+</ol>
+<h4 id="1-preferences-update">1. Preferences update</h4>
+<p>Follow these steps to add ESP32 board support:</p>
+<ol>
+<li>Open the Arduino <strong>Preferences</strong> dialog (also known as Settings).</li>
+<li>In the field for <strong>Additional boards manager URLs</strong>, enter this: <code>https://dl.espressif.com/dl/package_esp32_index.json</code>.</li>
+<li>Click <strong>Ok</strong>.</li>
+</ol>
+<p><img src="/images/cdn/8842ce25c1aa.png" alt/=""></p>
+<h4 id="2-board-manager">2. Board Manager</h4>
+<p>To add the ESP32 Board:</p>
+<ol>
+<li>Select the <strong>Board Manager</strong> from the left menu.</li>
+<li>Search for “<strong>esp32</strong>”.</li>
+<li>Install “<strong>esp32 by Espressif</strong>”.</li>
+</ol>
+<p><img src="/images/cdn/743f87a20e35.png" alt/=""></p>
+<ol start="4">
+<li><strong>Connect</strong> the ESP32 module to your system.</li>
+</ol>
+<p>⚠️</p>
+<p><strong>Warning:</strong> To be on the safe side, always attach the microcontroller on a <a href="https://en.wikipedia.org/wiki/Breadboard">breadboard</a> first, before connecting via the USB cable to your system.</p>
+<ol start="5">
+<li>From the board selector dropdown, go to “<strong>Select other board and port…</strong>”.</li>
+</ol>
+<p><img src="/images/cdn/b156508b6c34.png" alt/=""></p>
+<ol start="6">
+<li>Search for “<strong>esp32</strong>”.</li>
+<li>Select <strong>ESP32 Dev Module</strong>.</li>
+<li>Choose the correct <strong>serial port (USB)</strong>.</li>
+<li>Click <strong>Ok</strong>.</li>
+</ol>
+<p><img src="/images/cdn/ad0e960ffa47.png" alt/=""></p>
+<p>Awesome! Your system is now connected to the ESP32 module, and you are ready to write and flash the code.</p>
+<h3 id="writing-the-ble-code">Writing the BLE code</h3>
+<p>First, create a Sketch by going to <strong>File &gt; New</strong>. This will create a new Sketch, which is basically a file where you can write and save your Arduino code in <code>.ino</code> format.</p>
+<p>⭐</p>
+<p>The Arduino programming language is very similar to C++, you can learn more about it <a href="https://www.arduino.cc/reference/en/">here</a>.</p>
+<p>Every Arduino Sketch consists of two primary functions:</p>
+<ul>
+<li><strong><code>setup()</code>:</strong> This is where you make the program configurations or initialization.</li>
+<li><strong><code>loop()</code>:</strong> Add anything here that you want to repeat over certain interval as long as the board is powered. The <code>delay()</code> functions helps to define the intervals.</li>
+</ul>
+<p>More information about there functions <a href="https://docs.arduino.cc/learn/starting-guide/getting-started-arduino#quick-reference-1">here</a>.</p>
+<p>Today, we won’t go into the depths of understanding the entire Arduino code line by line. But let’s discuss some keys concepts that you need to know for implementing BLE functionality.</p>
+<p>A BLE peripheral has <strong>four</strong> primary components:</p>
+<p><strong>Server:</strong> In BLE terminology, a server is a device that has data to provide to other devices. For example, in our case, the ESP32 microcontroller acts as a server. The server hosts one or more services that can be accessed by client devices.</p>
+<p><strong>Service:</strong> A service in BLE represents a collection of data and associated behaviors to accomplish a particular function or feature on a device. For example, a “Heart Rate” service on a fitness tracker provides data about the user’s heart rate. A service is identified by a unique UUID (Universally Unique Identifier).</p>
+<p><strong>Characteristic:</strong> A characteristic in BLE represents a specific piece of data within a service. It’s the smallest unit of data exposed by a BLE device. For example, within a “Heart Rate” service, you might have characteristics like “Heart Rate Measurement” and “Body Sensor Location”. Like services, characteristics also have unique UUIDs.</p>
+<p>Characteristics can have different properties defining how their value can be used:</p>
+<ul>
+<li><em>Read:</em> The value of the characteristic can be read.</li>
+<li><em>Write:</em> The value of the characteristic can be written.</li>
+<li><em>Notify:</em> The client device can subscribe to updates of the characteristic’s value.</li>
+</ul>
+<p><strong>Advertising:</strong> Advertising is a crucial concept in BLE and it’s the way a device broadcasts its availability to connect with other devices. An advertising device periodically sends out packets that can include the device’s name, its services, and other information to help nearby devices decide if they want to connect. In our project, the ESP32 would advertise its existence and the services it supports, so the Flutter app can find and connect to it.</p>
+<p>Enough of chip-chat, now let’s dive into the code!</p>
+<p>Here’s the entire code for implementing a simple BLE connectivity on an IoT device:</p>
+<p>Brief summary of what the above code does:</p>
+<ol>
+<li><strong>Include BLE Library:</strong> The necessary BLE libraries are included at the start of the script (<code>BLEDevice.h</code>, <code>BLEUtils.h</code>, <code>BLEServer.h</code>).</li>
+<li><strong>Define UUIDs and Names:</strong> Unique identifiers for the device’s service and characteristics are defined. The name of the device that is broadcasted (<code>PERIPHERAL_NAME</code>) is also defined.</li>
+<li><strong>Define BLE Characteristics:</strong> An output characteristic is defined (<code>pOutputChar</code>). This is used later in the script to send responses back to the client device.</li>
+<li><strong>Define Callback Classes:</strong> Two classes, <code>ServerCallbacks</code> and <code>InputReceivedCallbacks</code>, are defined. The former handles events when a client connects and disconnects. The latter handles the event when data is sent to the ESP32 device by a client.</li>
+<li><strong>Setup Function:</strong> In the <code>setup()</code> function, the ESP32’s serial communication is initialized, and then the BLE device is set up. It creates a BLE server and service using the UUID defined earlier. It also creates two characteristics: an input characteristic to handle data sent from a client and the output characteristic mentioned earlier. Callbacks for server events and input characteristic are set. Then, the service is started and the device starts advertising itself as a BLE server.</li>
+<li><strong>Loop Function:</strong> In this particular script, the <code>loop()</code> function is empty, as the ESP32 acts as a server waiting for client interactions, and the handling of these interactions is done via the defined callbacks.</li>
+</ol>
+<p>In one line, currently the main functionality of the IoT device is to receive data from the app, and once a new data is received an acknowledgement message with “<strong>Last Received: [data]</strong>” will be send back to the client.</p>
+<p>If you want to learn about BLE implementation in ESP32 microcontroller in-depth, check out <a href="https://robkerr.com/posts/swift/ble-peripheral-ios-development-part1/">this page</a>.</p>
+<p>⭐</p>
+<p>Remember, while this code is written specifically for the ESP32 microcontroller, the general structure and functions are quite common across different microcontrollers.</p>
+<h3 id="flashing-to-the-iot-device">Flashing to the IoT device</h3>
+<p>The final step is to compile and upload the code to your ESP32 module:</p>
+<ol>
+<li>Click on the <strong>Compile</strong> button (check icon).</li>
+<li>Once the compilation is done, click on the <strong>Upload</strong> button (right arrow icon).</li>
+</ol>
+<p><img src="/images/cdn/1f9c76120217.png" alt/=""></p>
+<p>⚠️</p>
+<p><strong>Troubleshooting:</strong> Sometimes the upload doesn’t start automatically. If it’s stuck on “<strong>Connecting…</strong>”, press and hold the <strong>Boot</strong> button on the ESP32 board for a few seconds until the uploading starts.</p>
+<p>Cool, your IoT device is now ready to connect and communicate with the app!</p>
+<h2 id="testing-the-app">Testing the App</h2>
+<p>It’s time to test our application and observe how it interacts with the IoT device. It is important to test the app on a real device because BLE features won’t work on an emulator or Simulator.</p>
+<p>You have two options to run the FlutterFlow app on a real device:</p>
+<ul>
+<li><strong>Download the code</strong> from FlutterFlow.</li>
+<li><a href="https://docs.flutterflow.io/settings-and-integrations/integrations/github?ref=blog.flutterflow.io"><strong>Push the code to GitHub</strong></a> and pull the changes locally on your system.</li>
+</ul>
+<p>⚠️</p>
+<p>You must be at least on the <a href="/pricing/?ref=blog.flutterflow.io"><strong>Standard Plan</strong></a> of FlutterFlow, which is required for downloading/pushing the app’s source code to GitHub.</p>
+<p>👉</p>
+<p>Check out <a href="https://docs.flutterflow.io/deploying-your-app/testing-your-app/testing-your-app?ref=blog.flutterflow.io">this page</a> for detailed instructions on running a FlutterFlow app locally.</p>
+<p>To run the app on a device, connect a physical device (Android or iOS) to your system, and use this command from the <strong>project directory</strong>:</p>
+<p><code>flutter run</code></p>
+<p>Here’s a demo of the app in action:</p>
+<p>0:00 /1:15 1×</p>
+<p><strong>Congratulations!</strong> 🎉 You’ve now built an app using FlutterFlow that can interact with an IoT device over Bluetooth Low Energy. It’s an exciting achievement and opens up a world of possibilities for you.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this tutorial, we have successfully created a FlutterFlow app that communicates with an IoT device using Bluetooth Low Energy (BLE). By using FlutterFlow’s Custom Actions and integrating a BLE plugin, we established a bridge between our app and an ESP32 microcontroller, opening the door to countless IoT project possibilities.</p>
+<blockquote>
+<p>The entire template app is available on <a href="https://marketplace.flutterflow.io/item/0ZHlaMXPtWADkkU1YA2W">FlutterFlow Marketplace</a></p>
+</blockquote>
+<p>Here are a few potential applications of this knowledge:</p>
+<ul>
+<li><strong>Home automation system</strong> where the mobile app controls various appliances.</li>
+<li><strong>Health tracker</strong> application that collects data from a wearable device.</li>
+<li><strong>Industrial IoT applications</strong> for remote monitoring and control.</li>
+</ul>
+<p>We hope you enjoyed this guide and found it useful. Don’t forget to share your creations with us. We look forward to seeing what you build next!</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://robkerr.com/posts/swift/ble-peripheral-ios-development-part1/">ESP32 BLE</a> setup guide</li>
+<li><a href="https://docs.arduino.cc/learn/starting-guide/getting-started-arduino">Getting Started with Arduino</a></li>
+<li><a href="https://www.mindbowser.com/getting-started-with-ble/">BLE – Complete Guide</a></li>
+<li><a href="https://pub.dev/packages/flutter_blue_plus">Flutter Blue Plus Package</a></li>
+<li><a href="https://docs.flutterflow.io/actions/actions/backend-database/custom-action">Custom Action – FlutterFlow Docs</a></li>
+<li><a href="https://docs.flutterflow.io/widgets-and-components/custom-components">Component – FlutterFlow Docs</a></li>
+</ul> </div><footer class="ff-art-foot" data-astro-cid-v3wnudhb=""><p class="ff-art-meta" data-astro-cid-v3wnudhb=""><time datetime="2023-06-02" data-astro-cid-v3wnudhb="">Jun 2, 2023</time></p><div class="ff-art-share ff-art-foot-share" data-ff-art-share="" data-astro-cid-v3wnudhb="true" data-astro-cid-owv5jxu4=""> <button type="button" class="ff-ibtn ff-ibtn-sm ff-art-copy" data-ff-url="https://www.flutterflow.io/blog/creating-an-app-for-interacting-with-any-iot-devices-using-ble" aria-label="Copy link" data-astro-cid-owv5jxu4=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link ff-i ff-art-cp" aria-hidden="true" data-astro-cid-owv5jxu4="true"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check ff-i ff-art-ok" aria-hidden="true" data-astro-cid-owv5jxu4="true"> <path d="M20 6 9 17l-5-5"></path>  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x ff-i ff-art-no" aria-hidden="true" data-astro-cid-owv5jxu4="true"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg> </button> <a class="ff-ibtn ff-ibtn-sm" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.flutterflow.io%2Fblog%2Fcreating-an-app-for-interacting-with-any-iot-devices-using-ble&text=Creating%20an%20App%20for%20Interacting%20with%20IoT%20Devices%20using%20BLE%20and%20FlutterFlow" target="_blank" rel="noopener" aria-label="Share on X (opens in a new tab)" data-astro-cid-owv5jxu4=""> <svg viewbox="0 0 24 24" aria-hidden="true" data-astro-cid-owv5jxu4="true"><path fill="currentColor" d="M17.176 4h2.76l-6.03 6.777L21 20h-5.554l-4.351-5.593L5.117 20H2.355l6.451-7.25L2 4h5.695l3.932 5.113L17.176 4Zm-.97 14.375h1.53L7.863 5.54H6.223l9.983 12.835Z"></path></svg> </a> <a class="ff-ibtn ff-ibtn-sm" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.flutterflow.io%2Fblog%2Fcreating-an-app-for-interacting-with-any-iot-devices-using-ble" target="_blank" rel="noopener" aria-label="Share on LinkedIn (opens in a new tab)" data-astro-cid-owv5jxu4=""> <svg viewbox="0 0 24 24" aria-hidden="true" data-astro-cid-owv5jxu4="true"><path fill="currentColor" d="M4.5 3C3.672 3 3 3.672 3 4.5v15c0 .828.672 1.5 1.5 1.5h15c.828 0 1.5-.672 1.5-1.5v-15c0-.828-.672-1.5-1.5-1.5h-15Zm3.02 4.003a1.546 1.546 0 0 1-.003 3.088 1.546 1.546 0 0 1 .003-3.088ZM5.682 18.324h2.65V9.767H5.682v8.557Zm4.597-8.562h2.44v1.19h.034c.34-.644 1.17-1.322 2.407-1.322 2.573 0 3.049 1.694 3.049 3.897v4.797h-2.55v-4.252c0-1.014-.019-2.319-1.413-2.319-1.414 0-1.63 1.105-1.63 2.247v4.324h-2.337V9.762Z"></path></svg> </a> <span class="ff-vh" role="status" aria-live="polite" data-astro-cid-owv5jxu4=""></span> </div> <script type="module">for(const t of document.querySelectorAll("[data-ff-art-share] .ff-art-copy")){const e=t.parentElement.querySelector("[role=status]");let a=0;t.addEventListener("click",async()=>{clearTimeout(a),t.removeAttribute("data-ff-copied"),t.removeAttribute("data-ff-failed");try{await navigator.clipboard.writeText(t.dataset.ffUrl),t.setAttribute("data-ff-copied",""),e.textContent="Copied"}catch{t.setAttribute("data-ff-failed",""),e.textContent="Couldn’t copy. Copy the address from the browser’s bar."}a=window.setTimeout(()=>{t.removeAttribute("data-ff-copied"),t.removeAttribute("data-ff-failed"),e.textContent=""},2e3)})}</script></footer></div></div></article> <div class="ff-wrap"><section id="close" aria-labelledby="close-h" class="ff-block ff-cls" data-astro-cid-uny4lie4="true"> <div class="ff-sec-center" data-astro-cid-l4fe2nj4=""><h2 id="close-h" data-astro-cid-l4fe2nj4=""><span class="ff-ln" data-astro-cid-l4fe2nj4="">Turn your idea into an app</span></h2><div class="ff-cls-acts ff-cls-two" data-astro-cid-uny4lie4=""> <a class="ff-btn ff-btn-primary ff-btn-ab" href="https://build.flutterflow.io/signin?returnTo=%2Fnew" data-astro-cid-uny4lie4="true" data-astro-cid-sghildrv=""><span class="ff-ptag-dot" aria-hidden="true" data-astro-cid-uny4lie4=""></span>Start building<span class="ff-vh" data-astro-cid-sghildrv=""> in FlutterFlow</span></a> <a class="ff-btn ff-btn-primary ff-btn-ab" href="https://app.flutterflow.io" data-astro-cid-uny4lie4="true" data-astro-cid-sghildrv=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-uny4lie4=""></span>Open Studio</a> </div></div>   </section></div> </main> <div class="ff-wrap" data-astro-cid-557ad5nw=""> <footer class="ff-ftr-site-foot ff-ftr-all" data-astro-cid-557ad5nw=""> <div class="ff-ftr-top" data-astro-cid-557ad5nw=""> <div class="ff-ftr-id" data-astro-cid-557ad5nw=""> <a href="/" data-astro-cid-557ad5nw="true" class="ff-lkp ff-ftr-brand"><img src="/_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp" srcset="/_astro/flutterflow-mark-96.ChAYdHC__oeoFH.webp 30w, /_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp 60w, /_astro/flutterflow-mark-96.ChAYdHC__28B3sA.webp 96w" sizes="27px" alt="" width="96" height="96" loading="lazy" decoding="async"><svg class="ff-lkp-wordmark" viewbox="80 -710 5099 722" role="img" aria-label="FlutterFlow"><path fill="currentColor" d="M80 0L80 -710L555 -710L555 -597L139 -597L210 -670L210 -344L139 -403L537 -403L537 -291L139 -291L210 -350L210 0ZM748 0Q690 0 655 -30Q620 -60 620 -126L620 -710L748 -710L748 -139Q748 -119 758.5 -109Q769 -99 788 -99L827 -99L827 0ZM1055 12Q974 12 926.5 -41.5Q879 -95 879 -190L879 -534L1007 -534L1007 -222Q1007 -155 1029.5 -123.5Q1052 -92 1098 -92Q1150 -92 1178.5 -126.5Q1207 -161 1207 -227L1207 -534L1335 -534L1335 0L1218 0L1215 -147L1231 -142Q1219 -66 1174 -27Q1129 12 1055 12ZM1637 0Q1557 0 1519.5 -37Q1482 -74 1482 -153L1482 -659L1610 -659L1610 -165Q1610 -128 1626 -113.5Q1642 -99 1676 -99L1751 -99L1751 0ZM1398 -435L1398 -534L1751 -534L1751 -435ZM2004 0Q1924 0 1886.5 -37Q1849 -74 1849 -153L1849 -659L1977 -659L1977 -165Q1977 -128 1993 -113.5Q2009 -99 2043 -99L2118 -99L2118 0ZM1765 -435L1765 -534L2118 -534L2118 -435ZM2404 12Q2324 12 2265 -22.5Q2206 -57 2174 -120Q2142 -183 2142 -267Q2142 -351 2174 -413.5Q2206 -476 2264.5 -511Q2323 -546 2401 -546Q2477 -546 2534.5 -512Q2592 -478 2623 -414Q2654 -350 2654 -260L2654 -231L2275 -231Q2279 -161 2313.5 -125.5Q2348 -90 2405 -90Q2448 -90 2476.5 -109.5Q2505 -129 2516 -164L2647 -156Q2625 -78 2560.5 -33Q2496 12 2404 12ZM2275 -317L2522 -317Q2518 -382 2485 -413.5Q2452 -445 2401 -445Q2350 -445 2316.5 -412Q2283 -379 2275 -317ZM2724 0L2724 -534L2844 -534L2849 -386L2838 -388Q2850 -465 2883.5 -499.5Q2917 -534 2975 -534L3024 -534L3024 -424L2974 -424Q2933 -424 2906 -412Q2879 -400 2865.5 -374.5Q2852 -349 2852 -308L2852 0ZM3087 0L3087 -710L3562 -710L3562 -597L3146 -597L3217 -670L3217 -344L3146 -403L3544 -403L3544 -291L3146 -291L3217 -350L3217 0ZM3755 0Q3697 0 3662 -30Q3627 -60 3627 -126L3627 -710L3755 -710L3755 -139Q3755 -119 3765.5 -109Q3776 -99 3795 -99L3834 -99L3834 0ZM4118 12Q4039 12 3979.5 -22.5Q3920 -57 3887.5 -120Q3855 -183 3855 -267Q3855 -352 3887.5 -414.5Q3920 -477 3979.5 -511.5Q4039 -546 4118 -546Q4197 -546 4256 -511.5Q4315 -477 4347.5 -414.5Q4380 -352 4380 -267Q4380 -183 4347.5 -120Q4315 -57 4256 -22.5Q4197 12 4118 12ZM4118 -92Q4180 -92 4213.5 -138Q4247 -184 4247 -267Q4247 -349 4213.5 -395.5Q4180 -442 4118 -442Q4056 -442 4022 -395.5Q3988 -349 3988 -267Q3988 -184 4022 -138Q4056 -92 4118 -92ZM4543 0L4382 -534L4513 -534L4617 -145L4724 -534L4836 -534L4944 -145L5048 -534L5179 -534L5018 0L4886 0L4780 -358L4675 0Z"></path></svg></a> <p data-astro-cid-557ad5nw=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-557ad5nw=""></span>Already use FlutterFlow Studio? <a href="https://app.flutterflow.io" data-astro-cid-557ad5nw="">Open Studio</a><a href="https://build.flutterflow.io/signin" data-astro-cid-557ad5nw="">Sign in</a></p> </div> <nav class="ff-ftr-cols" aria-label="Footer" data-astro-cid-557ad5nw=""> <div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Product</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/product/" data-astro-cid-557ad5nw="">Product</a></li><li data-astro-cid-557ad5nw=""><a href="https://docs.flutterflow.io/ffx" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="/studio/changelog/" data-astro-cid-557ad5nw="">Changelog</a></li><li data-astro-cid-557ad5nw=""><a href="/studio/desktop/" data-astro-cid-557ad5nw="">Desktop</a></li><li data-astro-cid-557ad5nw=""><a href="/designer/" data-astro-cid-557ad5nw="">Designer</a></li><li data-astro-cid-557ad5nw=""><a href="/enterprise/" data-astro-cid-557ad5nw="">Enterprise</a></li><li data-astro-cid-557ad5nw=""><a href="/pricing/" data-astro-cid-557ad5nw="">Pricing</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Studio</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="https://app.flutterflow.io" data-astro-cid-557ad5nw="">Open Studio</a></li><li data-astro-cid-557ad5nw=""><a href="/ai/" data-astro-cid-557ad5nw="">AI</a></li><li data-astro-cid-557ad5nw=""><a href="https://docs.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://marketplace.flutterflow.io/home" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Templates<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://campus.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Campus<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.youtube.com/playlist?list=PLsUp7t2vRqx9UE13G8Xod8F-m248iR0E3" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Trainings<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://community.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://status.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Status<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Resources</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/studio/work-with-developers/" data-astro-cid-557ad5nw="">Hire an expert</a></li><li data-astro-cid-557ad5nw=""><a href="/studio/apply-to-be-a-developer/" data-astro-cid-557ad5nw="">Apply to be an expert</a></li><li data-astro-cid-557ad5nw=""><a href="/studio/showcase/" data-astro-cid-557ad5nw="">Showcase</a></li><li data-astro-cid-557ad5nw=""><a href="/customer-stories/" data-astro-cid-557ad5nw="">Customer stories</a></li><li data-astro-cid-557ad5nw=""><a href="/blog/" data-astro-cid-557ad5nw="">Blog</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Community</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/flutterflow-developer-groups/" data-astro-cid-557ad5nw="">Developer groups</a></li><li data-astro-cid-557ad5nw=""><a href="/student-ambassadors/" data-astro-cid-557ad5nw="">Student ambassadors</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Company</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/about-us/" data-astro-cid-557ad5nw="">About</a></li><li data-astro-cid-557ad5nw=""><a href="https://jobs.ashbyhq.com/FlutterFlow" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Careers<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="/contact-us/" data-astro-cid-557ad5nw="">Contact</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Connect</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="https://twitter.com/flutterflow" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">X<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.youtube.com/@FlutterFlow" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">YouTube<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.linkedin.com/company/flutterflow/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.reddit.com/r/FlutterFlow/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Reddit<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li> </ul></div> </nav> </div> <div class="ff-ftr-bar" data-astro-cid-557ad5nw=""> <div class="ff-ftr-legal" data-astro-cid-557ad5nw=""><span data-astro-cid-557ad5nw="">© 2026 FlutterFlow</span><a href="/tos/" data-astro-cid-557ad5nw="">Terms</a><a href="/privacy/" data-astro-cid-557ad5nw="">Privacy</a><a href="/tos-marketplace/" data-astro-cid-557ad5nw="">Marketplace terms</a><button class="ft-cookie" type="button" aria-haspopup="dialog" hidden="" data-astro-cid-2oyhmw5c="">Your Privacy Choices<svg class="ft-ccpa" viewbox="0 0 30 14" aria-hidden="true" focusable="false" data-astro-cid-2oyhmw5c=""><path fill="#fff" fill-rule="evenodd" d="M7.4,12.8h6.8l3.1-11.6H7.4C4.2,1.2,1.6,3.8,1.6,7S4.2,12.8,7.4,12.8z" data-astro-cid-2oyhmw5c=""></path><path fill="#06f" fill-rule="evenodd" d="M22.6,0H7.4c-3.9,0-7,3.1-7,7s3.1,7,7,7h15.2c3.9,0,7-3.1,7-7S26.4,0,22.6,0z M1.6,7c0-3.2,2.6-5.8,5.8-5.8h9.9l-3.1,11.6H7.4C4.2,12.8,1.6,10.2,1.6,7z" data-astro-cid-2oyhmw5c=""></path><path fill="#fff" d="M24.6,4c0.2,0.2,0.2,0.6,0,0.8l0,0L22.5,7l2.2,2.2c0.2,0.2,0.2,0.6,0,0.8c-0.2,0.2-0.6,0.2-0.8,0l0,0l-2.2-2.2L19.5,10c-0.2,0.2-0.6,0.2-0.8,0c-0.2-0.2-0.2-0.6,0-0.8l0,0L20.8,7l-2.2-2.2c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0l2.2,2.2L23.8,4C24,3.8,24.4,3.8,24.6,4z" data-astro-cid-2oyhmw5c=""></path><path fill="#06f" d="M12.7,4.1c0.2,0.2,0.3,0.6,0.1,0.8l0,0L8.6,9.8C8.5,9.9,8.4,10,8.3,10c-0.2,0.1-0.5,0.1-0.7-0.1l0,0L5.4,7.7c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0L8,8.6l3.8-4.5C12,3.9,12.4,3.9,12.7,4.1z" data-astro-cid-2oyhmw5c=""></path></svg></button> <script type="module" src="/_astro/PrivacyChoices.astro_astro_type_script_index_0_lang.BXErlLUd.js"></script></div> <div class="ff-tsw" role="radiogroup" aria-label="Theme" data-ff-tsw="" data-astro-cid-557ad5nw="true"> <button type="button" role="radio" aria-checked="true" aria-label="Match your system" title="Match your system" data-ff-tip="" data-ff-tsw-pick="system"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M3 4.5h18v11H3z"></path><path d="M8 20h8M12 15.5V20"></path></svg></button><button type="button" role="radio" aria-checked="false" aria-label="Light" title="Light" data-ff-tip="" data-ff-tsw-pick="light"><svg viewbox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"></path></svg></button><button type="button" role="radio" aria-checked="false" aria-label="Dark" title="Dark" data-ff-tip="" data-ff-tsw-pick="dark"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path></svg></button> </div> <!-- the remembered pick, checked before paint: the module script below runs only once the page is parsed --> <script>
+  (function (g) {
+    var pick = document.documentElement.dataset.ffTswPick, t = null;
+    if (!pick) { try { t = localStorage.getItem(document.documentElement.dataset.ffTswKey || "ff-theme"); } catch (e) {} pick = t === "light" || t === "dark" ? t : "system"; }
+    g.querySelectorAll("[data-ff-tsw-pick]").forEach(function (b) { b.setAttribute("aria-checked", String(b.dataset.ffTswPick === pick)); b.tabIndex = b.dataset.ffTswPick === pick ? 0 : -1; });
+  })(document.currentScript.previousElementSibling);
+</script> <script type="module">const c=document.documentElement,k="ff-theme",o=()=>c.dataset.ffTswKey||k,d=matchMedia("(prefers-color-scheme: dark)"),u=document.querySelectorAll("[data-ff-tsw]");function h(){try{const t=localStorage.getItem(o());return t==="light"||t==="dark"?t:"system"}catch{return"system"}}const a=()=>c.dataset.ffTswPick,r=()=>c.dataset.theme=a()==="system"?d.matches?"dark":"light":a();function i(t){for(const e of document.querySelectorAll("[data-ff-tsw] [data-ff-tsw-pick]"))e.setAttribute("aria-checked",String(e.dataset.ffTswPick===t)),e.tabIndex=e.dataset.ffTswPick===t?0:-1}function f(t){c.dataset.ffTswPick=t,r();try{t==="system"?localStorage.removeItem(o()):localStorage.setItem(o(),t)}catch{}i(t),document.dispatchEvent(new CustomEvent("ff:theme-switch-change",{detail:{pick:t}}))}a()||(c.dataset.ffTswPick=h(),r(),d.addEventListener("change",r));i(a());for(const t of u)t.addEventListener("click",e=>{const s=e.target.closest("[data-ff-tsw-pick]");s&&f(s.dataset.ffTswPick)}),t.addEventListener("keydown",e=>{if(!["ArrowLeft","ArrowRight","ArrowUp","ArrowDown"].includes(e.key))return;const s=[...t.querySelectorAll("[data-ff-tsw-pick]")],l=s.findIndex(w=>w.getAttribute("aria-checked")==="true"),n=s[(l+(e.key==="ArrowLeft"||e.key==="ArrowUp"?s.length-1:1))%s.length];e.preventDefault(),n.focus(),f(n.dataset.ffTswPick)});</script> </div> <div class="ff-ftr-flash" aria-hidden="true" data-ff-ftr-flash="" data-astro-cid-557ad5nw="true"><canvas></canvas></div> <script type="module" src="/_astro/FooterFlash.astro_astro_type_script_index_0_lang.2skXuUzs.js"></script> </footer> </div>    <script type="module" src="/_astro/third-party-body.astro_astro_type_script_index_0_lang.iWvDO2c2.js"></script> 

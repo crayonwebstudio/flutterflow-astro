@@ -1,0 +1,529 @@
+ <a class="ff-page-skip" href="#main">Skip to content</a>    <div class="ff-ban" id="ff-banner-studio-rename" role="region" aria-label="Announcement" data-astro-cid-po733llg=""> <p data-astro-cid-po733llg="">FlutterFlow’s visual builder is now FlutterFlow Studio. Everything you’ve built is right where you left it. <a class="ff-lnk" href="/studio/faq/" data-astro-cid-po733llg="">What’s changing</a></p> <button class="ff-ibtn" type="button" aria-label="Dismiss" hidden="" data-astro-cid-po733llg=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x ff-i" aria-hidden="true" data-astro-cid-po733llg="true"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg></button> </div> <script>(function(){const key = "ff-banner-studio-rename";
+
+  (() => {
+    const bn = document.getElementById(key);
+    try { if (localStorage.getItem(key)) { bn.hidden = true; return; } } catch (e) {}
+    const b = bn.querySelector("button");
+    b.hidden = false;
+    b.addEventListener("click", () => {
+      // focus would stay on the hidden button; hand it to the next stop after the banner (the bar's lockup).
+      // Not nextElementSibling: that's this script.
+      const next = [...document.querySelectorAll("a[href],button")]
+        .find((el) => !bn.contains(el) && bn.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING);
+      bn.hidden = true;
+      next?.focus();
+      try { localStorage.setItem(key, "1"); } catch (e) {}
+    });
+  })();
+})();</script> <header class="ff-snav" data-ff-snav="" data-astro-cid-gxc3ym7p=""> <nav class="ff-snav-nav ff-wrap" aria-label="Main" data-astro-cid-gxc3ym7p=""> <a href="/" data-astro-cid-gxc3ym7p="true" class="ff-lkp ff-snav-brand"><img src="/_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp" srcset="/_astro/flutterflow-mark-96.ChAYdHC__oeoFH.webp 30w, /_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp 60w, /_astro/flutterflow-mark-96.ChAYdHC__28B3sA.webp 96w" sizes="30px" alt="" width="96" height="96" loading="eager" decoding="async"><svg class="ff-lkp-wordmark" viewbox="80 -710 5099 722" role="img" aria-label="FlutterFlow"><path fill="currentColor" d="M80 0L80 -710L555 -710L555 -597L139 -597L210 -670L210 -344L139 -403L537 -403L537 -291L139 -291L210 -350L210 0ZM748 0Q690 0 655 -30Q620 -60 620 -126L620 -710L748 -710L748 -139Q748 -119 758.5 -109Q769 -99 788 -99L827 -99L827 0ZM1055 12Q974 12 926.5 -41.5Q879 -95 879 -190L879 -534L1007 -534L1007 -222Q1007 -155 1029.5 -123.5Q1052 -92 1098 -92Q1150 -92 1178.5 -126.5Q1207 -161 1207 -227L1207 -534L1335 -534L1335 0L1218 0L1215 -147L1231 -142Q1219 -66 1174 -27Q1129 12 1055 12ZM1637 0Q1557 0 1519.5 -37Q1482 -74 1482 -153L1482 -659L1610 -659L1610 -165Q1610 -128 1626 -113.5Q1642 -99 1676 -99L1751 -99L1751 0ZM1398 -435L1398 -534L1751 -534L1751 -435ZM2004 0Q1924 0 1886.5 -37Q1849 -74 1849 -153L1849 -659L1977 -659L1977 -165Q1977 -128 1993 -113.5Q2009 -99 2043 -99L2118 -99L2118 0ZM1765 -435L1765 -534L2118 -534L2118 -435ZM2404 12Q2324 12 2265 -22.5Q2206 -57 2174 -120Q2142 -183 2142 -267Q2142 -351 2174 -413.5Q2206 -476 2264.5 -511Q2323 -546 2401 -546Q2477 -546 2534.5 -512Q2592 -478 2623 -414Q2654 -350 2654 -260L2654 -231L2275 -231Q2279 -161 2313.5 -125.5Q2348 -90 2405 -90Q2448 -90 2476.5 -109.5Q2505 -129 2516 -164L2647 -156Q2625 -78 2560.5 -33Q2496 12 2404 12ZM2275 -317L2522 -317Q2518 -382 2485 -413.5Q2452 -445 2401 -445Q2350 -445 2316.5 -412Q2283 -379 2275 -317ZM2724 0L2724 -534L2844 -534L2849 -386L2838 -388Q2850 -465 2883.5 -499.5Q2917 -534 2975 -534L3024 -534L3024 -424L2974 -424Q2933 -424 2906 -412Q2879 -400 2865.5 -374.5Q2852 -349 2852 -308L2852 0ZM3087 0L3087 -710L3562 -710L3562 -597L3146 -597L3217 -670L3217 -344L3146 -403L3544 -403L3544 -291L3146 -291L3217 -350L3217 0ZM3755 0Q3697 0 3662 -30Q3627 -60 3627 -126L3627 -710L3755 -710L3755 -139Q3755 -119 3765.5 -109Q3776 -99 3795 -99L3834 -99L3834 0ZM4118 12Q4039 12 3979.5 -22.5Q3920 -57 3887.5 -120Q3855 -183 3855 -267Q3855 -352 3887.5 -414.5Q3920 -477 3979.5 -511.5Q4039 -546 4118 -546Q4197 -546 4256 -511.5Q4315 -477 4347.5 -414.5Q4380 -352 4380 -267Q4380 -183 4347.5 -120Q4315 -57 4256 -22.5Q4197 12 4118 12ZM4118 -92Q4180 -92 4213.5 -138Q4247 -184 4247 -267Q4247 -349 4213.5 -395.5Q4180 -442 4118 -442Q4056 -442 4022 -395.5Q3988 -349 3988 -267Q3988 -184 4022 -138Q4056 -92 4118 -92ZM4543 0L4382 -534L4513 -534L4617 -145L4724 -534L4836 -534L4944 -145L5048 -534L5179 -534L5018 0L4886 0L4780 -358L4675 0Z"></path></svg></a> <div class="ff-snav-nav-mid" data-astro-cid-gxc3ym7p=""> <div class="ff-snav-item" data-ff-snav-item="" data-astro-cid-gxc3ym7p=""> <button class="ff-snav-menu" type="button" aria-expanded="false" aria-controls="sn-flutterflow-0" data-astro-cid-gxc3ym7p="">Product<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m6 9 6 6 6-6"></path>  </svg></button> <div class="ff-snav-panel" id="sn-flutterflow-0" style="--ff-snav-cols:1" data-astro-cid-gxc3ym7p="">   <div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow</p><ul aria-label="FlutterFlow" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/product/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/ai/" data-astro-cid-gxc3ym7p="">AI</a></li><li data-astro-cid-gxc3ym7p=""><a href="/changelog/" data-astro-cid-gxc3ym7p="">What’s new</a></li><li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/ffx" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-vs-studio/" data-astro-cid-gxc3ym7p="">FlutterFlow or Studio?</a></li> </ul></div>   </div> </div><div class="ff-snav-item" data-ff-snav-item="" data-astro-cid-gxc3ym7p=""> <button class="ff-snav-menu" type="button" aria-expanded="false" aria-controls="sn-flutterflow-1" data-astro-cid-gxc3ym7p="">Studio<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m6 9 6 6 6-6"></path>  </svg></button> <div class="ff-snav-panel ff-snav-panel-studio" id="sn-flutterflow-1" style="--ff-snav-cols:2" data-astro-cid-gxc3ym7p="">  <a class="ff-snav-lead" href="https://app.flutterflow.io" data-astro-cid-gxc3ym7p=""><span class="ff-snav-lead-t" data-astro-cid-gxc3ym7p=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-gxc3ym7p=""></span>Sign in to Studio</span><span class="ff-snav-lead-p" data-astro-cid-gxc3ym7p="">Your projects are where you left them.</span><span class="ff-btn ff-btn-primary ff-btn-sm" aria-hidden="true" data-astro-cid-gxc3ym7p="">Sign in</span></a> <div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow Studio</p><ul aria-label="FlutterFlow Studio" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/ai/" data-astro-cid-gxc3ym7p="">AI tools</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/desktop/" data-astro-cid-gxc3ym7p="">Desktop app</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/changelog/" data-astro-cid-gxc3ym7p="">Changelog</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/faq/" data-astro-cid-gxc3ym7p="">FAQ</a></li> </ul></div><div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Experts</p><ul aria-label="Experts" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/work-with-developers/" data-astro-cid-gxc3ym7p="">Hire an expert</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/apply-to-be-a-developer/" data-astro-cid-gxc3ym7p="">Apply to be an expert</a></li> </ul></div>   </div> </div><a class="ff-snav-lk" href="/pricing/" data-astro-cid-gxc3ym7p="">Pricing</a><a class="ff-snav-lk" href="/enterprise/" data-astro-cid-gxc3ym7p="">Enterprise</a><div class="ff-snav-item" data-ff-snav-item="" data-astro-cid-gxc3ym7p=""> <button class="ff-snav-menu" type="button" aria-expanded="false" aria-controls="sn-flutterflow-4" data-astro-cid-gxc3ym7p="">Resources<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m6 9 6 6 6-6"></path>  </svg></button> <div class="ff-snav-panel" id="sn-flutterflow-4" style="--ff-snav-cols:3" data-astro-cid-gxc3ym7p="">   <div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Inspiration</p><ul aria-label="Inspiration" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/showcase/" data-astro-cid-gxc3ym7p="">Showcase</a></li><li data-astro-cid-gxc3ym7p=""><a href="/customer-stories/" data-astro-cid-gxc3ym7p="">Customer stories</a></li><li data-astro-cid-gxc3ym7p=""><a href="/blog/" data-astro-cid-gxc3ym7p="">Blog</a></li> </ul></div><div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Learn</p><ul aria-label="Learn" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://www.youtube.com/playlist?list=PLsUp7t2vRqx9UE13G8Xod8F-m248iR0E3" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Trainings<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://marketplace.flutterflow.io/home" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Templates<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li> </ul></div><div class="ff-snav-col" data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Community</p><ul aria-label="Community" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://community.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-developer-groups/" data-astro-cid-gxc3ym7p="">Developer groups</a></li><li data-astro-cid-gxc3ym7p=""><a href="/student-ambassadors/" data-astro-cid-gxc3ym7p="">Student ambassadors</a></li> </ul></div>   </div> </div> </div> <div class="ff-snav-nav-end" data-astro-cid-gxc3ym7p=""> <a class="ff-snav-lk ff-snav-signin" href="https://build.flutterflow.io/signin" data-astro-cid-gxc3ym7p="">Sign in</a> <a class="ff-btn ff-btn-primary ff-btn-sm ff-btn-ab" href="https://build.flutterflow.io/signin?returnTo=%2Fnew" data-astro-cid-gxc3ym7p="true" data-astro-cid-sghildrv="">Start building</a> <div class="ff-snav-sm" data-astro-cid-gxc3ym7p=""><button class="ff-ibtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="ms-flutterflow" aria-haspopup="dialog" data-ff-snav-open="" data-astro-cid-gxc3ym7p=""><svg class="ff-i" viewbox="0 0 24 24" aria-hidden="true" data-astro-cid-gxc3ym7p=""><path d="M4 6h16" data-astro-cid-gxc3ym7p=""></path><path d="M4 12h16" data-astro-cid-gxc3ym7p=""></path><path d="M4 18h16" data-astro-cid-gxc3ym7p=""></path></svg></button></div> </div> </nav> </header> <!-- the sheet: over the page from the bar down, its own bar drawn where the real one is, so close lands on the menu button --> <dialog class="ff-snav-ms" id="ms-flutterflow" aria-label="Menu" data-astro-cid-gxc3ym7p=""> <div class="ff-snav-nav ff-wrap" data-astro-cid-gxc3ym7p=""> <a href="/" data-astro-cid-gxc3ym7p="true" class="ff-lkp ff-snav-brand"><img src="/_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp" srcset="/_astro/flutterflow-mark-96.ChAYdHC__oeoFH.webp 30w, /_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp 60w, /_astro/flutterflow-mark-96.ChAYdHC__28B3sA.webp 96w" sizes="30px" alt="" width="96" height="96" loading="lazy" decoding="async"><svg class="ff-lkp-wordmark" viewbox="80 -710 5099 722" role="img" aria-label="FlutterFlow"><path fill="currentColor" d="M80 0L80 -710L555 -710L555 -597L139 -597L210 -670L210 -344L139 -403L537 -403L537 -291L139 -291L210 -350L210 0ZM748 0Q690 0 655 -30Q620 -60 620 -126L620 -710L748 -710L748 -139Q748 -119 758.5 -109Q769 -99 788 -99L827 -99L827 0ZM1055 12Q974 12 926.5 -41.5Q879 -95 879 -190L879 -534L1007 -534L1007 -222Q1007 -155 1029.5 -123.5Q1052 -92 1098 -92Q1150 -92 1178.5 -126.5Q1207 -161 1207 -227L1207 -534L1335 -534L1335 0L1218 0L1215 -147L1231 -142Q1219 -66 1174 -27Q1129 12 1055 12ZM1637 0Q1557 0 1519.5 -37Q1482 -74 1482 -153L1482 -659L1610 -659L1610 -165Q1610 -128 1626 -113.5Q1642 -99 1676 -99L1751 -99L1751 0ZM1398 -435L1398 -534L1751 -534L1751 -435ZM2004 0Q1924 0 1886.5 -37Q1849 -74 1849 -153L1849 -659L1977 -659L1977 -165Q1977 -128 1993 -113.5Q2009 -99 2043 -99L2118 -99L2118 0ZM1765 -435L1765 -534L2118 -534L2118 -435ZM2404 12Q2324 12 2265 -22.5Q2206 -57 2174 -120Q2142 -183 2142 -267Q2142 -351 2174 -413.5Q2206 -476 2264.5 -511Q2323 -546 2401 -546Q2477 -546 2534.5 -512Q2592 -478 2623 -414Q2654 -350 2654 -260L2654 -231L2275 -231Q2279 -161 2313.5 -125.5Q2348 -90 2405 -90Q2448 -90 2476.5 -109.5Q2505 -129 2516 -164L2647 -156Q2625 -78 2560.5 -33Q2496 12 2404 12ZM2275 -317L2522 -317Q2518 -382 2485 -413.5Q2452 -445 2401 -445Q2350 -445 2316.5 -412Q2283 -379 2275 -317ZM2724 0L2724 -534L2844 -534L2849 -386L2838 -388Q2850 -465 2883.5 -499.5Q2917 -534 2975 -534L3024 -534L3024 -424L2974 -424Q2933 -424 2906 -412Q2879 -400 2865.5 -374.5Q2852 -349 2852 -308L2852 0ZM3087 0L3087 -710L3562 -710L3562 -597L3146 -597L3217 -670L3217 -344L3146 -403L3544 -403L3544 -291L3146 -291L3217 -350L3217 0ZM3755 0Q3697 0 3662 -30Q3627 -60 3627 -126L3627 -710L3755 -710L3755 -139Q3755 -119 3765.5 -109Q3776 -99 3795 -99L3834 -99L3834 0ZM4118 12Q4039 12 3979.5 -22.5Q3920 -57 3887.5 -120Q3855 -183 3855 -267Q3855 -352 3887.5 -414.5Q3920 -477 3979.5 -511.5Q4039 -546 4118 -546Q4197 -546 4256 -511.5Q4315 -477 4347.5 -414.5Q4380 -352 4380 -267Q4380 -183 4347.5 -120Q4315 -57 4256 -22.5Q4197 12 4118 12ZM4118 -92Q4180 -92 4213.5 -138Q4247 -184 4247 -267Q4247 -349 4213.5 -395.5Q4180 -442 4118 -442Q4056 -442 4022 -395.5Q3988 -349 3988 -267Q3988 -184 4022 -138Q4056 -92 4118 -92ZM4543 0L4382 -534L4513 -534L4617 -145L4724 -534L4836 -534L4944 -145L5048 -534L5179 -534L5018 0L4886 0L4780 -358L4675 0Z"></path></svg></a> <div class="ff-snav-ms-end" data-astro-cid-gxc3ym7p=""><button class="ff-ibtn" type="button" aria-label="Close menu" autofocus="" data-ff-snav-ms-close="" data-astro-cid-gxc3ym7p=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg></button></div> </div> <div class="ff-snav-ms-body" data-astro-cid-gxc3ym7p=""> <ul class="ff-snav-ms-main" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/pricing/" data-astro-cid-gxc3ym7p="">Pricing<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m9 18 6-6-6-6"></path>  </svg></a></li><li data-astro-cid-gxc3ym7p=""><a href="/enterprise/" data-astro-cid-gxc3ym7p="">Enterprise<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="m9 18 6-6-6-6"></path>  </svg></a></li> </ul> <div class="ff-snav-ms-res" data-astro-cid-gxc3ym7p="">  <div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow</p><ul aria-label="FlutterFlow" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/product/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/ai/" data-astro-cid-gxc3ym7p="">AI</a></li><li data-astro-cid-gxc3ym7p=""><a href="/changelog/" data-astro-cid-gxc3ym7p="">What’s new</a></li><li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/ffx" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-vs-studio/" data-astro-cid-gxc3ym7p="">FlutterFlow or Studio?</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">FlutterFlow Studio</p><ul aria-label="FlutterFlow Studio" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/" data-astro-cid-gxc3ym7p="">Overview</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/ai/" data-astro-cid-gxc3ym7p="">AI tools</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/desktop/" data-astro-cid-gxc3ym7p="">Desktop app</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/changelog/" data-astro-cid-gxc3ym7p="">Changelog</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/faq/" data-astro-cid-gxc3ym7p="">FAQ</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Experts</p><ul aria-label="Experts" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/work-with-developers/" data-astro-cid-gxc3ym7p="">Hire an expert</a></li><li data-astro-cid-gxc3ym7p=""><a href="/studio/apply-to-be-a-developer/" data-astro-cid-gxc3ym7p="">Apply to be an expert</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Inspiration</p><ul aria-label="Inspiration" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="/studio/showcase/" data-astro-cid-gxc3ym7p="">Showcase</a></li><li data-astro-cid-gxc3ym7p=""><a href="/customer-stories/" data-astro-cid-gxc3ym7p="">Customer stories</a></li><li data-astro-cid-gxc3ym7p=""><a href="/blog/" data-astro-cid-gxc3ym7p="">Blog</a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Learn</p><ul aria-label="Learn" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://docs.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://www.youtube.com/playlist?list=PLsUp7t2vRqx9UE13G8Xod8F-m248iR0E3" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Trainings<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="https://marketplace.flutterflow.io/home" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Templates<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li> </ul></div><div data-astro-cid-gxc3ym7p=""><p class="ff-snav-h" data-astro-cid-gxc3ym7p="">Community</p><ul aria-label="Community" data-astro-cid-gxc3ym7p=""> <li data-astro-cid-gxc3ym7p=""><a href="https://community.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-gxc3ym7p="">Community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-gxc3ym7p="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-gxc3ym7p=""> (opens in a new tab)</span></a></li><li data-astro-cid-gxc3ym7p=""><a href="/flutterflow-developer-groups/" data-astro-cid-gxc3ym7p="">Developer groups</a></li><li data-astro-cid-gxc3ym7p=""><a href="/student-ambassadors/" data-astro-cid-gxc3ym7p="">Student ambassadors</a></li> </ul></div> </div> <div class="ff-snav-ms-foot" data-astro-cid-gxc3ym7p="">  <a class="ff-btn ff-btn-primary ff-btn-ab" href="https://build.flutterflow.io/signin?returnTo=%2Fnew" data-astro-cid-gxc3ym7p="true" data-astro-cid-sghildrv="">Start building</a> <a class="ff-btn ff-btn-secondary ff-btn-ab" href="https://build.flutterflow.io/signin" data-astro-cid-gxc3ym7p="true" data-astro-cid-sghildrv="">Sign in</a> <p data-astro-cid-gxc3ym7p=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-gxc3ym7p=""></span>Already use FlutterFlow Studio? <a class="ff-lnk" href="https://app.flutterflow.io" data-astro-cid-gxc3ym7p="">Open Studio</a></p>  </div> </div> </dialog> <script type="module">const f=[...document.querySelectorAll("[data-ff-snav]")],u=()=>{const t=scrollY>2;document.documentElement.toggleAttribute("data-ff-snav-scrolled",t);for(const n of f)n.classList.toggle("ff-snav-scrolled",t)};u();addEventListener("scroll",u,{passive:!0});const p=[],v=[];for(const t of f){const n=[...t.querySelectorAll("[data-ff-snav-item]")],a=n.map(e=>e.querySelector("button")),d=(e,s)=>e.setAttribute("aria-expanded",String(s));n.forEach((e,s)=>{const o=a[s];o.addEventListener("click",()=>{const l=o.getAttribute("aria-expanded")!=="true";a.forEach(i=>d(i,!1)),d(o,l)}),e.addEventListener("focusout",l=>{const i=l.relatedTarget;i&&!e.contains(i)&&d(o,!1)})}),p.push(()=>n.forEach((e,s)=>{if(a[s].getAttribute("aria-expanded")!=="true")return;const o=e.contains(document.activeElement);d(a[s],!1),o&&a[s].focus()})),v.push(e=>n.forEach((s,o)=>{s.contains(e)||d(a[o],!1)}));const r=t.querySelector("[data-ff-snav-open]"),c=t.nextElementSibling;r.addEventListener("click",()=>{const e=t.getBoundingClientRect().top-(parseFloat(getComputedStyle(t).top)||0);e>0&&scrollTo({top:scrollY+e,behavior:"instant"}),c.style.setProperty("--ff-snav-ms-top",`${Math.max(0,t.getBoundingClientRect().top)}px`),c.showModal(),r.setAttribute("aria-expanded","true")}),c.querySelector("[data-ff-snav-ms-close]").addEventListener("click",()=>c.close()),c.addEventListener("close",()=>{r.setAttribute("aria-expanded","false"),(r.offsetParent?r:a[0]??r).focus()}),matchMedia("(width >= 821px)").addEventListener("change",e=>{e.matches&&c.open&&c.close()})}document.addEventListener("keydown",t=>{t.key==="Escape"&&p.forEach(n=>n())});document.addEventListener("click",t=>v.forEach(n=>n(t.target)));</script> <main id="main" tabindex="-1"> <article class="ff-art" data-astro-cid-v3wnudhb=""><div class="ff-wrap" data-astro-cid-v3wnudhb=""><a class="ff-art-bc-back" href="/blog/" data-astro-cid-v3wnudhb=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left ff-i" aria-hidden="true" data-astro-cid-v3wnudhb="true"> <path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path>  </svg>All posts</a><header class="ff-art-head" data-astro-cid-v3wnudhb=""><p class="ff-art-meta" data-astro-cid-v3wnudhb=""><time datetime="2022-05-06" data-astro-cid-v3wnudhb="">May 6, 2022</time><i data-astro-cid-v3wnudhb=""></i><a href="/author/souvik-biswas/" data-astro-cid-v3wnudhb="">Souvik Biswas</a><i data-astro-cid-v3wnudhb=""></i>19 min read<span class="ff-ptag ff-ptag-studio" data-astro-cid-v3wnudhb="true"><span class="ff-ptag-dot" aria-hidden="true"></span>FlutterFlow Studio</span></p><h1 class="ff-art-h" data-astro-cid-v3wnudhb="">Storing Data to the Cloud Using Firestore - To Do App #2</h1></header><div class="ff-art-body" data-astro-cid-v3wnudhb=""><p class="ff-art-lede" data-astro-cid-v3wnudhb="">Second part of the Todo blog series, exploring Cloud Firestore database integration with FlutterFlow</p><div class="ff-prose" data-astro-cid-v3wnudhb=""> <p><a href="https://firebase.google.com/docs/firestore?ref=blog.flutterflow.io"><strong>Cloud Firestore</strong></a> is a flexible and scalable NoSQL database to store and sync data across multiple devices in real-time. Another advantage of using this database is its built-in offline support for mobile and web apps. When your mobile device is offline, it stores the data generated by your app locally, and once the device comes back online, the data is synced with the cloud database.</p>
+<p>In this article, you will learn to set up and integrate the Firestore database with your FlutterFlow app. Once the Firestore integration is complete, we’ll progress with our ToDo app by adding functionality for storing, retrieving, updating, and deleting tasks.</p>
+<blockquote>
+<p><em><strong>Clone the starter project for this tutorial to follow along:</strong></em> <a href="https://app.flutterflow.io/project/todo-app-starter-2?ref=blog.flutterflow.io"><em><strong>Todo Starter 2</strong></em></a><em><strong>.</strong></em><a href="https://app.flutterflow.io/project/todo-app-starter-2?ref=blog.flutterflow.io"><em><strong>Todo Starter 2</strong></em></a><em><strong>.</strong></em></p>
+</blockquote>
+<p>This is the second part of the ToDo blog series, and if you haven’t yet read the first part, we recommended you go through it before continuing with this blog:</p>
+<p><a href="https://www.flutterflow.io/blog/firebase-authentication">https://www.flutterflow.io/blog/firebase-authentication</a></p>
+<h2 id="whats-a-nosql-database">What’s a NoSQL database?</h2>
+<p>Before going further into the Firestore database, let’s take a step back and look at the broader picture of databases.</p>
+<p>The two most important types of databases are:</p>
+<ul>
+<li><strong>SQL:</strong> A relational database system having data items with pre-defined relationships between them that are organized as a set of tables with columns and rows.</li>
+<li><strong>NoSQL:</strong> A non-relational database system having flexible data models, scalable horizontally, helps in fast queries and is easy for developers to work with.</li>
+</ul>
+<p>In <strong>Cloud Firestore</strong>, data is stored inside <em>documents</em> in key-value pair format called <em>fields</em>, which are organized into <em>collections</em>.</p>
+<p>The following video gives an excellent visual explanation of the differences between a SQL and a NoSQL database, along with a basic idea of the Firestore database structure:</p>
+<iframe allowfullscreen="" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/v_hR4K4auoQ" title="What is a NoSQL Database? How is Cloud Firestore structured? | Get to know Cloud Firestore #1"></iframe>
+<p>For anyone just starting with Firestore, it’s essential to understand the structure followed by this NoSQL database. The following section covers the data model of Firestore in detail.</p>
+<h2 id="firestore-data-model">Firestore data model</h2>
+<p>You might have already figured out that Firestore uses <em>collections</em>, <em>documents</em>, and <em>fields</em> for structuring its database.</p>
+<p>A <strong>Collection</strong> can contain one or more <em>documents</em>. For example, a <strong><code>users</code></strong> collection can contain various users, each represented by a document.</p>
+<p><img src="/images/cdn/9e234c115bd6.png" alt="A collection called &#34;users&#34; containing three documents: user1, user2, and user3"></p>
+<p><strong>Document</strong> can contain <em>fields</em> and <em>sub-collections</em>. For example, a <strong><code>user1</code></strong> document can contain various user details as fields. Let’s say you also want to store hobbies for each user along with the date it’s added, then the best way is to create a sub-collection called <strong><code>hobbies</code></strong> and store each of the hobbies as separate documents.</p>
+<p><img src="/images/cdn/5877030652db.png" alt="A document called &#34;user1&#34; containing two fields: name and country, and another document called &#34;user2&#34; containing two fields: name and country along with a sub-collection called &#34;hobbies&#34;"></p>
+<p><strong>Field</strong> is basically a key-value pair where you can set the <em>key</em> as the field name, and the value can have a data type such as string, number, boolean, etc.</p>
+<p>Learn more about the supported data types in Cloud Firestore from <a href="https://firebase.google.com/docs/firestore/manage-data/data-types?ref=blog.flutterflow.io"><strong>here</strong></a>.</p>
+<p><img src="/images/cdn/8c86763928db.png" alt="Three fields (name, country, and age) along with their values, showing the key-value pair structure"></p>
+<h2 id="setting-up-firestore">Setting up Firestore</h2>
+<p>With the basics out of the way, you are ready to start setting up Firestore.</p>
+<p>Follow the steps below to set up Firestore:</p>
+<p>1. Navigate to the <a href="https://console.firebase.google.com/?ref=blog.flutterflow.io"><strong>Firebase Console</strong></a>.</p>
+<p>2. Select <strong>Firestore Database</strong> from the left menu and click <strong>Create database</strong>.</p>
+<p><img src="/images/cdn/bbe5607b895e.png" alt="Firestore Database page opened from Firebase console"></p>
+<p>3. In the dialog, choose <strong>Start in test mode</strong> option and click <strong>Next</strong>.</p>
+<p>⚠️</p>
+<p>This is a fully open mode; as you can see, the warning message tells that anyone can view, edit and delete all data from the database. It’s <strong>not recommended</strong> to use this mode and should be updated before deploying the app to production.</p>
+<p><img src="/images/cdn/c85d5feeecc3.png" alt="Create database dialog (step 1), choose the type of security rule"></p>
+<p><strong>NOTE:</strong> There’s a dedicated section on security rules later in this article, and at that time, we’ll update the security rules. That being said, you won’t need to go into too much detail of security rules as FlutterFlow handles most of them for you using a simple interface.</p>
+<p>4. Select a <strong>location</strong> from the dropdown options and click <strong>Enable</strong>.</p>
+<p><img src="/images/cdn/80f0b7a56b9e.png" alt="Create database dialog (step 2), set Cloud Firestore location"></p>
+<p>Check out <a href="https://firebase.google.com/docs/projects/locations?ref=blog.flutterflow.io"><strong>this link</strong></a> for more information about Firebase locations.</p>
+<h2 id="creating-collections">Creating Collections</h2>
+<p>You can directly create and structure your Firestore database from FlutterFlow. For the ToDo app, you would need two collections:</p>
+<ul>
+<li><strong><code>users</code></strong>: For storing general user information.</li>
+<li><strong><code>todos</code></strong>: For storing the todos of each user.</li>
+</ul>
+<h2 id="users-collection">Users Collection</h2>
+<p>Having a <strong><code>users</code></strong> collection is a basic necessity for most apps, so there’s a simple way to auto-generate some of the fields you may require.</p>
+<p>If you want to follow along, clone the starter project:</p>
+<ol>
+<li><strong>Login</strong> to FlutterFlow <a href="https://app.flutterflow.io/?ref=blog.flutterflow.io"><strong>here</strong></a>. If you don’t have an account, you can create one easily from the same page.</li>
+<li>Open the <a href="https://app.flutterflow.io/project/todo-app-starter-2?ref=blog.flutterflow.io"><strong>starter project</strong></a> for this tutorial and clone the project.</li>
+</ol>
+<p>⚠️</p>
+<p>The starter project requires you to connect your Firebase project. If you are not sure how to do it, follow the steps <a href="/blog/firebase-authentication/#connecting-with-flutterflow"><strong>here</strong></a> (just skip the cloning steps there).</p>
+<p>Follow the steps below to generate the <strong><code>users</code></strong> collection:</p>
+<p>1. Navigate to your FlutterFlow project, select <strong>Firestore</strong> from the left menu, and click <strong>+ Create Collection</strong>.</p>
+<p><img src="/images/cdn/8b9737c099db.png" alt="Firestore page inside FlutterFlow with the Create Collection button"></p>
+<p>2. In the dialog box, enter the <strong>name</strong> of the collection as <strong><code>users</code></strong>. Click <strong>Create</strong>.</p>
+<p><img src="/images/cdn/3e07671e44eb.png" alt="Create Collection dialog with &#34;users&#34; as the collection name"></p>
+<p>3. Go to the <strong>Settings</strong> tab, and enable the <strong>Users Collection</strong> using the toggle. From the <strong>Collection</strong> dropdown, choose <strong><code>users</code></strong>.</p>
+<p><img src="/images/cdn/fcbe98a5567e.png" alt="Firestore settings page inside FlutterFlow, enabling the users collection using a toggle"></p>
+<p>4. A dialog box will pop up for whether you want to add the necessary fields to the <strong><code>users</code></strong> collection, click <strong>Yes</strong>.</p>
+<p><img src="/images/cdn/53e882f58091.png" alt="Dialog box for wherther the necessary fields for the users collection should be generated automatically"></p>
+<p>5. If you go back to the <strong>Collections</strong> tab, you will notice that a few fields have been added to the <strong><code>users</code></strong> collection.</p>
+<p><img src="/images/cdn/6e640763a29f.png" alt="Users collection wih the generated fields"></p>
+<p>6. To create a new field, click the ”<strong>+ Add Field</strong>” button.</p>
+<p><img src="/images/cdn/2ea3a119b9e8.png" alt="Add field button on users collection"></p>
+<p>7. Enter the <strong>field name</strong>, <strong>data type</strong>, and <strong>field type</strong> (single element or list). Click <strong>Create</strong>.</p>
+<p><img src="/images/cdn/731d17f2d7df.png" alt="Dialog box for adding a field to the users collection"></p>
+<p>8. You can remove any fields you don’t need by clicking on the remove icon beside the field. Click <strong>Delete</strong> in the dialog box.</p>
+<p><img src="/images/cdn/2366f63c4007.png" alt="Delete button beside a collection field "></p>
+<h2 id="todos-collection">Todos Collection</h2>
+<p>Let’s add the <strong><code>todos</code></strong> collection that would be used for storing data related to each of the to-do items that the users can add, edit, or remove.</p>
+<p>This collection will consist of the following fields (the data types are written in braces):</p>
+<ul>
+<li><strong><code>title</code></strong> (String): store the name of to-do task</li>
+<li><strong><code>description</code></strong> (String): description of to-do task</li>
+<li><strong><code>timestamp</code></strong> (Timestamp): creation date of the to-do task</li>
+<li><strong><code>is_done</code></strong> (Boolean): whether the to-do task is complete</li>
+<li><strong><code>uid</code></strong> (String): unique identifier of a user</li>
+</ul>
+<p>Follow the steps below to create the <strong><code>todos</code></strong> collection:</p>
+<p>. Click on the ”<strong>+</strong>” button present beside the Collections.</p>
+<p><img src="/images/cdn/2497c8cc1122.png" alt="Add button beside the Collections text inside FlutterFlow"></p>
+<p>2. Enter the <strong>collection name</strong> and click <strong>Create</strong>.</p>
+<p><img src="/images/cdn/dcb448a4f297.png" alt="Create collection dialog with todos as the collection name"></p>
+<p>3. Once the collection is created, you can add fields to it by clicking ”<strong>+ Add Field</strong>”.</p>
+<p><img src="/images/cdn/6d559dbeb40d.png" alt="Add Field button inside the todos collection"></p>
+<p>4. Enter the <strong>field name</strong>, <strong>data type</strong>, and <strong>field type</strong>. Click <strong>Create</strong>.</p>
+<p><img src="/images/cdn/1acbf8bac059.png" alt="Dialog box for adding a field to the todos collection"></p>
+<p>5. Follow similar steps for adding the rest of the fields.</p>
+<p>Once all the fields are added to the <strong><code>todos</code></strong> collection, it would look like this:</p>
+<p><img src="/images/cdn/87acbea1d1d9.png" alt="todos collection with all the required fields added"></p>
+<h2 id="adding-security-rules">Adding security rules</h2>
+<p>Now that you have the basic structure of the two collections ready, it’s time to look at the <a href="https://firebase.google.com/docs/rules?ref=blog.flutterflow.io"><strong>Firebase Security Rules</strong></a>.</p>
+<p>⚠️</p>
+<p><strong>Disclaimer:</strong> Don’t skip this section. You should ALWAYS configure the security rules before starting to use the database.</p>
+<p>The security rules help to keep your Firebase data secure from malicious users. Firebase allows you to set security rules on <em>Cloud Firestore</em>, <em>Firebase Realtime Database</em>, and <em>Cloud Storage</em>.</p>
+<p>Today we’ll only go into the details of the security rules of <strong>Cloud Firestore</strong>.</p>
+<p>FlutterFlow makes it a lot easier to manage your Firestore security rules. You can access it by going to the <strong>Firestore</strong> page &gt; <strong>Settings</strong> tab &gt; <strong>Firestore Rules</strong>.</p>
+<p><img src="/images/cdn/a935fea0f566.png" alt/=""></p>
+<p>Every operation (or database request) done on the Cloud Firestore is evaluated against your security rules before reading or writing any data. You can configure the security rules for the following four types of operations:</p>
+<ul>
+<li><strong>Create:</strong> users having access can create a new document inside a collection</li>
+<li><strong>Read:</strong> users having access can read documents of a collection</li>
+<li><strong>Write:</strong> users having access can update a document of a collection</li>
+<li><strong>Delete:</strong> users having access can delete a document of a collection</li>
+</ul>
+<p><strong>CRUD</strong> (create, read, update and delete) is the acronym used to refer to these four basic database storage operations.</p>
+<p>In FlutterFlow, you can select among the following five levels of access for your data:</p>
+<ul>
+<li><strong>Everyone:</strong> Allows both authenticated/unauthenticated users to perform the operation</li>
+<li><strong>No One:</strong> Allows none of the users to perform the operation</li>
+<li><strong>Authenticated Users:</strong> Allows only the authenticated users to perform the operation</li>
+<li><strong>Tagged Users:</strong> Allows users to perform the operation if they have been tagged in the document. To use this rule, you need to select a field from the document representing that user.</li>
+<li><strong>Users Collection:</strong> (can only be set on the operations of <em>Users Collection</em>) Allows users having <strong><code>uid</code></strong> (unique user identifier) same as the <strong><code>id</code></strong> of the document to perform the operation.</li>
+</ul>
+<p>The default rules that FlutterFlow sets on any new collection are as follows:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Operation</th><th>Access</th><th>Description</th></tr></thead><tbody><tr><td>Create</td><td>Everyone</td><td>Any user can create a document</td></tr><tr><td>Read</td><td>Everyone</td><td>Any user can read a document</td></tr><tr><td>Write</td><td>No One</td><td>None of the users can write to a document</td></tr><tr><td>Delete</td><td>No One</td><td>None of the users can delete a document</td></tr></tbody></table>
+<p>As there are predefined rules for the <strong>users</strong> collection, you can just set the access level of all the four types of operations as <strong>Users Collection</strong>.</p>
+<p>Let’s take a look at what should be the ideal security rules for the <strong>todos</strong> collection.</p>
+<ul>
+<li>Any <strong>authenticated users</strong> should be able to <strong>create</strong> a to-do task.</li>
+<li>Only <strong>tagged users</strong> (having the same <strong><code>uid</code></strong> with which they are authenticated) should be able to <strong>read</strong>, <strong>update (write)</strong>, or <strong>delete</strong> a to-do task.</li>
+</ul>
+<p>These rules will allow any authenticated user to create a to-do task, but only the user who has created that task would be able to read, update or delete it. <strong>So this will prevent any task created by a user from being read or modified by a different user.</strong></p>
+<p>According to the above points, you can set the following security rules to the <strong>todos</strong> collection:</p>
+<ul>
+<li>Create   –&gt; <strong>Authenticated Users</strong></li>
+<li>Read     –&gt; <strong>Tagged Users</strong> (with <strong><code>uid</code></strong> field)</li>
+<li>Write     –&gt; <strong>Tagged Users</strong> (with <strong><code>uid</code></strong> field)</li>
+<li>Delete   –&gt; <strong>Tagged Users</strong> (with <strong><code>uid</code></strong> field)</li>
+</ul>
+<p>On selecting the <strong>Tagged Users</strong> rule, a dialog will appear where you have to choose the field (whose value will be used for verifying the tagged user). Choose <strong>uid</strong> as the field and click <strong>Save Changes</strong>.</p>
+<p><img src="/images/cdn/f923c048ae4b.png" alt/=""></p>
+<p>Once you have the security rules defined, you can also see a preview of the rules. Now, click on the <strong>Deploy</strong> button to upload the rules to Firestore.</p>
+<p><img src="/images/cdn/b3fddd417e71.png" alt/=""></p>
+<p>This will open up a dialog showing the updated security rules that you are going to upload. Click <strong>Deploy Now</strong>.</p>
+<p><img src="/images/cdn/2471ceccd053.png" alt/=""></p>
+<p>Notice that the following part is still present in the security rules:</p>
+<p>This was added earlier as we were using the database in test mode, but now you won’t need this part. Remove this rule by following the steps below:</p>
+<ol>
+<li>Go to your <strong>Firebase project</strong>.</li>
+<li>Select <strong>Firestore Database</strong> from the left menu.</li>
+<li>Go to the <strong>Rules</strong> tab.</li>
+<li>Remove that part from the rules, and click <strong>Publish</strong>.</li>
+</ol>
+<p><img src="/images/cdn/587271931412.gif" alt/=""></p>
+<h2 id="ui-overview">UI Overview</h2>
+<p>We’ll continue using the interface of the <em>RobinDo</em> app, which you can find among the sample apps of FlutterFlow.</p>
+<p>In the previous article, we haven’t completed the interface of the <strong>MyTasksScreen</strong>, so we’ll start with that.</p>
+<p>Our focus would be mainly on implementing the CRUD database operations in the app, so we won’t go deep into creating the UI.</p>
+<h2 id="mytasksscreen">MyTasksScreen</h2>
+<p>Previously, we had created this page to just contain the <strong>Log Out</strong> button in order to demonstrate the logging out action of authentication.</p>
+<p><img src="/images/cdn/5d6ad8d2c231.png" alt/=""></p>
+<p>Update this page to display the list of all <strong>tasks</strong> added by the user (reading from the database):</p>
+<p><img src="/images/cdn/d53f9a24c576.png" alt/=""></p>
+<h2 id="completedtasksscreen">CompletedTasksScreen</h2>
+<p>Displays a list of all the tasks that the user has already completed (reading from the database).</p>
+<p><img src="/images/cdn/6b7972e08478.png" alt/=""></p>
+<h2 id="createtaskscreen">CreateTaskScreen</h2>
+<p>Users can <strong>create</strong> or add a new task from this page by entering the required details.</p>
+<p><img src="/images/cdn/15708a70c6c8.png" alt/=""></p>
+<h2 id="taskdetailsscreen">TaskDetailsScreen</h2>
+<p>Displays the details about a task when a task item is selected from the list. This page will have an option to <strong>update</strong> or <strong>remove</strong> the task from the to-do list.</p>
+<p><img src="/images/cdn/559da127335f.png" alt/=""></p>
+<h2 id="edittaskcomponent">EditTaskComponent</h2>
+<p>This component will be displayed as a bottom sheet when the <strong>edit</strong> button is tapped on the <strong>TaskDetailsScreen</strong>. You can edit the details of a to-do task using this component.</p>
+<p><img src="/images/cdn/0e7f1f6a8532.png" alt/=""></p>
+<h2 id="myprofilescreen">MyProfileScreen</h2>
+<p>The <strong>Log Out</strong> button can be shifted to this page. It will also have a button for going to the <strong>ProfileEditScreen</strong>.</p>
+<p><img src="/images/cdn/cf0cb1d71895.png" alt/=""></p>
+<h2 id="profileeditscreen">ProfileEditScreen</h2>
+<p>Users can modify their current profile details from this page.</p>
+<p><img src="/images/cdn/8e0c76ffb987.png" alt/=""></p>
+<h2 id="adding-navbar">Adding NavBar</h2>
+<p>Let’s add a bottom navigation bar (or, <a href="https://docs.flutterflow.io/settings-and-integrations/general-settings/navbar-and-appbar/navbar?ref=blog.flutterflow.io"><strong>NavBar</strong></a>) to facilitate quick navigation between the top-level views of the app. We’ll add the NavBar to the following pages:</p>
+<ul>
+<li>MyTasksScreen</li>
+<li>CompletedTasksScreen</li>
+<li>MyProfileScreen</li>
+</ul>
+<p>Follow the steps below to add a NavBar:</p>
+<ol>
+<li>Go to a <strong>page</strong> on which you want to add the NavBar.</li>
+<li>Enable the <strong>Show on Nav Bar</strong> toggle.</li>
+<li>Enter a <strong>Label</strong> text using which you can easily identify the item.</li>
+<li>Choose a <strong>Nav Bar Icon</strong>.</li>
+<li>Enter the <strong>Icon Size</strong> to be <strong><code>32</code></strong>.</li>
+<li>Repeat the above steps for adding the NavBar on other pages as well. <strong>You should have the NavBar enabled on at least two pages.</strong></li>
+<li>Navigate to the <strong>Settings and Integrations</strong> page from the left menu.</li>
+<li>Select <strong>NavBar &amp; AppBar</strong> under <strong>General</strong>.</li>
+<li>Enable <strong>Show NavBar</strong> toggle.</li>
+<li>You can set a <strong>Nav Bar Style</strong> and customize various properties of it from this page.</li>
+</ol>
+<p><img src="/images/cdn/5d3d138e8f37.gif" alt/=""></p>
+<h2 id="performing-crud-operations">Performing CRUD operations</h2>
+<p>There are three types of <strong>Database Actions</strong> that can be used to <em><strong>create</strong></em>, <em><strong>update</strong></em>, or <em><strong>delete</strong></em> a record from a Firestore Collection.</p>
+<p>Data can be <em><strong>read</strong></em> from the database by defining a <a href="https://docs.flutterflow.io/actions-and-api-calls/backend-query?ref=blog.flutterflow.io"><strong>Backend Query</strong></a>. You can either retrieve all the documents present inside a collection or just retrieve the data present inside a single document.</p>
+<p>This section will give you a walkthrough of performing the CRUD operations on the <strong>users</strong> and <strong>todos</strong> collection.</p>
+<h2 id="creating-user-document">Creating user document</h2>
+<p>In the last article of this series, we discussed how to define a user authentication flow, but we didn’t store any of the user details inside the Firestore database. While building most apps, you need to store the general user details in order to create a good profile for them.</p>
+<h3 id="using-email-sign-up">Using Email sign up</h3>
+<p>To store user details while registering using email/password, you must manually specify the values for the fields you want to store in the users collection.</p>
+<p>Follow the steps below:</p>
+<ol>
+<li>Navigate to the <strong>RegisterScreen</strong> page.</li>
+<li>Select the <strong>Create Account</strong> button.</li>
+<li>Go to the <strong>Actions</strong> tab.</li>
+<li>Under the <strong>Auth Create Account</strong> action, enable <strong>Create User Document</strong> using the toggle.</li>
+<li>Select the <strong>users</strong> collection from the dropdown under <strong>Collection</strong>.</li>
+<li>Set the field values for <strong><code>email</code></strong>, <strong><code>display_name</code></strong>, and <strong><code>created_time</code></strong>.<br>
+Use the <strong>Value Source</strong> as <em><strong>From Variable</strong></em>, select the <strong>Source</strong> as <em><strong>Widget State</strong></em>, and choose the respective <em><strong>TextField</strong></em> from the <strong>Available Options</strong> dropdown.</li>
+</ol>
+<p><img src="/images/cdn/c2ccdfa51ba2.gif" alt/=""></p>
+<h3 id="using-google-provider">Using Google provider</h3>
+<p>While using <strong>Auth Login Action</strong> with the Google provider, just enable the <strong>Create User Document</strong> toggle. It will automatically assign field values of the <strong>users</strong> collection (you don’t need to specify them manually).</p>
+<ol>
+<li>Navigate to the <strong>SplashScreen</strong> page.</li>
+<li>Select the <strong>Sign in with Google</strong> button.</li>
+<li>Go to the <strong>Actions</strong> tab.</li>
+<li>Enable the <strong>Create User Document</strong> toggle.</li>
+<li>Select the <strong>users</strong> collection from the dropdown.</li>
+<li>On the dialog box, click <strong>Yes</strong>.</li>
+</ol>
+<p><img src="/images/cdn/0c1c35700865.gif" alt/=""></p>
+<h2 id="reading-user-details">Reading user details</h2>
+<p>Backend Query can be used for retrieving the details from the <strong>users</strong> collection. We’ll need to add the backend query on the <strong>MyProfileScreen</strong> page.</p>
+<ol>
+<li>Navigate to the <strong>MyProfileScreen</strong> page.</li>
+<li>We want the query results to be available throughout the page, so you don’t need to select any particular widget. Just go to the <strong>Backend Query</strong> tab from the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Select the <strong>Query Type</strong> as <em><strong>Query Collection</strong></em>.</li>
+<li>Select the <em><strong>users</strong></em> collection from the <strong>Collection</strong> dropdown.</li>
+<li>In the next <strong>Query Type</strong> dropdown, choose <em><strong>Single Document</strong></em>.</li>
+<li><strong>Disable</strong> the <strong>Hide Widget If No Match</strong> because we don’t want an empty widget if the user’s display name is not found (also, as it’s part of the registration, so it should always be available).</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><img src="/images/cdn/406392951738.gif" alt/=""></p>
+<p><strong>Backend queries</strong> get triggered as soon as a page/widget loads on which it is defined. You can set only one backend query on a particular widget.</p>
+<p>Once this query is defined, you should have access to the <strong>users</strong> collection data throughout the page.</p>
+<p>To display the name of the user from the query result, follow the steps below:</p>
+<ol>
+<li>Select the user name <strong>Text</strong> widget.</li>
+<li>Click <strong>Set from Variable</strong> on the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Choose the <strong>Source</strong> as <em><strong>users Record</strong></em>.</li>
+<li>Under <strong>Available Options</strong>, select <em><strong>display_name</strong></em>.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><img src="/images/cdn/b219cb492dcd.gif" alt/=""></p>
+<p>You would also want to pass the record data over to the <strong>ProfileEditScreen</strong> as you need access to the record for performing an <em>Update Record</em> action.</p>
+<p><strong>TIP:</strong> It’s always recommended to pass a record data instead of having the same Firebase query again on the page you are navigating to. This helps in reducing the number of database queries per user.</p>
+<p>Follow the steps below to pass the record to <em>ProfileEditScreen</em> from <em>MyProfileScreen</em>:</p>
+<ol>
+<li>Navigate to the <strong>ProfileEditScreen</strong>.</li>
+<li>Click on the edit button beside <strong>Parameters</strong> and click <strong>+ Add Parameter</strong>.</li>
+<li>Enter the <strong>Parameter Name</strong> as <em><strong>profileData</strong></em>*.*</li>
+<li>Set the <strong>Type</strong> as <em><strong>RecordReference</strong></em> and choose <em><strong>users</strong></em> from the <strong>Record Type</strong> dropdown.</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Navigate back to the <strong>MyProfileScreen</strong>.</li>
+<li>Go to the <strong>Navigate</strong> action defined on the Edit Profile Row.</li>
+<li>Click <strong>Pass</strong> under <em>Parameters</em>.</li>
+<li>Choose <em><strong>profileData</strong></em> as the <strong>Parameter</strong> from the dropdown.</li>
+<li>Select the <strong>Source</strong> as <em><strong>users Record</strong></em>.</li>
+<li>Under <strong>Available Options</strong>, choose <em><strong>reference</strong></em>.</li>
+</ol>
+<p><img src="/images/cdn/90f230053b95.gif" alt/=""></p>
+<h2 id="editing-user-details">Editing user details</h2>
+<p>We have already created the interface of the <strong>ProfileEditScreen</strong> and passed the <strong>users</strong> record reference to this page. Let’s add the functionality of letting users edit (or update) their details present on the database.</p>
+<p>Follow the steps below:</p>
+<ol>
+<li>Select the <strong>Save Changes</strong> button.</li>
+<li>Go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Click <strong>+ Add Action</strong>.</li>
+<li>Make sure <em><strong>On Tap</strong></em> is selected under the <strong>Type of Action</strong>.</li>
+<li>Select <em><strong>Update Record</strong></em> under <strong>Database</strong>.</li>
+<li>Choose the <strong>Source</strong> of the reference as <em><strong>profileData</strong></em>.</li>
+<li>Click <strong>+ Add Field</strong> and set the values for <em><strong>email</strong></em> and <em><strong>display_name</strong></em> fields.<br>
+Select the <strong>Value Source</strong> as <em><strong>From Variable</strong></em>, select <strong>Source</strong> as <em><strong>Widget State</strong></em>, and choose the respective <em><strong>TextField</strong></em> under <strong>Available Options</strong>.</li>
+</ol>
+<p><img src="/images/cdn/58f4e069e257.gif" alt/=""></p>
+<h2 id="adding-a-todo-task">Adding a todo task</h2>
+<p>For creating a new task record on the database, you have to use the <strong>Create Record</strong> action. Before adding this action, you need to define a <strong>Date/Time Picker</strong> action on the <strong>CreateTaskScreen</strong> to let the users select a task completion deadline.</p>
+<p>To add the <strong>Date/Time Picker</strong> action, follow the steps below:</p>
+<ol>
+<li>Select the <strong>widget</strong> on which to set the action.</li>
+<li>Go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Click <strong>+ Add Action</strong>.</li>
+<li>Make sure <em><strong>On Tap</strong></em> is selected under the <strong>Type of Action</strong>.</li>
+<li>Select the <strong>Date/Time Picker</strong> action.</li>
+<li>Choose the <strong>Picker Type</strong> as <em><strong>Date</strong></em>.</li>
+<li>Select the <strong>Default Date</strong> from a variable, choose the <strong>Source</strong> as <em><strong>Global Properties</strong></em> and select <em><strong>Current Timestamp</strong></em> under <strong>Available Options</strong>.</li>
+<li>To display the selected date, select the <strong>Text</strong> widget.</li>
+<li>From the <em>Properties Panel</em>, click <strong>Set from Variable</strong>.</li>
+<li>Choose the <strong>Source</strong> as <em><strong>Widget State</strong></em>, under <strong>Available Options</strong> choose <em><strong>Date Picked</strong></em>, and select the <strong>Date Format Option</strong> as <em><strong>MMMMEEEEd</strong></em>.</li>
+<li>In the <strong>Default Value</strong> field, enter “<em><strong>Select Date</strong></em>” (which will be displayed when the user does not yet pick the date).</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><img src="/images/cdn/4f7a5f65bc6e.gif" alt/=""></p>
+<p>For creating a new task record on the database, follow the steps below:</p>
+<ol>
+<li>Navigate to the <strong>CreateTaskScreen</strong>.</li>
+<li>Select the <strong>Create Task</strong> button.</li>
+<li>Go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Click <strong>+ Add Action</strong>.</li>
+<li>Make sure <em><strong>On Tap</strong></em> is selected under the <strong>Type of Action</strong>.</li>
+<li>Select <em><strong>Create Record</strong></em> under <strong>Database</strong>.</li>
+<li>Choose the action as <em><strong>Create Record</strong></em> under <strong>Database</strong>.</li>
+<li>Select the <strong>Collection</strong> as <em><strong>todos</strong></em>.</li>
+<li>Click <strong>+ Add Field</strong> to add new fields to this record.</li>
+<li>Choose the value of the <em><strong>title</strong></em> and <em><strong>description</strong></em> from variable with the <strong>Source</strong> as <em><strong>Widget State</strong></em>*,* and under <strong>Available Options</strong> choose the respective <em><strong>TextFields</strong></em>.</li>
+<li>Choose the value of the <em><strong>timestamp</strong></em> field from variable with <strong>Source</strong> as <em><strong>Widget State</strong></em>*,* and under <strong>Available Options</strong> choose <em><strong>Date Picked</strong></em>.</li>
+<li>Choose the value of the <em><strong>is_done</strong></em> field from a specific value with the <strong>Value</strong> as <em><strong>False</strong></em>.</li>
+<li>Choose the value of the <em><strong>uid</strong></em> field from variable with <strong>Source</strong> as <em><strong>Authenticated User</strong></em>*,* and under <strong>Available Options</strong> choose <em><strong>User ID</strong></em>.</li>
+</ol>
+<p><img src="/images/cdn/899bb7a6c3c1.gif" alt/=""></p>
+<p>Add another action after the Create Record action to <strong>Navigate</strong> the back from this page:</p>
+<ol>
+<li>Select the <strong>Create Task</strong> button.</li>
+<li>Go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Open using the <strong>Action Flow Editor</strong>.</li>
+<li>Click on the ”<strong>+</strong>” button and select <strong>Add Action</strong>.</li>
+<li>Choose the action as <strong>Navigate Back</strong>.</li>
+<li>Click <strong>Close</strong>.</li>
+</ol>
+<p><img src="/images/cdn/db226ac5bf34.gif" alt/=""></p>
+<h2 id="displaying-todo-task-list">Displaying todo task list</h2>
+<p>You can quickly generate a list of widgets from the documents returned from a collection query. We’ll also look at how you can apply filtering and ordering to the results.</p>
+<p>Follow the steps below:</p>
+<ol>
+<li>Navigate to the <strong>MyTasksScreen</strong>.</li>
+<li>Select the <strong>Column</strong> widget containing the task tile widgets.</li>
+<li>Go to the <strong>Backend Query</strong> tab from the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Select the <strong>Query Type</strong> as <em><strong>Query Collection</strong></em>.</li>
+<li>Choose the <strong>Collection</strong> as <em><strong>todos</strong></em>.</li>
+<li>Select the <strong>Query Type</strong> as <em><strong>List of Documents</strong></em>.</li>
+<li>We only want to show the tasks created by the currently logged-in user. You can filter the results according to the <strong>uid</strong>. Click <strong>+ Filter</strong> button.</li>
+<li>Choose the <strong>Field Name</strong> as <em><strong>uid</strong></em>.</li>
+<li>Select the <strong>Relation</strong> as <em><strong>Equal To</strong></em>.</li>
+<li>Choose the <strong>Value Source</strong> as <em><strong>From Variable</strong></em>, select <strong>Source</strong> as <em><strong>Authenticated User</strong></em>, and under <strong>Available Options</strong> choose <em><strong>User ID</strong></em>.</li>
+<li>We also want to apply an ordering on the results. Click <strong>+ Order By</strong> button.</li>
+<li>Select the <strong>Field Name</strong> as <em><strong>timestamp</strong></em> and choose the <strong>Order</strong> as <em><strong>Increasing</strong></em>.</li>
+<li>Click <strong>Save</strong>.</li>
+<li>On the dialog box that appears, click <strong>Ok</strong>. This will generate the children dynamically inside the Column.</li>
+</ol>
+<p><img src="/images/cdn/255253cd92d1.gif" alt/=""></p>
+<p>After defining this query, you might see an issue pop up saying, “<strong>Firebase indexes not properly deployed for your project</strong>”.</p>
+<p>Just click on that issue; it will take you to the <strong>Firestore Settings</strong> page. Scroll down to the <strong>Firestore Indexes</strong> section and click the <strong>Deploy</strong> button. You need to deploy the indexes while using ordering and filtering on the Firestore results.</p>
+<p><img src="/images/cdn/f7b44d3e9c3d.gif" alt/=""></p>
+<p>To display the data retrieved from the query:</p>
+<ol>
+<li>Select the <strong>widget</strong> in which you want to use the data.</li>
+<li>Under Properties Panel, click <strong>Set from Variable</strong> or <strong>Tie to Variable</strong>.</li>
+<li>Choose the <strong>Source</strong> as <em><strong>todos Record</strong></em> and select the respective field name under <strong>Available Options.</strong></li>
+<li>Click <strong>Save</strong>.</li>
+<li>Repeat these steps for setting the data on other widgets as well.</li>
+</ol>
+<p><img src="/images/cdn/600d7e36dfbd.gif" alt/=""></p>
+<p>We also need the record data on the <strong>TaskDetailsScreen</strong>. Let’s pass it inside the <strong>Navigate</strong> action as a parameter:</p>
+<ol>
+<li>Select the <strong>widget</strong> on which you want to define the Navigate action.</li>
+<li>From the <strong>Properties Panel</strong>, go to the <strong>Actions</strong> tab.</li>
+<li>Select <strong>Navigate</strong> action to the <strong>TaskDetailsScreen</strong>.</li>
+<li>Click <strong>+ Add Action</strong>.</li>
+<li>Make sure <em><strong>On Tap</strong></em> is selected under the <strong>Type of Action</strong>.</li>
+<li>Under <strong>Parameters</strong>, click <strong>+ Define</strong>. This will navigate you to the <strong>TaskDetailsScreen</strong>, from where you can define a new page parameter.</li>
+<li>Click <strong>+ Add Parameter</strong>.</li>
+<li>Enter the <strong>Parameter Name</strong> as <em><strong>taskData</strong></em>.</li>
+<li>Set the <strong>Type</strong> as <em><strong>RecordReference</strong></em> and choose <em><strong>todos</strong></em> from the <strong>Record Type</strong> dropdown.</li>
+<li>Click <strong>Save</strong>. It will navigate you back to where you were defining the action.</li>
+<li>Click <strong>Pass</strong> under <em>Parameters</em>.</li>
+<li>Choose <em><strong>taskData</strong></em> as the <strong>Parameter</strong> from the dropdown.</li>
+<li>Select the <strong>Source</strong> as <strong>todos <em>Record</em></strong>.</li>
+<li>Under <strong>Available Options</strong>, choose <em><strong>reference</strong></em>.</li>
+</ol>
+<p><img src="/images/cdn/64076636208f.gif" alt/=""></p>
+<p>To display the to-do task fields on the <strong>TaskDetailsScreen</strong>, you must pass each of them as a parameter.</p>
+<p>Define three more parameters on the <em>TaskDetailsScreen</em> and pass their respective values from the <em>MyTasksScreen</em>:</p>
+<ul>
+<li><strong>taskTitle</strong> (String)</li>
+<li><strong>taskDescription</strong> (String)</li>
+<li><strong>taskDate</strong> (String)</li>
+</ul>
+<p><strong>TIP:</strong> Here, we have passed each of the <strong>required fields</strong> and the <strong>record reference</strong> separately. But there’s an even better way to get access to all these by just passing the entire <strong>record</strong> (gives access to all the fields and as well as to its reference). Continue reading to learn how to define it.</p>
+<p>Similarly, tasks can also be displayed on the <strong>CompletedTasksScreen</strong>. Here, you need a second filter to filter the data according to the field <em><strong>is_done</strong></em> and show only those with the value <strong>True</strong>.</p>
+<p><img src="/images/cdn/b16667a41cb8.gif" alt/=""></p>
+<p>After defining this query on the <em>CompletedTasksScreen</em>, you would again need to deploy the updated Firebase indexes.</p>
+<h2 id="updating-a-todo-task">Updating a todo task</h2>
+<p>There are two places where we need to perform an Update Record action:</p>
+<ul>
+<li>On <em>TaskDetailsScreen</em>, <strong>Mark As Complete</strong> button should update the <strong><code>is_done</code></strong> field of a task to <strong>True</strong>.</li>
+<li>On <em>EditTaskComponent</em>, the Update Task button should update the <strong>title</strong>, <strong>description</strong>, and <strong>date</strong> of the task to the new ones that are specified in the TextFields.</li>
+</ul>
+<p>To update a task state to complete, follow the steps below:</p>
+<ol>
+<li>Select the <strong>Mark As Complete</strong> button present on the <em>TaskDetailsScreen</em>.</li>
+<li>Go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Click <strong>+ Add Action</strong>.</li>
+<li>Make sure <em><strong>On Tap</strong></em> is selected under the <strong>Type of Action</strong>.</li>
+<li>Select <strong>Update Record</strong> under <em>Database</em> actions.</li>
+<li>Choose the <strong>Source</strong> of reference as <em><strong>taskData</strong></em>.</li>
+<li>Click <strong>+ Add Field</strong>.</li>
+<li>Set the field value of <em><strong>is_done</strong></em> from a specific value to <strong>True</strong>.</li>
+</ol>
+<p><img src="/images/cdn/abe25b683c6e.gif" alt/=""></p>
+<p>There’s a more efficient way of passing records between pages of the app. Follow the steps below to refactor:</p>
+<ol>
+<li><strong>Remove</strong> all the parameters defined on the <em>TaskDetailsScreen</em>.</li>
+<li>Just specify a single parameter called <em><strong>taskData</strong></em> with the <strong>Type</strong> set as <em><strong>Record</strong></em>, and <strong>Record Type</strong> as <em><strong>todos</strong></em>. Click <strong>Save</strong>.</li>
+<li>Update the <strong>Set from Variable</strong> of the widgets to use the new <em>Source</em>, select the respective field from the <em>Available Options</em>, and click <strong>Save</strong>.</li>
+<li>Update the <em>Source</em> of the <strong>Update Record</strong> action and use <strong>reference</strong> under <em>Available Options</em>.</li>
+<li>Now, go to the <strong>MyTasksScreen</strong> and select the task tile on which the <em>Navigate</em> action is set. Remove all the non-existing parameters and pass the <strong>taskData</strong> parameter with the <strong>Source</strong> as <em><strong>todos Record</strong></em>.</li>
+</ol>
+<p><img src="/images/cdn/bb5508d9f1c3.gif" alt/=""></p>
+<p>Before you can update a task from the <em>EditTaskComponent</em>, you need to pass the record from the <em>TaskDetailsScreen</em>.</p>
+<ol>
+<li>Select the <strong>Edit</strong> button on the <em>TaskDetailsScreen</em>.</li>
+<li>Go to the <strong>Bottom Sheet</strong> action defined on it.</li>
+<li>Click <strong>+ Define</strong> under <em><strong>Parameters</strong></em>. This will navigate you to the <em>EditTaskComponent</em>.</li>
+<li>Click <strong>+ Add Parameter</strong>.</li>
+<li>Enter the <strong>Parameter Name</strong> as <em><strong>taskData</strong></em>, select <strong>Type</strong> as <em><strong>Record</strong></em>, and <strong>Record Type</strong> as <em><strong>todos</strong></em>. Click <strong>Save</strong>.</li>
+<li>Now, click <strong>Pass</strong> under <em>Parameters</em>.</li>
+<li>Set the value of <em>taskData</em> as <strong>taskData</strong> (Source).</li>
+</ol>
+<p><img src="/images/cdn/190a8281bf59.gif" alt/=""></p>
+<p>Show the current values of the task on the TextFields and also define the Date/Time Picker action:</p>
+<ol>
+<li>Select the TextField widgets and set their <strong>Initial Value</strong> from variable.</li>
+<li>Use <em><strong>taskData</strong></em> as the <strong>Source</strong> and the respective field under <em>Available Options</em>. Click <strong>Save</strong>.</li>
+<li>For displaying the date, set the <strong>Text</strong> widget value from variable.</li>
+<li>Define <strong>Date/Time Picker</strong> action with the default value set from <strong><code>taskData &gt; timestamp</code></strong>.</li>
+</ol>
+<p><img src="/images/cdn/408946c73556.gif" alt/=""></p>
+<p>To define an <strong>Update Record</strong> action on the <em>EditTaskComponent</em>, follow the steps below:</p>
+<ol>
+<li>Select the <strong>Update Task</strong> button.</li>
+<li>Go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Click <strong>+ Add Action</strong>.</li>
+<li>Make sure <em><strong>On Tap</strong></em> is selected under the <strong>Type of Action</strong>.</li>
+<li>Select <strong>Update Record</strong> under <em>Database</em> actions.</li>
+<li>Choose the <strong>Source</strong> of reference as <em><strong>taskData</strong></em> and select <em><strong>reference</strong></em> under <strong>Available Options</strong>.</li>
+<li>Click <strong>+ Add Field</strong> button to specify the values of the <em><strong>title</strong></em>, <em><strong>description</strong></em>, and <em><strong>timestamp</strong></em> fields.</li>
+<li>For the <em><strong>title</strong></em> and <em><strong>description</strong></em> fields, use Value Source as <strong>From Variable</strong>, Source as <strong>Widget State</strong>, and select the respective TextField under Available Options.</li>
+<li>For the <strong>timestamp</strong> field, use Value Source as <strong>From Variable</strong>, Source as <strong>Widget State</strong>, and select <strong>Date Picked</strong> under Available Options.</li>
+</ol>
+<p><img src="/images/cdn/363fbc2a1362.gif" alt/=""></p>
+<h2 id="deleting-a-todo-task">Deleting a todo task</h2>
+<p>The <em>EditTaskComponent</em> also has an option for deleting a to-do task from the database. Follow the steps below to define the Delete Record action:</p>
+<ol>
+<li>Select the <strong>Delete</strong> icon button.</li>
+<li>Go to the <strong>Actions</strong> tab from the <a href="https://docs.flutterflow.io/getting-started/ui-builder/properties-panel?ref=blog.flutterflow.io"><strong>Properties Panel</strong></a>.</li>
+<li>Click <strong>+ Add Action</strong>.</li>
+<li>Make sure <em><strong>On Tap</strong></em> is selected under the <strong>Type of Action</strong>.</li>
+<li>Select <strong>Delete Record</strong> under <em>Database</em> actions.</li>
+<li>Choose the <strong>Source</strong> of reference as <em><strong>taskData</strong></em> and select <em><strong>reference</strong></em> under <strong>Available Options</strong>.</li>
+</ol>
+<p><img src="/images/cdn/003fb35ea34b.gif" alt/=""></p>
+<h2 id="database-operations-in-action">Database operations in action</h2>
+<p>You can try out the CRUD operations on the database by running the app either using the <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/tool-bar?ref=blog.flutterflow.io#7.-run"><strong>Run mode</strong></a> or by <a href="https://docs.flutterflow.io/building-your-ui/ui-builder/tool-bar?ref=blog.flutterflow.io#7.-run"><strong>downloading the project</strong></a> and running it from your system.</p>
+<p><strong>NOTE:</strong> To download and run the app on your system, you need to have <a href="https://docs.flutter.dev/get-started/install?ref=blog.flutterflow.io"><strong>Flutter SDK</strong></a> installed.</p>
+<p>The following demonstrates the CRUD operations performed inside the app running on an iOS Simulator.</p>
+<blockquote>
+<p><em><strong>You can try out this sample app</strong></em> <a href="https://app.flutterflow.io/run/tnPq49p2Fh3RfVFmMlqs?ref=blog.flutterflow.io"><em><strong>here</strong></em></a><em><strong>.</strong></em><a href="https://app.flutterflow.io/run/tnPq49p2Fh3RfVFmMlqs?ref=blog.flutterflow.io"><em><strong>here</strong></em></a><em><strong>.</strong></em></p>
+</blockquote>
+<p><img src="/images/cdn/4b5d69aaef46.gif" alt/=""></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Firestore integration with FlutterFlow makes it much simpler to manage cloud data across devices without worrying about syncing, allows real-time updates, and offers offline support out of the box.</p>
+<p>We hope this blog post has made the basic Firestore concepts clear for you and will help you to get more confident while using Firestore in your apps.</p>
+<p>In the <a href="/blog/implementing-search/"><strong>next part</strong></a> of this blog post series, you will learn to integrate a simple search functionality to this todo app.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://docs.flutterflow.io/working-with-data/firestore-database?ref=blog.flutterflow.io"><strong>Firestore Database Introduction - FlutterFlow Docs</strong></a></li>
+<li><a href="https://docs.flutterflow.io/working-with-data/firestore-rules?ref=blog.flutterflow.io"><strong>Firestore Rules - FlutterFlow Docs</strong></a></li>
+<li><a href="https://docs.flutterflow.io/actions-and-api-calls/actions/backend-calls?ref=blog.flutterflow.io"><strong>Backend Calls Action</strong></a> and <a href="https://docs.flutterflow.io/actions-and-api-calls/backend-query?ref=blog.flutterflow.io"><strong>Backend Query</strong></a> Docs</li>
+</ul> </div><footer class="ff-art-foot" data-astro-cid-v3wnudhb=""><p class="ff-art-meta" data-astro-cid-v3wnudhb=""><time datetime="2022-05-06" data-astro-cid-v3wnudhb="">May 6, 2022</time></p><div class="ff-art-share ff-art-foot-share" data-ff-art-share="" data-astro-cid-v3wnudhb="true" data-astro-cid-owv5jxu4=""> <button type="button" class="ff-ibtn ff-ibtn-sm ff-art-copy" data-ff-url="https://www.flutterflow.io/blog/cloud-firestore" aria-label="Copy link" data-astro-cid-owv5jxu4=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link ff-i ff-art-cp" aria-hidden="true" data-astro-cid-owv5jxu4="true"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check ff-i ff-art-ok" aria-hidden="true" data-astro-cid-owv5jxu4="true"> <path d="M20 6 9 17l-5-5"></path>  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x ff-i ff-art-no" aria-hidden="true" data-astro-cid-owv5jxu4="true"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg> </button> <a class="ff-ibtn ff-ibtn-sm" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.flutterflow.io%2Fblog%2Fcloud-firestore&text=Storing%20Data%20to%20the%20Cloud%20Using%20Firestore%20-%20To%20Do%20App%20%232" target="_blank" rel="noopener" aria-label="Share on X (opens in a new tab)" data-astro-cid-owv5jxu4=""> <svg viewbox="0 0 24 24" aria-hidden="true" data-astro-cid-owv5jxu4="true"><path fill="currentColor" d="M17.176 4h2.76l-6.03 6.777L21 20h-5.554l-4.351-5.593L5.117 20H2.355l6.451-7.25L2 4h5.695l3.932 5.113L17.176 4Zm-.97 14.375h1.53L7.863 5.54H6.223l9.983 12.835Z"></path></svg> </a> <a class="ff-ibtn ff-ibtn-sm" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.flutterflow.io%2Fblog%2Fcloud-firestore" target="_blank" rel="noopener" aria-label="Share on LinkedIn (opens in a new tab)" data-astro-cid-owv5jxu4=""> <svg viewbox="0 0 24 24" aria-hidden="true" data-astro-cid-owv5jxu4="true"><path fill="currentColor" d="M4.5 3C3.672 3 3 3.672 3 4.5v15c0 .828.672 1.5 1.5 1.5h15c.828 0 1.5-.672 1.5-1.5v-15c0-.828-.672-1.5-1.5-1.5h-15Zm3.02 4.003a1.546 1.546 0 0 1-.003 3.088 1.546 1.546 0 0 1 .003-3.088ZM5.682 18.324h2.65V9.767H5.682v8.557Zm4.597-8.562h2.44v1.19h.034c.34-.644 1.17-1.322 2.407-1.322 2.573 0 3.049 1.694 3.049 3.897v4.797h-2.55v-4.252c0-1.014-.019-2.319-1.413-2.319-1.414 0-1.63 1.105-1.63 2.247v4.324h-2.337V9.762Z"></path></svg> </a> <span class="ff-vh" role="status" aria-live="polite" data-astro-cid-owv5jxu4=""></span> </div> <script type="module">for(const t of document.querySelectorAll("[data-ff-art-share] .ff-art-copy")){const e=t.parentElement.querySelector("[role=status]");let a=0;t.addEventListener("click",async()=>{clearTimeout(a),t.removeAttribute("data-ff-copied"),t.removeAttribute("data-ff-failed");try{await navigator.clipboard.writeText(t.dataset.ffUrl),t.setAttribute("data-ff-copied",""),e.textContent="Copied"}catch{t.setAttribute("data-ff-failed",""),e.textContent="Couldn’t copy. Copy the address from the browser’s bar."}a=window.setTimeout(()=>{t.removeAttribute("data-ff-copied"),t.removeAttribute("data-ff-failed"),e.textContent=""},2e3)})}</script></footer></div></div></article> <div class="ff-wrap"><section id="close" aria-labelledby="close-h" class="ff-block ff-cls" data-astro-cid-uny4lie4="true"> <div class="ff-sec-center" data-astro-cid-l4fe2nj4=""><h2 id="close-h" data-astro-cid-l4fe2nj4=""><span class="ff-ln" data-astro-cid-l4fe2nj4="">Turn your idea into an app</span></h2><div class="ff-cls-acts ff-cls-two" data-astro-cid-uny4lie4=""> <a class="ff-btn ff-btn-primary ff-btn-ab" href="https://build.flutterflow.io/signin?returnTo=%2Fnew" data-astro-cid-uny4lie4="true" data-astro-cid-sghildrv=""><span class="ff-ptag-dot" aria-hidden="true" data-astro-cid-uny4lie4=""></span>Start building<span class="ff-vh" data-astro-cid-sghildrv=""> in FlutterFlow</span></a> <a class="ff-btn ff-btn-primary ff-btn-ab" href="https://app.flutterflow.io" data-astro-cid-uny4lie4="true" data-astro-cid-sghildrv=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-uny4lie4=""></span>Open Studio</a> </div></div>   </section></div> </main> <div class="ff-wrap" data-astro-cid-557ad5nw=""> <footer class="ff-ftr-site-foot ff-ftr-all" data-astro-cid-557ad5nw=""> <div class="ff-ftr-top" data-astro-cid-557ad5nw=""> <div class="ff-ftr-id" data-astro-cid-557ad5nw=""> <a href="/" data-astro-cid-557ad5nw="true" class="ff-lkp ff-ftr-brand"><img src="/_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp" srcset="/_astro/flutterflow-mark-96.ChAYdHC__oeoFH.webp 30w, /_astro/flutterflow-mark-96.ChAYdHC__ZEyrXC.webp 60w, /_astro/flutterflow-mark-96.ChAYdHC__28B3sA.webp 96w" sizes="27px" alt="" width="96" height="96" loading="lazy" decoding="async"><svg class="ff-lkp-wordmark" viewbox="80 -710 5099 722" role="img" aria-label="FlutterFlow"><path fill="currentColor" d="M80 0L80 -710L555 -710L555 -597L139 -597L210 -670L210 -344L139 -403L537 -403L537 -291L139 -291L210 -350L210 0ZM748 0Q690 0 655 -30Q620 -60 620 -126L620 -710L748 -710L748 -139Q748 -119 758.5 -109Q769 -99 788 -99L827 -99L827 0ZM1055 12Q974 12 926.5 -41.5Q879 -95 879 -190L879 -534L1007 -534L1007 -222Q1007 -155 1029.5 -123.5Q1052 -92 1098 -92Q1150 -92 1178.5 -126.5Q1207 -161 1207 -227L1207 -534L1335 -534L1335 0L1218 0L1215 -147L1231 -142Q1219 -66 1174 -27Q1129 12 1055 12ZM1637 0Q1557 0 1519.5 -37Q1482 -74 1482 -153L1482 -659L1610 -659L1610 -165Q1610 -128 1626 -113.5Q1642 -99 1676 -99L1751 -99L1751 0ZM1398 -435L1398 -534L1751 -534L1751 -435ZM2004 0Q1924 0 1886.5 -37Q1849 -74 1849 -153L1849 -659L1977 -659L1977 -165Q1977 -128 1993 -113.5Q2009 -99 2043 -99L2118 -99L2118 0ZM1765 -435L1765 -534L2118 -534L2118 -435ZM2404 12Q2324 12 2265 -22.5Q2206 -57 2174 -120Q2142 -183 2142 -267Q2142 -351 2174 -413.5Q2206 -476 2264.5 -511Q2323 -546 2401 -546Q2477 -546 2534.5 -512Q2592 -478 2623 -414Q2654 -350 2654 -260L2654 -231L2275 -231Q2279 -161 2313.5 -125.5Q2348 -90 2405 -90Q2448 -90 2476.5 -109.5Q2505 -129 2516 -164L2647 -156Q2625 -78 2560.5 -33Q2496 12 2404 12ZM2275 -317L2522 -317Q2518 -382 2485 -413.5Q2452 -445 2401 -445Q2350 -445 2316.5 -412Q2283 -379 2275 -317ZM2724 0L2724 -534L2844 -534L2849 -386L2838 -388Q2850 -465 2883.5 -499.5Q2917 -534 2975 -534L3024 -534L3024 -424L2974 -424Q2933 -424 2906 -412Q2879 -400 2865.5 -374.5Q2852 -349 2852 -308L2852 0ZM3087 0L3087 -710L3562 -710L3562 -597L3146 -597L3217 -670L3217 -344L3146 -403L3544 -403L3544 -291L3146 -291L3217 -350L3217 0ZM3755 0Q3697 0 3662 -30Q3627 -60 3627 -126L3627 -710L3755 -710L3755 -139Q3755 -119 3765.5 -109Q3776 -99 3795 -99L3834 -99L3834 0ZM4118 12Q4039 12 3979.5 -22.5Q3920 -57 3887.5 -120Q3855 -183 3855 -267Q3855 -352 3887.5 -414.5Q3920 -477 3979.5 -511.5Q4039 -546 4118 -546Q4197 -546 4256 -511.5Q4315 -477 4347.5 -414.5Q4380 -352 4380 -267Q4380 -183 4347.5 -120Q4315 -57 4256 -22.5Q4197 12 4118 12ZM4118 -92Q4180 -92 4213.5 -138Q4247 -184 4247 -267Q4247 -349 4213.5 -395.5Q4180 -442 4118 -442Q4056 -442 4022 -395.5Q3988 -349 3988 -267Q3988 -184 4022 -138Q4056 -92 4118 -92ZM4543 0L4382 -534L4513 -534L4617 -145L4724 -534L4836 -534L4944 -145L5048 -534L5179 -534L5018 0L4886 0L4780 -358L4675 0Z"></path></svg></a> <p data-astro-cid-557ad5nw=""><span class="ff-ptag-dot ff-ptag-studio" aria-hidden="true" data-astro-cid-557ad5nw=""></span>Already use FlutterFlow Studio? <a href="https://app.flutterflow.io" data-astro-cid-557ad5nw="">Open Studio</a><a href="https://build.flutterflow.io/signin" data-astro-cid-557ad5nw="">Sign in</a></p> </div> <nav class="ff-ftr-cols" aria-label="Footer" data-astro-cid-557ad5nw=""> <div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Product</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/product/" data-astro-cid-557ad5nw="">Product</a></li><li data-astro-cid-557ad5nw=""><a href="https://docs.flutterflow.io/ffx" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="/studio/changelog/" data-astro-cid-557ad5nw="">Changelog</a></li><li data-astro-cid-557ad5nw=""><a href="/studio/desktop/" data-astro-cid-557ad5nw="">Desktop</a></li><li data-astro-cid-557ad5nw=""><a href="/designer/" data-astro-cid-557ad5nw="">Designer</a></li><li data-astro-cid-557ad5nw=""><a href="/enterprise/" data-astro-cid-557ad5nw="">Enterprise</a></li><li data-astro-cid-557ad5nw=""><a href="/pricing/" data-astro-cid-557ad5nw="">Pricing</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Studio</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="https://app.flutterflow.io" data-astro-cid-557ad5nw="">Open Studio</a></li><li data-astro-cid-557ad5nw=""><a href="/ai/" data-astro-cid-557ad5nw="">AI</a></li><li data-astro-cid-557ad5nw=""><a href="https://docs.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Docs<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://marketplace.flutterflow.io/home" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Templates<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://campus.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Campus<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.youtube.com/playlist?list=PLsUp7t2vRqx9UE13G8Xod8F-m248iR0E3" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Trainings<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://community.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Community<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://status.flutterflow.io/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Status<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Resources</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/studio/work-with-developers/" data-astro-cid-557ad5nw="">Hire an expert</a></li><li data-astro-cid-557ad5nw=""><a href="/studio/apply-to-be-a-developer/" data-astro-cid-557ad5nw="">Apply to be an expert</a></li><li data-astro-cid-557ad5nw=""><a href="/studio/showcase/" data-astro-cid-557ad5nw="">Showcase</a></li><li data-astro-cid-557ad5nw=""><a href="/customer-stories/" data-astro-cid-557ad5nw="">Customer stories</a></li><li data-astro-cid-557ad5nw=""><a href="/blog/" data-astro-cid-557ad5nw="">Blog</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Community</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/flutterflow-developer-groups/" data-astro-cid-557ad5nw="">Developer groups</a></li><li data-astro-cid-557ad5nw=""><a href="/student-ambassadors/" data-astro-cid-557ad5nw="">Student ambassadors</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Company</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="/about-us/" data-astro-cid-557ad5nw="">About</a></li><li data-astro-cid-557ad5nw=""><a href="https://jobs.ashbyhq.com/FlutterFlow" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Careers<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="/contact-us/" data-astro-cid-557ad5nw="">Contact</a></li> </ul></div><div data-astro-cid-557ad5nw=""><h2 data-astro-cid-557ad5nw="">Connect</h2><ul data-astro-cid-557ad5nw=""> <li data-astro-cid-557ad5nw=""><a href="https://twitter.com/flutterflow" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">X<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.youtube.com/@FlutterFlow" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">YouTube<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.linkedin.com/company/flutterflow/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li><li data-astro-cid-557ad5nw=""><a href="https://www.reddit.com/r/FlutterFlow/" target="_blank" rel="noopener" data-astro-cid-557ad5nw="">Reddit<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right ff-i" aria-hidden="true" data-astro-cid-557ad5nw="true"> <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>  </svg><span class="ff-vh" data-astro-cid-557ad5nw=""> (opens in a new tab)</span></a></li> </ul></div> </nav> </div> <div class="ff-ftr-bar" data-astro-cid-557ad5nw=""> <div class="ff-ftr-legal" data-astro-cid-557ad5nw=""><span data-astro-cid-557ad5nw="">© 2026 FlutterFlow</span><a href="/tos/" data-astro-cid-557ad5nw="">Terms</a><a href="/privacy/" data-astro-cid-557ad5nw="">Privacy</a><a href="/tos-marketplace/" data-astro-cid-557ad5nw="">Marketplace terms</a><button class="ft-cookie" type="button" aria-haspopup="dialog" hidden="" data-astro-cid-2oyhmw5c="">Your Privacy Choices<svg class="ft-ccpa" viewbox="0 0 30 14" aria-hidden="true" focusable="false" data-astro-cid-2oyhmw5c=""><path fill="#fff" fill-rule="evenodd" d="M7.4,12.8h6.8l3.1-11.6H7.4C4.2,1.2,1.6,3.8,1.6,7S4.2,12.8,7.4,12.8z" data-astro-cid-2oyhmw5c=""></path><path fill="#06f" fill-rule="evenodd" d="M22.6,0H7.4c-3.9,0-7,3.1-7,7s3.1,7,7,7h15.2c3.9,0,7-3.1,7-7S26.4,0,22.6,0z M1.6,7c0-3.2,2.6-5.8,5.8-5.8h9.9l-3.1,11.6H7.4C4.2,12.8,1.6,10.2,1.6,7z" data-astro-cid-2oyhmw5c=""></path><path fill="#fff" d="M24.6,4c0.2,0.2,0.2,0.6,0,0.8l0,0L22.5,7l2.2,2.2c0.2,0.2,0.2,0.6,0,0.8c-0.2,0.2-0.6,0.2-0.8,0l0,0l-2.2-2.2L19.5,10c-0.2,0.2-0.6,0.2-0.8,0c-0.2-0.2-0.2-0.6,0-0.8l0,0L20.8,7l-2.2-2.2c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0l2.2,2.2L23.8,4C24,3.8,24.4,3.8,24.6,4z" data-astro-cid-2oyhmw5c=""></path><path fill="#06f" d="M12.7,4.1c0.2,0.2,0.3,0.6,0.1,0.8l0,0L8.6,9.8C8.5,9.9,8.4,10,8.3,10c-0.2,0.1-0.5,0.1-0.7-0.1l0,0L5.4,7.7c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0L8,8.6l3.8-4.5C12,3.9,12.4,3.9,12.7,4.1z" data-astro-cid-2oyhmw5c=""></path></svg></button> <script type="module" src="/_astro/PrivacyChoices.astro_astro_type_script_index_0_lang.BXErlLUd.js"></script></div> <div class="ff-tsw" role="radiogroup" aria-label="Theme" data-ff-tsw="" data-astro-cid-557ad5nw="true"> <button type="button" role="radio" aria-checked="true" aria-label="Match your system" title="Match your system" data-ff-tip="" data-ff-tsw-pick="system"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M3 4.5h18v11H3z"></path><path d="M8 20h8M12 15.5V20"></path></svg></button><button type="button" role="radio" aria-checked="false" aria-label="Light" title="Light" data-ff-tip="" data-ff-tsw-pick="light"><svg viewbox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"></path></svg></button><button type="button" role="radio" aria-checked="false" aria-label="Dark" title="Dark" data-ff-tip="" data-ff-tsw-pick="dark"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path></svg></button> </div> <!-- the remembered pick, checked before paint: the module script below runs only once the page is parsed --> <script>
+  (function (g) {
+    var pick = document.documentElement.dataset.ffTswPick, t = null;
+    if (!pick) { try { t = localStorage.getItem(document.documentElement.dataset.ffTswKey || "ff-theme"); } catch (e) {} pick = t === "light" || t === "dark" ? t : "system"; }
+    g.querySelectorAll("[data-ff-tsw-pick]").forEach(function (b) { b.setAttribute("aria-checked", String(b.dataset.ffTswPick === pick)); b.tabIndex = b.dataset.ffTswPick === pick ? 0 : -1; });
+  })(document.currentScript.previousElementSibling);
+</script> <script type="module">const c=document.documentElement,k="ff-theme",o=()=>c.dataset.ffTswKey||k,d=matchMedia("(prefers-color-scheme: dark)"),u=document.querySelectorAll("[data-ff-tsw]");function h(){try{const t=localStorage.getItem(o());return t==="light"||t==="dark"?t:"system"}catch{return"system"}}const a=()=>c.dataset.ffTswPick,r=()=>c.dataset.theme=a()==="system"?d.matches?"dark":"light":a();function i(t){for(const e of document.querySelectorAll("[data-ff-tsw] [data-ff-tsw-pick]"))e.setAttribute("aria-checked",String(e.dataset.ffTswPick===t)),e.tabIndex=e.dataset.ffTswPick===t?0:-1}function f(t){c.dataset.ffTswPick=t,r();try{t==="system"?localStorage.removeItem(o()):localStorage.setItem(o(),t)}catch{}i(t),document.dispatchEvent(new CustomEvent("ff:theme-switch-change",{detail:{pick:t}}))}a()||(c.dataset.ffTswPick=h(),r(),d.addEventListener("change",r));i(a());for(const t of u)t.addEventListener("click",e=>{const s=e.target.closest("[data-ff-tsw-pick]");s&&f(s.dataset.ffTswPick)}),t.addEventListener("keydown",e=>{if(!["ArrowLeft","ArrowRight","ArrowUp","ArrowDown"].includes(e.key))return;const s=[...t.querySelectorAll("[data-ff-tsw-pick]")],l=s.findIndex(w=>w.getAttribute("aria-checked")==="true"),n=s[(l+(e.key==="ArrowLeft"||e.key==="ArrowUp"?s.length-1:1))%s.length];e.preventDefault(),n.focus(),f(n.dataset.ffTswPick)});</script> </div> <div class="ff-ftr-flash" aria-hidden="true" data-ff-ftr-flash="" data-astro-cid-557ad5nw="true"><canvas></canvas></div> <script type="module" src="/_astro/FooterFlash.astro_astro_type_script_index_0_lang.2skXuUzs.js"></script> </footer> </div>    <script type="module" src="/_astro/third-party-body.astro_astro_type_script_index_0_lang.iWvDO2c2.js"></script> 

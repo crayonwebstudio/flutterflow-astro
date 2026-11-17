@@ -1,0 +1,1 @@
+import{_ as r}from"./preload-helper.CVfkMyKi.js";const t=document.querySelector("[data-ff-ftr-flash]");if(t){const e=new IntersectionObserver(([o])=>{o?.isIntersecting&&(e.disconnect(),r(()=>import("./flash.Dh5aYwHF.js"),[]).catch(()=>{}))},{rootMargin:"1200px 0px"});e.observe(t)}

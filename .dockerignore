@@ -1,0 +1,19 @@
+# Build output and generated files
+dist/
+.astro/
+
+# Dependencies (installed in the image with npm ci)
+node_modules/
+
+# Version control
+.git/
+
+# Regeneration script and docs: not needed to build or serve the site
+tools/
+README.md
+
+# Local environment and editor files
+.env
+.env.production
+.DS_Store
+.idea/

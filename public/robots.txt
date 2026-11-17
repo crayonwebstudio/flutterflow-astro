@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://omnimercestage.woodwolfdigital.com/sitemap-index.xml

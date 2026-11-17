@@ -1,0 +1,39 @@
+---
+// Source layout: carries one original FlutterFlow page verbatim.
+// headHtml is the original <head> inner markup (title, meta, canonical,
+// OG/Twitter, inline <style> blocks, font preloads, inline theme/GTM/UTM
+// scripts and the _astro module scripts). bodyHtml is the original <body>
+// inner markup. Both are injected with set:html so Astro does not
+// re-parse, escape or alter the source markup, CSS or JS.
+// The scaffold header/footer/components were removed: the source pages
+// already contain their own header and footer in the body markup, and
+// extracting shared components without changing the rendered output was
+// not possible without risking fidelity. Fidelity beats code elegance here.
+// src/styles/global.css and variables.css are kept for reference only and
+// are not loaded by this layout; the source inline CSS is authoritative.
+//
+// Stage noindex: this is a stage copy of flutterflow.io, so it must not
+// be indexed. The robots meta below is injected by this layout, outside
+// the raw headHtml, so it applies to all 203 pages. The source
+// src/source/*.head.html fragments were NOT edited and their canonical/OG
+// URLs still point to https://www.flutterflow.io. robots.txt Disallows
+// all, and nginx.conf adds X-Robots-Tag "noindex, nofollow" as a second
+// layer.
+interface Props {
+  htmlAttrs?: Record<string, string>;
+  bodyAttrs?: Record<string, string>;
+  headHtml: string;
+  bodyHtml: string;
+}
+
+const { htmlAttrs = {}, bodyAttrs = {}, headHtml, bodyHtml } = Astro.props;
+---
+
+<!doctype html>
+<html {...htmlAttrs}>
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <Fragment set:html={headHtml} />
+  </head>
+  <body {...bodyAttrs} set:html={bodyHtml}></body>
+</html>
